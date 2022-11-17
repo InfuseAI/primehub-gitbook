@@ -1,5 +1,5 @@
 ---
-description: Amazon Web Services (AWS)
+description: PrimeHub Installation on Amazon Web Services
 ---
 
 # One-Click Install
