@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Page 1](README.md)
+* [This is User Manual](README.md)
