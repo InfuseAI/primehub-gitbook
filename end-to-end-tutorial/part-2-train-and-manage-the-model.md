@@ -35,6 +35,8 @@ PrimeHub UI → User portal → Notebook → Choose the instance type and Jupyte
 
 When the notebook has started, you will see the My Server Information page:
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-server-information.png" alt=""><figcaption></figcaption></figure>
+
 #### 2. Download the tutorial project code
 
 Jupyter Notebook → Create terminal → Run the following commands
@@ -60,6 +62,8 @@ label_data_file_path = "project-6-at-2022-09-19-04-17-b9f72b54.json"
 
 #### 3. Run the Notebook and train the model
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-train-model (1).png" alt=""><figcaption></figcaption></figure>
+
 > Note: If you want to run the training Notebook in the background job, we also support submitting the Jupyter Notebook as a job method. Please see the advanced tutorial section for details.
 
 ### Step 3: Use MLFlow to manage the model
@@ -76,6 +80,8 @@ As a result, we can go back to the PrimeHub user portal, open the MLFlow platfor
 
 → PrimeHub User portal → models → MLFlow UI → (In MLFlow) Experiments → tutorial\_screw\_train
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-experiment.png" alt=""><figcaption></figcaption></figure>
+
 ### Step 4: Change the parameter for tuning the model
 
 When we successfully build the machine learning model, we need to give experiments for tuning the machine learning model to be the best.
@@ -85,7 +91,9 @@ When we successfully build the machine learning model, we need to give experimen
     Please change the `base_learning_rate` variable value and run the Notebook again:
 
     `base_learning_rate = 0.01` → `base_learning_rate = 0.05`
-2. Then you will see the second experiment result in MLFlow platform.
+2.  Then you will see the second experiment result in MLFlow platform.
+
+    <figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-mlflow-experiments.png" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 
