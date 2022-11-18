@@ -34,11 +34,13 @@ User portal → Apps → Click `+ Application` → Click `+ Install in PrimeHub`
 
 Once Streamlit is ready, click **Open** to launch the web interface.
 
-![https://docs.primehub.io/docs/assets/primehub-end-to-end-tutorial-web-app-4.png](https://docs.primehub.io/docs/assets/primehub-end-to-end-tutorial-web-app-4.png)
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-web-app-4 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Model prediction
 
 Click the **Browse Files** button at the top left to upload images of screws. The uploaded images and their inference results will be shown on the right.
+
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-web-app-5 (1).png" alt=""><figcaption></figcaption></figure>
 
 Adjust the layout of the screw images by selecting a **Column Size** in the left sidebar. The threshold to determine good and bad screws can also be adjusted with the **Threshold** slider.
 
