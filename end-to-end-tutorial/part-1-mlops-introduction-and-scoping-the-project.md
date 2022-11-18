@@ -8,13 +8,15 @@ Machine Learning Operations, also called MLOps, is a process of training and dep
 
 In the MLOps pipeline, We implement the following stages:
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-mlops_pipeline_introduction.png" alt=""><figcaption><p>MLops pipeline</p></figcaption></figure>
+
 #### 1. Scoping
 
 Plan and check that the project or product scope is suitable for Machine Learning Model. You can use the following form to evaluate your project.
 
 The example table of project scope:
 
-
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-project-scope-example.png" alt=""><figcaption><p>project scope table</p></figcaption></figure>
 
 #### 2. Data Engineering
 
