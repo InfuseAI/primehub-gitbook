@@ -1,5 +1,11 @@
 # Quickstart
 
+### PrimeHub in 1 minute
+
+{% embed url="https://youtu.be/PL2J6KPijdw" %}
+PrimeHub in 1 minute
+{% endembed %}
+
 ### Brief
 
 In this quick-start, we will learn how to use a Notebook to train/generate a simple model. Then, in the follow-up guide, we will learn how to submit a parameter-tuning job for the model tuning from same Notebook.
@@ -12,12 +18,26 @@ In this quick-start, we will learn how to use a Notebook to train/generate a sim
 
 * Select a group with Shared Volume enabled.
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-shared-volume.png" alt=""><figcaption></figcaption></figure>
+
 #### Steps
 
-1. **Open TensorFlow Notebook** from the Home page, then you will be redirected to the Notebooks page.
-2. Click on **Start Notebook** to spawn a notebook with basic settings. If you want to use different instance types, click on **Change Settings** and start the notebook.
-3. Wait for the notebook spawn. When the notebook is ready, you will be redirected to the notebook with prepared example notebook.
-4. **Run All Cells**, it will train a classification model for MNIST dataset and save it.
+1.  **Open TensorFlow Notebook** from the Home page, then you will be redirected to the Notebooks page.
+
+    <figure><img src="../.gitbook/assets/quickstart_home (1).png" alt=""><figcaption></figcaption></figure>
+2.  Click on **Start Notebook** to spawn a notebook with basic settings. If you want to use different instance types, click on **Change Settings** and start the notebook.&#x20;
+
+    <figure><img src="../.gitbook/assets/quickstart_create_notebook (1).png" alt=""><figcaption></figcaption></figure>
+3.  Wait for the notebook spawn. When the notebook is ready, you will be redirected to the notebook with prepared example notebook.
+
+    <figure><img src="../.gitbook/assets/quickstart_notebook_spwaning (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="../.gitbook/assets/quickstart_notebook_started (1).png" alt=""><figcaption></figcaption></figure>
+4.  **Run All Cells**, it will train a classification model for MNIST dataset and save it.
+
+    <figure><img src="../.gitbook/assets/quickstart_notebook_run_all (1).png" alt=""><figcaption></figcaption></figure>
 
 So far, we have trained and generated a model file via our Notebook. This is achievable in both Community and Enterprise editions of PrimeHub.
 
