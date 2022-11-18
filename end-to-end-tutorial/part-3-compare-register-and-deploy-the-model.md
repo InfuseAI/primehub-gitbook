@@ -15,6 +15,8 @@ In the previous part, we used PrimeHub Notebook to train and manage the base mod
 
 Before we get started, enable the Model Deployment toggle in your group settings.
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-model-deployment.png" alt=""><figcaption></figcaption></figure>
+
 #### 2. Model pre-package docker image
 
 There are two methods to get your pre-package docker image:
@@ -32,17 +34,25 @@ To compare the results, click the checkbox next to each run to select them, then
 
 → MLFlow server UI → Choose two runs → Click Compare.
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-mlflow-compare-results.png" alt=""><figcaption></figcaption></figure>
+
 #### 2. Choose the best run and register the model
 
 Check the best score in Metrics
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-mlflow-check-score.png" alt=""><figcaption></figcaption></figure>
+
 At the top of the page, click the **Run ID** link for the run.
+
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-mlflow-run-id.png" alt=""><figcaption></figcaption></figure>
 
 In the Artifact, register the model folder as our model registry.
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-mlflow-register-model-1.png" alt=""><figcaption></figcaption></figure>
+
 Enter the model information to register the model.
 
-
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-mlflow-register-model-2.png" alt=""><figcaption></figcaption></figure>
 
 ### Step 2: Deploy and test the model service
 
@@ -50,9 +60,15 @@ Enter the model information to register the model.
 
 On the **Models** page in the PrimeHub user portal, click our managed model with the name **tf-screw-model**.
 
+<figure><img src="../.gitbook/assets/tutorial_models_managed.png" alt=""><figcaption></figcaption></figure>
+
 The following page shows all versions of the **tf-screw-model** model. Click the **Deploy** button for **Version 1**.
 
+<figure><img src="../.gitbook/assets/tutorial_models_version.png" alt=""><figcaption></figcaption></figure>
+
 In the **Deploy Model** dialog, select **Create new deployment** from the **Deployment** dropdown and then click **OK**.
+
+<figure><img src="../.gitbook/assets/tutorial_models_create_new_deployment.png" alt=""><figcaption></figcaption></figure>
 
 Fill in the Deployment information:
 
@@ -66,7 +82,9 @@ Click the **Deploy** button, and you will be redirected to the **Deployments** p
 
 To view the details of the deployment, click the **tf-screw-deployment** card.
 
-> If you want to build your custom deployment logic and environment, you can see the information in the advanced tutorial section.
+{% hint style="info" %}
+If you want to build your custom deployment logic and environment, you can see the information in the [advanced tutorial section](advanced/custom-build-the-seldon-server.md).
+{% endhint %}
 
 #### 2. Test the model service is available to use
 
