@@ -39,9 +39,11 @@ PrimeHub user portal → Apps → `+ Application` → Label Studio → Fill in t
 
 #### Step 2: Log into Label Studio.
 
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-label-studio-userpass.png" alt=""><figcaption></figcaption></figure>
 
-
-> Tip: The account and password are in the environment variables.
+{% hint style="info" %}
+Tip: The account and password are in the environment variables.
+{% endhint %}
 
 #### Step 3: Create a Label Studio project.
 
@@ -67,11 +69,17 @@ Click Create → Fill in the information:
 
 In the screw project, click **Label All Tasks** to start labeling.
 
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-label-studio-tasks.png" alt=""><figcaption></figcaption></figure>
+
 For each image, click either the **good** or **bad** checkbox, use the keyboard numbers 1 for good or 2 for bad, and then click the **Submit** button to proceed to the following image.
+
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-label-studio-labeling.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 5: Export the labeling output.
 
 You can use the export UI to download the JSON-formatted files to your local computer.
+
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-label-studio-export.png" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 
