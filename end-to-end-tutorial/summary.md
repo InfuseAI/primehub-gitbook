@@ -4,6 +4,8 @@ Enterprise Applicable to Enterprise Edition
 
 We've achieved a lot during this tutorial, let's review what we have achieved and how PrimeHub helped us at each stage of the process.
 
+<figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-mlops_pipeline_introduction.png" alt=""><figcaption></figcaption></figure>
+
 ### Part 1 - MLOps Introduction and Scoping the Project
 
 In this part, we introduced the MLOps concept and learned how to build a good data and machine learning pipeline. Otherwise, we provide a table that can give the project owner the three important elements of machine learning - Data, Model, and Code.
