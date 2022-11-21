@@ -12,6 +12,8 @@ In addition to the **Jobs**, PrimeHub also provides another feature, **Recurring
 
 There is a list showing created jobs within the current group with relevant information.
 
+<figure><img src="../.gitbook/assets/jsub_list.png" alt=""><figcaption></figcaption></figure>
+
 | Column       | Description                                                                                                |
 | ------------ | ---------------------------------------------------------------------------------------------------------- |
 | `Status`     | The status of the job. `Pending`,`Preparing`, `Running`, `Failed`, `Succeeded`, `Cancelled` and `Unknown`. |
@@ -36,6 +38,8 @@ Click the job name on the list to view the job information and logs. The job can
 
 It shows the brief information of the job.
 
+<figure><img src="../.gitbook/assets/jsub_panel_v310.png" alt=""><figcaption></figcaption></figure>
+
 | Field        | Description                                                                                                                          |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `Status`     | The status of the job. `Preparing`, `Running`, `Failed`, `Succeeded`, `Cancelled` and `Unknown`.                                     |
@@ -45,6 +49,8 @@ It shows the brief information of the job.
 | `User`       | The owner who submits the job.                                                                                                       |
 
 **Tabs**
+
+<figure><img src="../.gitbook/assets/jsub_view_tabs_v32.png" alt=""><figcaption></figcaption></figure>
 
 **Information**
 
@@ -69,7 +75,9 @@ If a Job generates data so called **artifacts** under the PHFS storage `artifact
 
 **Monitoring**
 
-> It shows the message "feature not enabled, please contact admin", if underlying prerequisite phfs is not enabled.
+{% hint style="info" %}
+It shows the message "feature not enabled, please contact admin", if underlying prerequisite phfs is not enabled.
+{% endhint %}
 
 Monitoring indicates how much resources the Job use.
 
@@ -78,6 +86,8 @@ Monitoring indicates how much resources the Job use.
     > View the average usage within these most recent time frames
 * `Overall Usage`: CPU and Memory(MB).
 * `GPU Device Usage`: GPU and Memory(MB) display _if GPU is allocated_.
+
+<figure><img src="../.gitbook/assets/jsub-monitoring-15m.png" alt=""><figcaption></figcaption></figure>
 
 **Logs**
 
@@ -99,6 +109,8 @@ However, when a job comes to cancellation or timeout, **there is no log left** s
 
 There is a list showing created recurring jobs within the current group with relevant information.
 
+<figure><img src="../.gitbook/assets/jsub_recurring_list.png" alt=""><figcaption></figcaption></figure>
+
 | Column       | Description                                                         |
 | ------------ | ------------------------------------------------------------------- |
 | `Name`       | The name of the recurring job.                                      |
@@ -117,6 +129,8 @@ There is a list showing created recurring jobs within the current group with rel
 ### Create Job/Recurring Job
 
 Confirm if the current group is what you desire; switch the group by the `Group:` dropdown in the upper right corner.
+
+<figure><img src="../.gitbook/assets/jsub_create_v310.png" alt=""><figcaption></figcaption></figure>
 
 * `InstanceTypes`: Select a instance type which allocates resources for the job.
 * `Images`: Select an image which the job run bases on.
@@ -174,9 +188,13 @@ python -u train_minst.py
 python -u /project/research/train_minst.py
 ```
 
-> We, sometimes, may find ourselves repeating frequently-used packages installation in every runtime. Either we can request Group admin/Admin to build a custom image with those packages to avoid the repetition or we can customize own runtime environments at our convenience. See Reference.
+{% hint style="info" %}
+We, sometimes, may find ourselves repeating frequently-used packages installation in every runtime. Either we can request Group admin/Admin to build a custom image with those packages to avoid the repetition or we can customize own runtime environments at our convenience. See Reference.
+{% endhint %}
 
 **Execute this Job**
+
+<figure><img src="../.gitbook/assets/recurrence-option.png" alt=""><figcaption></figcaption></figure>
 
 | Options                   | Description                                                                                |
 | ------------------------- | ------------------------------------------------------------------------------------------ |
