@@ -1,7 +1,5 @@
 # (Part1) MNIST classifier training
 
-Enterprise Applicable to Enterprise tier only
-
 By leveraging Job Submission, users can train a machine learning job in the background while doing other analyses in JupyterLab at the same time.
 
 In this tutorial, we will go through a MNIST example, introduce and teach you how to use Job Submission functions, and also explain how Job Submission functions interact with other functions in PrimeHub.
@@ -15,6 +13,8 @@ To fully utilize all Job Submission functions, there must be a `group volume` in
 Jobs cannot access `user volume` and a job's working directory is also a temporary directory. Therefore, the easiest way to persist your outputs is to output them into `group volume`. Also, the easiest way to use the code written in JupyterLab is to put your code in `group volume`.
 
 The rest of this tutorial assumes that you have `group volume`.
+
+<figure><img src="../../.gitbook/assets/jobsub-tt-p1-1.png" alt=""><figcaption></figcaption></figure>
 
 Ask your administrator to switch on shared volume in Groups tab under the Admin page
 
