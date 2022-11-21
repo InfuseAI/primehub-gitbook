@@ -1,7 +1,5 @@
 # (Advanced) Use Job Submission to Tune Hyperparameters
 
-Enterprise Applicable to Enterprise tier only
-
 For typical machine learning algorithms, there are many hyperparameters to tune. Finding the right hyperparameters can be a very time consuming job. However, with Job Submission, you can let it run the job for you. All you have to do is simply check the results when the job is complete.
 
 1.  Let's create another Python file `tune_dropout.py` in JupyterLab first:
@@ -80,6 +78,8 @@ For typical machine learning algorithms, there are many hyperparameters to tune.
     If you prefer, rather than writing in a shell script, you can create another Python file and wrap the original code as a function and write a `for loop` in Python. We can submit this new Python file as a job to find out best dropout rate.
 3.  After your job has succeeded, you can view the best dropout rate for your model.
 
-    Your results may not match this image above
+    Your results may not match this image below
+
+    <figure><img src="../../.gitbook/assets/jobsub-tt-p3-1.png" alt=""><figcaption></figcaption></figure>
 
 In the future, we will provide even better hyperparameters tuning functions. Stay tuned!

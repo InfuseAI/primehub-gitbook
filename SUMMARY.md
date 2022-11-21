@@ -37,6 +37,6 @@
 * [Tutorial](jobs/tutorial/README.md)
   * [(Part1) MNIST classifier training](jobs/tutorial/part1-mnist-classifier-training.md)
   * [(Part2) MNIST classifier training](jobs/tutorial/part2-mnist-classifier-training.md)
-  * [(Advanced) Model Serving by Seldon](jobs/tutorial/advanced-model-serving-by-seldon.md)
   * [(Advanced) Use Job Submission to Tune Hyperparameters](jobs/tutorial/advanced-use-job-submission-to-tune-hyperparameters.md)
+  * [(Advanced) Model Serving by Seldon](jobs/tutorial/advanced-model-serving-by-seldon.md)
   * [Job Artifacts Simple Usecase](jobs/tutorial/job-artifacts-simple-usecase.md)
