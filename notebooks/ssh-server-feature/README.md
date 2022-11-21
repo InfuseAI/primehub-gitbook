@@ -12,7 +12,9 @@ To activate SSH Server, administrators have to configure SSH Server of PrimeHub.
 Before using this feature, you are required to have a **public/private key pair**, please go to SSH key generation to generate your own pair at local.
 {% endhint %}
 
-1. Enter `JupyterHub` from side-menu, before staring a notebook, expand `Show advanced settings` and check `Enable SSH Server`.
+1.  Enter `JupyterHub` from side-menu, before staring a notebook, expand `Show advanced settings` and check `Enable SSH Server`.
+
+    <figure><img src="../../.gitbook/assets/ssh-enable.png" alt=""><figcaption></figcaption></figure>
 2. Hovering the cursor over the code block, copy the configuration by clicking the copy icon.
 3. Press `Start Notebook` to launch the JupyterHub.
 4. Go back to your local, edit the `~/.ssh/config` with adding the copied configuration at your local. Make sure `jupyter-<username>` and `~/.ssh/id_rsa`(private key) are correct according to your circumstance.
@@ -25,9 +27,15 @@ If you want to assign other private key, please change the path `~/.ssh/id_rsa` 
 
 After JupyterHub is launched,
 
-> In JupyterHub menu on User Portal, it shows the same instruction for the reference.
+{% hint style="info" %}
+In JupyterHub menu on User Portal, it shows the same instruction for the reference
+{% endhint %}
 
-1. Drag-n-drop a public key (e.g. `id_rsa.pub`) from your local to the `File Browser` of the opened JupyterHub tab on browser.
+<figure><img src="../../.gitbook/assets/ssh-server-instruction.png" alt=""><figcaption></figcaption></figure>
+
+1.  Drag-n-drop a public key (e.g. `id_rsa.pub`) from your local to the `File Browser` of the opened JupyterHub tab on browser.
+
+    <figure><img src="../../.gitbook/assets/ssh-dragdrop-pub.png" alt=""><figcaption></figcaption></figure>
 2.  Open `Terminal` on JupyterHub, run the commands
 
     ```bash
