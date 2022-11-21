@@ -37,7 +37,9 @@ ph.config.set_group(<group-name>)
 
 If you see the content that want us to insert the authorization code, please click the url to get the token.
 
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-auth-code.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-paste-code.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 3: Check the group information
 
