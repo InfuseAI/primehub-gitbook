@@ -26,7 +26,9 @@ When deploying a registered model from **MLflow Model Registry** according to it
 
 **Optional**
 
-> If want to share `MLflow Model Registry` among other groups which have **installed MLflow server by Apps** either. Please prepare and configure proper [Artifact Stores](https://www.mlflow.org/docs/latest/tracking.html#artifact-stores). It is very common to use Amazon S3 and S3-compatible storage to save artifacts.
+{% hint style="info" %}
+If want to share `MLflow Model Registry` among other groups which have **installed MLflow server by Apps** either. Please prepare and configure proper [Artifact Stores](https://www.mlflow.org/docs/latest/tracking.html#artifact-stores). It is very common to use Amazon S3 and S3-compatible storage to save artifacts.
+{% endhint %}
 
 #### Integrate with the external MLflow server
 
@@ -36,7 +38,9 @@ Since you have a running external MLflow server, it should be with an prepared a
 
 The only one consideration is to make sure that `DEFAULT_ARTIFACT_ROOT`, the path to the artifact store, is available to your MLflow client.
 
-> Same as the use-case of sharing `MLflow Model Registry` to other groups, it is a good idea to use Amazon S3 and S3-compatible storage.
+{% hint style="info" %}
+Same as the use-case of sharing `MLflow Model Registry` to other groups, it is a good idea to use Amazon S3 and S3-compatible storage.
+{% endhint %}
 
 ### Configuration
 
@@ -55,18 +59,24 @@ Two groups of environmental variables , `Tracking Environment Variables` and `Ar
 
 #### Tracking Environment Variables
 
-> Usually, it is for externally-hosted MLflow server.
+{% hint style="info" %}
+Usually, it is for externally-hosted MLflow server.
+{% endhint %}
 
 It is used to set the authentication configuration to your tracking server.
 
 * `MLFLOW_TRACKING_USERNAME` and `MLFLOW_TRACKING_PASSWORD` - username and password to use with HTTP Basic authentication. To use Basic authentication, you must set both environment variables.
 * `MLFLOW_TRACKING_TOKEN` - token to use with HTTP Bearer authentication. Basic authentication takes precedence if set.
 
-> Please refer to [MLflow document](https://www.mlflow.org/docs/latest/tracking.html#logging-to-a-tracking-server) to find more information.
+{% hint style="info" %}
+Please refer to [MLflow document](https://www.mlflow.org/docs/latest/tracking.html#logging-to-a-tracking-server) to find more information.
+{% endhint %}
 
 #### Artifact Store Environment Variables
 
-> Usually, it is for externally-hosted MLflow server or for external artifact stores.
+{% hint style="info" %}
+Usually, it is for externally-hosted MLflow server or for external artifact stores.
+{% endhint %}
 
 It is used to instruct your client how to connect to the artifact storage. We take `S3-compatible storage` as an example:
 

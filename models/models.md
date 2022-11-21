@@ -20,7 +20,7 @@ A running installed MLflow instance is required and Group Setting has to be conf
 
 **Mlflow instance is not reachable/running**
 
-<figure><img src="../.gitbook/assets/mlflow-not-reachable (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/mlflow-not-reachable.png" alt=""><figcaption></figcaption></figure>
 
 ### Models
 
