@@ -12,11 +12,15 @@ How to build own images including **PrimeHub Extensions**? See the [repo](https:
 
 After opening a Notebook file (\*.ipynb), there is **PrimeHub** extension on the menu bar of the Notebook. This document explains these extension features briefly.
 
+<figure><img src="../../.gitbook/assets/ph-extension-menu.png" alt=""><figcaption></figcaption></figure>
+
 ### API Token
 
 PrimeHub Extension needs an API Token to submit a Job, Please generate a API Token and setup it.
 
 You could open the PrimeHub Extension dropdown list to find the `API Token` setting:
+
+<figure><img src="../../.gitbook/assets/ph-extension-token.png" alt=""><figcaption></figcaption></figure>
 
 ### Submit Notebook as a Job
 
