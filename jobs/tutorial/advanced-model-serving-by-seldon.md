@@ -1,7 +1,5 @@
 # (Advanced) Model Serving by Seldon
 
-Enterprise Applicable to Enterprise tier only
-
 In this section, we want to post our MNIST classifier online, thus allowing everyone to try our model via a URL.
 
 To do this, you must have:
@@ -143,8 +141,11 @@ To do this, you must have:
     ```
 
     The data is normalized vector of this image:
-12. You will get output like this
 
+    <figure><img src="../../.gitbook/assets/jobsub-tt-p4-1.png" alt=""><figcaption></figcaption></figure>
+12. You will get output like the screenshot below.\
     The values field has a total of ten values (separated by commas). The first value represents the probability that the image is a '0', the second value represents the probability that the image is a '1', and so on. Thus, the eighth value represents the highest probability that this picture is '7', which is in line with our expectations (since the image is surely a '7'!). Our model makes a correct prediction!
+
+    <figure><img src="../../.gitbook/assets/jobsub-tt-p4-2.png" alt=""><figcaption></figcaption></figure>
 
 In the future, we will provide even better model serving functions. Stay tuned!
