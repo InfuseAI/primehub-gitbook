@@ -1,13 +1,13 @@
 # (Part2) MNIST classifier training
 
-Enterprise Applicable to Enterprise tier only
-
 Select the Notebooks icon upon logging in.
 
 1. After you login to PrimeHub, please open `Notebook` in a new tab first.
 2. Select an `instance type` with at least one virtual CPU and 2GB RAM.
 3. Select an `image` with Tensorflow 1.14.
-4. Start the notebook.
+4.  Start the notebook.
+
+    <figure><img src="../../.gitbook/assets/jobsub-tt-p2-2.png" alt=""><figcaption></figcaption></figure>
 
 Example using our demo group
 
@@ -89,9 +89,13 @@ Select the `Jobs` icon and click `Create Job`.
 
 **Jobs list page and refresh button**
 
+<figure><img src="../../.gitbook/assets/jobsub-tt-p2-5.png" alt=""><figcaption></figcaption></figure>
+
 After submitting a job, the job will appear in the Jobs list in a `Pending` state. Click the Refresh button in the top right corner to get the latest status of your jobs.
 
 **Logs tab**
+
+<figure><img src="../../.gitbook/assets/jobsub-tt-p2-6.png" alt=""><figcaption></figcaption></figure>
 
 To view the Job's log, select the Job name and then click the `Logs` tab to see that the job is running. Wait for the job to finish running. While waiting, you don't need to wait in the Job Submission page - you can write code and continue to do analyses while the job is running!
 
@@ -102,6 +106,8 @@ When the job is complete, it will output a model file `mymodel` into JupyterLab.
 It's time to verify if our job really train a MNIST classifier.
 
 **Outputted model file located in JuypterLab**
+
+<figure><img src="../../.gitbook/assets/jobsub-tt-p2-7.png" alt=""><figcaption></figcaption></figure>
 
 In your JupyterLab tab, you can find the outputted model file `params_dropout-0.2/my_model` in `group volume`.
 
@@ -125,7 +131,12 @@ Follow the steps below to test the MNIST classifier:
         model = tf.keras.models.load_model('params_dropout-0.2/my_model')
         model.evaluate(x_test, y_test)
     ```
+
+    <figure><img src="../../.gitbook/assets/jobsub-tt-p2-8.png" alt=""><figcaption></figcaption></figure>
 4. Press `shift + enter` to execute your code.
+5.
+
+    <figure><img src="../../.gitbook/assets/jobsub-tt-p2-9.png" alt=""><figcaption></figcaption></figure>
 
 Example code from testing a MNIST classifier. Warning messages (highlighted in red above) can be ignored since the model's accuracy is \~0.98.
 
