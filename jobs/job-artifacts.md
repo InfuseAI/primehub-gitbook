@@ -1,7 +1,5 @@
 # Job Artifacts
 
-Enterprise Applicable to Enterprise tier only
-
 Allows users to store the job output and can be downloaded from the job UI.
 
 ### Prerequisites
@@ -21,7 +19,9 @@ To put artifacts in a job, just create an `artifacts` folder (or said `/home/jov
     ```
 2. Go to the detail page of the newly created job.
 3. Wait for the job completed
-4. Go to the **Artifacts** tab. You will see all the two artifacts we just created
+4.  Go to the **Artifacts** tab. You will see all the two artifacts we just created
+
+    <figure><img src="../.gitbook/assets/jartifact_folder.png" alt=""><figcaption></figcaption></figure>
 
 ### Link Artifacts Folder
 
@@ -37,7 +37,9 @@ We can also create a symbolic link `artifacts` to the actual folder where the fi
     ```
 2. Go to the newly created job detail page.
 3. Wait for the job completed
-4. Go to the **Artifacts** tab. You will see all the two artifacts you just created&#x20;
+4.  Go to the **Artifacts** tab. You will see all the two artifacts you just created&#x20;
+
+    <figure><img src="../.gitbook/assets/jartifact_link.png" alt=""><figcaption></figcaption></figure>
 
 ### Retention
 
