@@ -18,3 +18,14 @@
   * [Notebook as a Job](end-to-end-tutorial/advanced/notebook-as-a-job.md)
   * [Custom build the Seldon server](end-to-end-tutorial/advanced/custom-build-the-seldon-server.md)
   * [PrimeHub SDK/CLI Tools](end-to-end-tutorial/advanced/primehub-sdk-cli-tools.md)
+
+## Notebooks
+
+* [Start Notebook](notebooks/start-notebook/README.md)
+  * [Advanced Settings](notebooks/start-notebook/advanced-settings.md)
+  * [Notebook Tips](notebooks/start-notebook/notebook-tips.md)
+* [SSH Server Feature](notebooks/ssh-server-feature/README.md)
+  * [VSCode SSH Notebook Remotely](notebooks/ssh-server-feature/vscode-ssh-notebook-remotely.md)
+  * [Generate SSH Key Pair](notebooks/ssh-server-feature/generate-ssh-key-pair.md)
+* [PrimeHub Notebook Extension](notebooks/primehub-notebook-extension/README.md)
+  * [Submit Notebook as Job](notebooks/primehub-notebook-extension/submit-notebook-as-job.md)
