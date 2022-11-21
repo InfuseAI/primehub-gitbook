@@ -1,14 +1,13 @@
 # Manage and Deploy Model
 
-Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition\
-
-
 In this tutorial, we will use the MNIST model in TensorFlow 2 as an example to show how to train, manage, and deploy a model.
 
 ### What we need?
 
 * Remember to follow configuration to enable model management in your group, contact your admin if it is not enabled yet.
-* Remember to enable model deployment in your group, contact your admin if it is not enabled yet.&#x20;
+*   Remember to enable model deployment in your group, contact your admin if it is not enabled yet.&#x20;
+
+    <figure><img src="../.gitbook/assets/mdeploy_enable.png" alt=""><figcaption></figcaption></figure>
 * The `TensorFlow 2.4` image `infuseai/docker-stacks:tensorflow-notebook-v2-4-1-dbdcead1`.
 * An instance type >= minimal requirement (CPU=1, GPU=0, Mem=2G).
 *   The prepared notebook file of the example,
@@ -16,29 +15,59 @@ In this tutorial, we will use the MNIST model in TensorFlow 2 as an example to s
     Download model\_management\_tutorial.ipynb. This example file is referred to [TensorFlow 2 quickstart for beginners](https://www.tensorflow.org/tutorials/quickstart/beginner) with added cell to enable [MLflow autologging API](https://www.mlflow.org/docs/latest/python\_api/mlflow.tensorflow.html#mlflow.tensorflow.autolog).&#x20;
 * Choose a group with enabled Shared Volume (a.k.a Group Volume).
 
-> Please have the image, the instance type on PrimeHub, or request administrators for assistance before we start.
+{% hint style="info" %}
+Please have the image, the instance type on PrimeHub, or request administrators for assistance before we start.
+{% endhint %}
 
 ### Steps
 
 1. Enter Notebooks from User Portal, select the image, the instance type, and start a notebook.
 2. While inside the group volume, copy/drag the downloaded `model_management_tutorial.ipynb` to File Browser. Then, let's open it and **Run All Cells**.
-3. Enter Models from User Portal then click on `MLflow UI` button.&#x20;
-4. In the MLflow UI, We will see a newly completed run under the `Default` experiment. Now clicking on this run.&#x20;
-5. In the run information page, scroll down to the `Artifacts` section. Clicking on the exported model and `Register Model` button.&#x20;
-6. We can register a new model or update version to the existing model.&#x20;
-7. We choose `Create New Model` and fill in the `Model Name` field with `tensorflow-mnist-model`. Let's clicking on `Register` button to complete model registration.&#x20;
-8. Enter Models from User Portal, we will see the registered model in the model list. Now clicking on our model `tensorflow-mnist-model`.&#x20;
-9. In the model detail page, we can find all registered model version here. Let's clicking on the `Deploy` button of `Version 1`.&#x20;
+3.  Enter Models from User Portal then click on `MLflow UI` button.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-mlflow-ui-button.png" alt=""><figcaption></figcaption></figure>
+4.  In the MLflow UI, We will see a newly completed run under the `Default` experiment. Now clicking on this run.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-mlflow-run-list.png" alt=""><figcaption></figcaption></figure>
+5.  In the run information page, scroll down to the `Artifacts` section. Clicking on the exported model and `Register Model` button.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-mlflow-run-artifacts.png" alt=""><figcaption></figcaption></figure>
+6.  We can register a new model or update version to the existing model.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-mlflow-register-model-1.png" alt=""><figcaption></figcaption></figure>
+7.  We choose `Create New Model` and fill in the `Model Name` field with `tensorflow-mnist-model`. Let's clicking on `Register` button to complete model registration.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-mlflow-register-model-2.png" alt=""><figcaption></figcaption></figure>
+8.  Enter Models from User Portal, we will see the registered model in the model list. Now clicking on our model `tensorflow-mnist-model`.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-model-list.png" alt=""><figcaption></figcaption></figure>
+9.  In the model detail page, we can find all registered model version here. Let's clicking on the `Deploy` button of `Version 1`.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-model-detail.png" alt=""><figcaption></figcaption></figure>
 10. We can deploy the selected model version to a new deployment or update to the existing deployment. We choose `Create new deployment` and click on `OK` button.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-deploy-model.png" alt=""><figcaption></figcaption></figure>
 11. We will be directed to create deployment page. Fill in the `Deployment Name` field with `tensorflow-mnist`. Select the `Model Image` field with `TensorFlow2 server`; this is a pre-packaged model server image that can serve `MLflow autologged TensorFlow model`.&#x20;
 
+    <figure><img src="../.gitbook/assets/mdeploy_create_model_image_suggestion.png" alt=""><figcaption></figcaption></figure>
+
     As for the `Model URI` field, it will be auto fill-in with registered model scheme.&#x20;
+
+    <figure><img src="../.gitbook/assets/model-mgt-create-deployment.png" alt=""><figcaption></figcaption></figure>
 12. In the `Resources`,
     * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
-    * leave `Replicas` as default (1)&#x20;
+    *   leave `Replicas` as default (1)&#x20;
+
+        <figure><img src="../.gitbook/assets/mdeploy_quickstart_deployresource.png" alt=""><figcaption></figcaption></figure>
 13. Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.&#x20;
 
+    <figure><img src="../.gitbook/assets/model-mgt-model-deploying.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/model-mgt-model-deployed.png" alt=""><figcaption></figcaption></figure>
+
     When the deployment is deployed successfully, we can click on cell to check its detail.
+
+    <figure><img src="../.gitbook/assets/model-mgt-deployment-detail.png" alt=""><figcaption></figcaption></figure>
 14. We can view some detailed information in detail page, now let's test our deployed model! Copy the `endpoint URL` and replace the `${YOUR_ENDPOINT_URL}` in the following block.
 
     ```bash

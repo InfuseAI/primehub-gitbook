@@ -76,7 +76,7 @@ The page displays the information regarding this version.
 
 In order to deploy a certain versioned model, click `Deploy` of a versioned model and select `+ Create new deployment` or update an existing deployment. It will navigate to Deployment page, continue to submit the deployment with mandatory information.
 
-<figure><img src="../.gitbook/assets/model-mgt-deploy-popup.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/model-mgt-deploy-popup (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Deployed
 
