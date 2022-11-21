@@ -40,3 +40,9 @@
   * [(Advanced) Use Job Submission to Tune Hyperparameters](jobs/tutorial/advanced-use-job-submission-to-tune-hyperparameters.md)
   * [(Advanced) Model Serving by Seldon](jobs/tutorial/advanced-model-serving-by-seldon.md)
   * [Job Artifacts Simple Usecase](jobs/tutorial/job-artifacts-simple-usecase.md)
+
+## Models
+
+* [Models](models/models.md)
+* [Model Management Configuration](models/model-management-configuration.md)
+* [Manage and Deploy Model](models/manage-and-deploy-model.md)
