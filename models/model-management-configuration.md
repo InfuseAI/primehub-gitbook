@@ -1,8 +1,5 @@
 # Model Management Configuration
 
-Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition\
-
-
 In order to use the Model Management feature, a running reachable MLflow instance is required. Also, Group Administrator must configure Group Setting with MLflow-related information.
 
 According to a binding MLflow instance, Group Administrators could choose either one of ways:
@@ -44,6 +41,8 @@ The only one consideration is to make sure that `DEFAULT_ARTIFACT_ROOT`, the pat
 ### Configuration
 
 So far, you supposedly already have a running MLFlow instance, either installed by PrimeHub Apps or externally-hosted. We have to bind the service by configuring Group Setting.
+
+<figure><img src="../.gitbook/assets/group-mlflow-configuration-example.png" alt=""><figcaption></figcaption></figure>
 
 If using **installed MLflow server by Apps**, see Group Setting - MLflow section.
 
