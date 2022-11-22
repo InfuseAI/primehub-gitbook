@@ -1,7 +1,5 @@
 # PyTorch server
 
-Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition
-
 ### Model Information
 
 #### Basic
