@@ -12,15 +12,21 @@ PrimeHub provides two ways of Model Deployment, one is to deploy a model image d
 
 First, we have to turn on **Model Deployment** in groups.
 
+<figure><img src="../.gitbook/assets/mdeploy_enable.png" alt=""><figcaption></figcaption></figure>
+
 If the current group's `Model Deployment` is not enabled, it shows a message
 
-> Feature not available - Model Deployment is not enabled for this group. Please contact your administrator to enable it.
+{% hint style="info" %}
+Feature not available - Model Deployment is not enabled for this group. Please contact your administrator to enable it.
+{% endhint %}
 
 Please contact Admin to turn on it or switch to a group which `Model Deployment` is enabled.
 
 ### Overview
 
 This page displays all of created deployments status.
+
+<figure><img src="../.gitbook/assets/mdeploy_grid_v38.png" alt=""><figcaption></figcaption></figure>
 
 * `Search by name`: Search deployments by a keyword.
 * `+ Create Deployment` button: Clicking for a deployment creation.
@@ -41,7 +47,9 @@ Each card represents a deployment.
 * `Manage`: click to view the detail.
 * `Start/Stop`: toggle the deployment.
 
-> The status, `Deployed`, reflected the deployment pod status. So it might not really indicate the correct status when we need to take a while to load a massive model file. Suggested to specify a [health\_status()](https://docs.seldon.io/projects/seldon-core/en/latest/python/python\_component.html#rest-health-endpoint) function to precisely represent the current deployment status.
+{% hint style="info" %}
+The status, `Deployed`, reflected the deployment pod status. So it might not really indicate the correct status when we need to take a while to load a massive model file. Suggested to specify a [health\_status()](https://docs.seldon.io/projects/seldon-core/en/latest/python/python\_component.html#rest-health-endpoint) function to precisely represent the current deployment status.
+{% endhint %}
 
 ### Create
 
@@ -56,11 +64,15 @@ Confirm if the current group is what you desire; switch the group by the `Group:
   *   Or acted as the pre-packaged model server image which must be deployed with a specified model file (Tutorial: Deploy a Model by Pre-packaged Server、Tutorial: Deploy a Model by Pre-packaged Server (PHFS)).
 
       We can select the suggested pre-packaged model server image or click on its link to access its server information and input/output examples.&#x20;
+
+      <figure><img src="../.gitbook/assets/mdeploy_create_model_image_suggestion (1).png" alt=""><figcaption></figcaption></figure>
 * `Model URI`: The location which the trained model is stored in; based on this model file to deploy a model image. Here is supported URIs.
 * `Image Pull Secret`: a pull secret for the model image if required.
 * `Descriptions`: User input description.
 
-> Since **Model URI** is introduced, there are two ways for model deployments. One way is to deploy a _ready-to-serve packaged model image_ which is packaged by user already directly using **Model Image** field; the other way is to assign a model file using the **Model URI** field with a specified pre-packaged image using **Model Image** field, under the hood, the model file will be packaged into images.
+{% hint style="info" %}
+Since **Model URI** is introduced, there are two ways for model deployments. One way is to deploy a _ready-to-serve packaged model image_ which is packaged by user already directly using **Model Image** field; the other way is to assign a model file using the **Model URI** field with a specified pre-packaged image using **Model Image** field, under the hood, the model file will be packaged into images.
+{% endhint %}
 
 #### Environment Variables
 
@@ -95,6 +107,8 @@ One the deployment is triggered, there is a notification popping up, we can clic
 
 ### Deployment Detail
 
+<figure><img src="../.gitbook/assets/mdeploy_detail_v35.png" alt=""><figcaption></figcaption></figure>
+
 #### Information
 
 | Info              | Description                                                                                                                                        |
@@ -116,7 +130,9 @@ One the deployment is triggered, there is a notification popping up, we can clic
 * Metadata table
 * Environment Variables table: disclose values by clicking the eye icon.
 
-> The status, `Deployed`, reflected the deployment pod status. So it might not really indicate the correct status when we need to take a while to load a massive model file. Suggested to specify a [health\_status()](https://docs.seldon.io/projects/seldon-core/en/latest/python/python\_component.html#rest-health-endpoint) function to precisely represent the current deployment status.
+{% hint style="info" %}
+The status, `Deployed`, reflected the deployment pod status. So it might not really indicate the correct status when we need to take a while to load a massive model file. Suggested to specify a [health\_status()](https://docs.seldon.io/projects/seldon-core/en/latest/python/python\_component.html#rest-health-endpoint) function to precisely represent the current deployment status.
+{% endhint %}
 
 #### Logs
 
@@ -124,17 +140,25 @@ One the deployment is triggered, there is a notification popping up, we can clic
 
 In Logs tab, the logs of current deployment are displayed here.
 
-> Timestamp reflects Universal Time Coordinated (**UTC**).
+{% hint style="info" %}
+Timestamp reflects Universal Time Coordinated (**UTC**).
+{% endhint %}
 
 Clicking `Scroll to Bottom` button skips to the bottom of logs.
 
-> It displays only logs of **latest 2000 lines**; clicking the `Download` button to download the whole log file.
+{% hint style="info" %}
+It displays only logs of **latest 2000 lines**; clicking the `Download` button to download the whole log file.
+{% endhint %}
 
 #### History
 
 In History tab, we can view the detail of historical deployments with each update message.
 
+<figure><img src="../.gitbook/assets/mdeploy_history_v32.png" alt=""><figcaption></figcaption></figure>
+
 Clicking on the `View` link for the detail of each deployment.
+
+<figure><img src="../.gitbook/assets/mdeploy_history_view_v32.png" alt=""><figcaption></figcaption></figure>
 
 | Info               | Description                       |
 | ------------------ | --------------------------------- |
@@ -156,6 +180,8 @@ Clicking on the `View` link for the detail of each deployment.
 #### Clients
 
 This tab appears if `Private Access` of the endpoint is enabled.
+
+<figure><img src="../.gitbook/assets/mdeploy_token_v27.png" alt=""><figcaption></figcaption></figure>
 
 Filling in `Client Name` and clicking `Add client` to generate a `Client Token`.
 
@@ -191,7 +217,7 @@ On a deployment detail page, clicking `Update` button to enter the deployment ed
 
 `Group`、 `Deployment name`、 `Deployment ID` are not allowed to be modified in a update once the initial deployment is created.
 
-***
+<figure><img src="../.gitbook/assets/mdeploy_update_v32.png" alt=""><figcaption></figcaption></figure>
 
 ### Delete
 
@@ -199,7 +225,7 @@ Clicking on the card of the deployment which we want to delete.
 
 On a deployment detail page, clicking `Delete` button and inputting the name of deployment for the confirmation.
 
-***
+<figure><img src="../.gitbook/assets/deployment_deletion_confirmation.gif" alt=""><figcaption></figcaption></figure>
 
 ### Stop
 
@@ -214,8 +240,12 @@ On a deployment detail page, clicking `Stop` button at top-right to stop the cur
 PrimeHub provides a monitoring dashboard based on **Seldon Core Analytics** on Grafana, we are able to monitor metrics of **deployment**/**model**/**model version**.
 
 1. Accessing the Grafana from User Portal.
-2. Selecting `PrimeHub / Model Deployments` dashboard, it lists deployment which are providing services.
-3. Selecting a deployment and monitoring metrics on the board.
+2.  Selecting `PrimeHub / Model Deployments` dashboard, it lists deployment which are providing services.
+
+    <figure><img src="../.gitbook/assets/mdeploy_grafana_list.png" alt=""><figcaption></figcaption></figure>
+3.  Selecting a deployment and monitoring metrics on the board.
+
+    <figure><img src="../.gitbook/assets/mdeploy_grafana_metrics.png" alt=""><figcaption></figcaption></figure>
 
 Default Metrics:
 
@@ -235,6 +265,8 @@ The board is based on **Seldon Core Analytics**, it can be advanced customized. 
 
 when used model amount > granted model amount + 10%, a warning message appears, furthermore, `Create Deployment` is disabled.
 
-> Please contact your system administrator for assistance to upgrade your license to run more models.
+{% hint style="info" %}
+Please contact your system administrator for assistance to upgrade your license to run more models.
+{% endhint %}
 
 To learn the current PrimeHub license information, please see PrimeHub License.

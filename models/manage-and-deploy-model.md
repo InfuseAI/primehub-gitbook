@@ -7,7 +7,7 @@ In this tutorial, we will use the MNIST model in TensorFlow 2 as an example to s
 * Remember to follow configuration to enable model management in your group, contact your admin if it is not enabled yet.
 *   Remember to enable model deployment in your group, contact your admin if it is not enabled yet.&#x20;
 
-    <figure><img src="../.gitbook/assets/mdeploy_enable.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/mdeploy_enable (1).png" alt=""><figcaption></figcaption></figure>
 * The `TensorFlow 2.4` image `infuseai/docker-stacks:tensorflow-notebook-v2-4-1-dbdcead1`.
 * An instance type >= minimal requirement (CPU=1, GPU=0, Mem=2G).
 *   The prepared notebook file of the example,
