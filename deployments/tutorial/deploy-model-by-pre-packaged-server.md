@@ -1,7 +1,4 @@
-# Model by Pre-packaged Server
-
-Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition\
-
+# Deploy Model by Pre-packaged Server
 
 In this tutorial, we will show how to deploy a model by a pre-packaged server. We deploy a IRIS model by SKLearn pre-packaged server.
 
@@ -11,6 +8,8 @@ In this tutorial, we will show how to deploy a model by a pre-packaged server. W
 
 Remember to enable model deployment in your group, contact your admin if it is not enabled yet.&#x20;
 
+<figure><img src="../../.gitbook/assets/mdeploy_enable (1).png" alt=""><figcaption></figcaption></figure>
+
 ### Tutorial Steps
 
 1. Go to User Portal and select `Deployments`.
@@ -19,13 +18,27 @@ Remember to enable model deployment in your group, contact your admin if it is n
 
     Select the `Model Image` field with `SKLearn server`; This is a pre-packaged model server image that can serve `scikit-learn` model.&#x20;
 
+
+
+    <figure><img src="../../.gitbook/assets/mdeploy_create_model_image_suggestion (1).png" alt=""><figcaption></figcaption></figure>
+
     Fill in the `Model URI` field with `gs://seldon-models/sklearn/iris`; This path is included the trained model in the Google Cloud Storage.&#x20;
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deploydetail_1.png" alt=""><figcaption></figcaption></figure>
 4. In the `Resources`,
    * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
-   * leave `Replicas` as default (1)&#x20;
+   *   leave `Replicas` as default (1)&#x20;
+
+       <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployresource.png" alt=""><figcaption></figcaption></figure>
 5.  Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.&#x20;
 
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deploying_iris.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployed_iris.png" alt=""><figcaption></figcaption></figure>
+
     When the deployment is deployed successfully, we can click on cell to check its detail.
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_detailpage_1.png" alt=""><figcaption></figcaption></figure>
 6.  We can view some detailed information in detail page, now let's test our deployed model! Copy the `endpoint URL` and replace the `${YOUR_ENDPOINT_URL}` in the following block.
 
     ```bash
@@ -69,7 +82,7 @@ Remember to enable model deployment in your group, contact your admin if it is n
     }
     ```
 
-1. Congratulations! We have deployed a model as an endpoint service that can respond requests anytime from everywhere.
+Congratulations! We have deployed a model as an endpoint service that can respond requests anytime from everywhere.
 
 ### Reference
 

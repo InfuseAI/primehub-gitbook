@@ -59,7 +59,7 @@ In this case, we suggest this step: _writing HDF5 files into user home directory
    * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
    *   leave `Replicas` as default (1)&#x20;
 
-       <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployresource (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployresource.png" alt=""><figcaption></figcaption></figure>
 9.  Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.&#x20;
 
     <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deploying_phfs.png" alt=""><figcaption></figcaption></figure>

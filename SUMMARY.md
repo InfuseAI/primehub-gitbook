@@ -53,7 +53,7 @@
 * [Tutorial](deployments/tutorial/README.md)
   * [Model by Pre-packaged Server](deployments/tutorial/model-by-pre-packaged-server.md)
   * [Model by Pre-packaged Server (PHFS)](deployments/tutorial/model-by-pre-packaged-server-phfs.md)
-  * [Model by Pre-packaged Server](deployments/tutorial/model-by-pre-packaged-server-1.md)
+  * [Deploy Model by Pre-packaged Server](deployments/tutorial/deploy-model-by-pre-packaged-server.md)
 * [Pre-packaged servers](deployments/pre-packaged-servers/README.md)
   * [TensorFlow server](deployments/pre-packaged-servers/tensorflow-server.md)
   * [SKLearn server](deployments/pre-packaged-servers/sklearn-server.md)
