@@ -46,3 +46,23 @@
 * [Models](models/models.md)
 * [Model Management Configuration](models/model-management-configuration.md)
 * [Manage and Deploy Model](models/manage-and-deploy-model.md)
+
+## Deployments
+
+* [Deployments](deployments/deployments.md)
+* [Tutorial](deployments/tutorial/README.md)
+  * [Model by Pre-packaged Server](deployments/tutorial/model-by-pre-packaged-server.md)
+  * [Model by Pre-packaged Server (PHFS)](deployments/tutorial/model-by-pre-packaged-server-phfs.md)
+  * [Model by Pre-packaged Server](deployments/tutorial/model-by-pre-packaged-server-1.md)
+* [Pre-packaged servers](deployments/pre-packaged-servers/README.md)
+  * [TensorFlow server](deployments/pre-packaged-servers/tensorflow-server.md)
+  * [SKLearn server](deployments/pre-packaged-servers/sklearn-server.md)
+  * [PyTorch server](deployments/pre-packaged-servers/pytorch-server.md)
+  * [Customize Pre-packaged Server](deployments/pre-packaged-servers/customize-pre-packaged-server.md)
+  * [Run Pre-packaged Server Locally](deployments/pre-packaged-servers/run-pre-packaged-server-locally.md)
+* [Package from Language Wrapper](deployments/package-from-language-wrapper/README.md)
+  * [Model Image for Python](deployments/package-from-language-wrapper/model-image-for-python.md)
+  * [Model Image for R](deployments/package-from-language-wrapper/model-image-for-r.md)
+  * [Reusable Base Image](deployments/package-from-language-wrapper/reusable-base-image.md)
+* [Prediction APIs](deployments/prediction-apis.md)
+* [Model URI](deployments/model-uri.md)
