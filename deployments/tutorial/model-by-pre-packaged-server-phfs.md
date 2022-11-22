@@ -1,46 +1,75 @@
 # Model by Pre-packaged Server (PHFS)
 
-Enterprise Applicable to Enterprise Edition
-
 In this tutorial, we will show how to deploy a model trained from Jupyter Notebook via PHFS storage. We deploy a MNIST model by TensorFlow2 pre-packaged server.
 
 ### Prerequisites
 
 #### Enable Model Deployment in Group Management
 
-Remember to enable model deployment in your group, contact your admin if it is not enabled yet.&#x20;
+Remember to enable model deployment in your group, contact your admin if it is not enabled yet.
+
+<figure><img src="../../.gitbook/assets/mdeploy_enable (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Enable PHFS Storage
 
 Remember to enable PHFS Storage, contact your admin if it is not enabled yet.
 
-> PHFS, currently, supports _writing files sequentially only_; within this limitation, writing model files in `HDF5` format directly into PHFS will cause the error, `Problems closing file (file write failed: ...)` since `HDF5` uses _seek_ while writing.
+{% hint style="info" %}
+PHFS, currently, supports _writing files sequentially only_; within this limitation, writing model files in `HDF5` format directly into PHFS will cause the error, `Problems closing file (file write failed: ...)` since `HDF5` uses _seek_ while writing.
+{% endhint %}
 
-> In this case, we suggest this step: _writing HDF5 files into user home directory directly_ rather than PHFS, then copying files to PHFS for the preparation of model deployments
+{% hint style="success" %}
+In this case, we suggest this step: _writing HDF5 files into user home directory directly_ rather than PHFS, then copying files to PHFS for the preparation of model deployments
+{% endhint %}
 
 ### Tutorial Steps
 
 1. Go to User Portal and select `Notebooks`.
-2. Then we are in spawner page, here we choose the instance type with configuration `(CPU: 1 / Memory: 2 G / GPU: 0)`.  Also, we choosing the `TensorFlow 2.2` as our runtime image and clicking on `Start Notebook` button, e.g. `infuseai/docker-stacks:tensorflow-notebook-v2-2-1-a7f9696a`
-3. Once the notebook is started, running this example notebook to train and save a simple MNIST model.&#x20;
-4. If we want to deploy a model trained from Notebook, just move it to the `phfs` directory.&#x20;
+2.  Then we are in spawner page, here we choose the instance type with configuration `(CPU: 1 / Memory: 2 G / GPU: 0)`. &#x20;
 
-Alternatively, you can upload files to the `phfs` directory using the Shared Files feature in the User Portal:
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_notebook_instanceType.png" alt=""><figcaption></figcaption></figure>
 
-1. Then, back to User Portal and select `Deployments`.
-2. We are in model deployment list page, now clicking on `Create Deployment` button.
-3.  Fill in the `Deployment name` field with `quickstart-mnist`
+    Also, we choosing the `TensorFlow 2.2` as our runtime image and clicking on `Start Notebook` button, e.g. `infuseai/docker-stacks:tensorflow-notebook-v2-2-1-a7f9696a`
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_notebook_image.png" alt=""><figcaption></figcaption></figure>
+3.  Once the notebook is started, running this example notebook to train and save a simple MNIST model.&#x20;
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_notebook.png" alt=""><figcaption></figcaption></figure>
+4.  If we want to deploy a model trained from Notebook, just move it to the `phfs` directory.&#x20;
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_notebook_phfs.png" alt=""><figcaption></figcaption></figure>
+
+    Alternatively, you can upload files to the `phfs` directory using the Shared Files feature in the User Portal:
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_shared_files_upload.gif" alt=""><figcaption></figcaption></figure>
+5. Then, back to User Portal and select `Deployments`.
+6. We are in model deployment list page, now clicking on `Create Deployment` button.
+7.  Fill in the `Deployment name` field with `quickstart-mnist`
 
     Select the `Model Image` field with `TensorFlow2 server`; This is a pre-packaged model server image that can serve `TensorFlow 2` model.&#x20;
 
+
+
+    <figure><img src="../../.gitbook/assets/mdeploy_create_model_image_suggestion (1).png" alt=""><figcaption></figcaption></figure>
+
     Fill in the `Model URI` field with `phfs:///TF-MNIST-Model`; This path is included the trained model in the PHFS Storage.&#x20;
-4. In the `Resources`,
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deploydetail_1_phfs.png" alt=""><figcaption></figcaption></figure>
+8. In the `Resources`,
    * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
-   * leave `Replicas` as default (1)&#x20;
-5.  Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.&#x20;
+   *   leave `Replicas` as default (1)&#x20;
+
+       <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployresource (1).png" alt=""><figcaption></figcaption></figure>
+9.  Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.&#x20;
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deploying_phfs.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployed_phfs.png" alt=""><figcaption></figcaption></figure>
 
     When the deployment is deployed successfully, we can click on cell to check its detail.
-6.  We can view some detailed information in detail page, now let's test our deployed model! Copy the `endpoint URL` and replace the `${YOUR_ENDPOINT_URL}` in the following block.
+
+    <figure><img src="../../.gitbook/assets/mdeploy_quickstart_detailpage_1_phfs.png" alt=""><figcaption></figcaption></figure>
+10. We can view some detailed information in detail page, now let's test our deployed model! Copy the `endpoint URL` and replace the `${YOUR_ENDPOINT_URL}` in the following block.
 
     ```bash
     curl -X POST ${YOUR_ENDPOINT_URL} \
@@ -81,8 +110,8 @@ Alternatively, you can upload files to the `phfs` directory using the Shared Fil
           "meta": {}
         }
         ```
-7. Congratulations! We have trained a model in Notebook and directly deployed it as an endpoint service that can respond requests anytime from everywhere.
-8. (Advanced) We went through a simple MNIST example by sending ndarray data to the deployed model. Next, we can also try to send an exact image file to the deployed model.
+11. Congratulations! We have trained a model in Notebook and directly deployed it as an endpoint service that can respond requests anytime from everywhere.
+12. (Advanced) We went through a simple MNIST example by sending ndarray data to the deployed model. Next, we can also try to send an exact image file to the deployed model.
 
 *   Follow previous tutorial steps but with `Model Image` to be `infuseai/tensorflow2-prepackaged_rest:v0.4.3`.
 

@@ -49,7 +49,7 @@ Please have the image, the instance type on PrimeHub, or request administrators 
     <figure><img src="../.gitbook/assets/model-mgt-deploy-model.png" alt=""><figcaption></figcaption></figure>
 11. We will be directed to create deployment page. Fill in the `Deployment Name` field with `tensorflow-mnist`. Select the `Model Image` field with `TensorFlow2 server`; this is a pre-packaged model server image that can serve `MLflow autologged TensorFlow model`.&#x20;
 
-    <figure><img src="../.gitbook/assets/mdeploy_create_model_image_suggestion (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/mdeploy_create_model_image_suggestion.png" alt=""><figcaption></figcaption></figure>
 
     As for the `Model URI` field, it will be auto fill-in with registered model scheme.&#x20;
 
@@ -58,7 +58,7 @@ Please have the image, the instance type on PrimeHub, or request administrators 
     * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
     *   leave `Replicas` as default (1)&#x20;
 
-        <figure><img src="../.gitbook/assets/mdeploy_quickstart_deployresource (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../.gitbook/assets/mdeploy_quickstart_deployresource.png" alt=""><figcaption></figcaption></figure>
 13. Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.&#x20;
 
     <figure><img src="../.gitbook/assets/model-mgt-model-deploying.png" alt=""><figcaption></figcaption></figure>

@@ -20,7 +20,7 @@ Remember to enable model deployment in your group, contact your admin if it is n
 
 
 
-    <figure><img src="../../.gitbook/assets/mdeploy_create_model_image_suggestion.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/mdeploy_create_model_image_suggestion (1).png" alt=""><figcaption></figcaption></figure>
 
     Fill in the `Model URI` field with `gs://seldon-models/sklearn/iris`; This path is included the trained model in the Google Cloud Storage.&#x20;
 
@@ -31,7 +31,7 @@ Remember to enable model deployment in your group, contact your admin if it is n
    * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
    *   leave `Replicas` as default (1)&#x20;
 
-       <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployresource.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployresource (1).png" alt=""><figcaption></figcaption></figure>
 5.  Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.&#x20;
 
     <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deploying_iris.png" alt=""><figcaption></figcaption></figure>
