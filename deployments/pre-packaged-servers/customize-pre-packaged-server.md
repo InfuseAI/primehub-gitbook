@@ -1,5 +1,7 @@
 # Customize Pre-packaged Server
 
+Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition
+
 PrimeHub provides many pre-packaged servers, it might not fit in your use cases:
 
 1. You are adopting a new machine learning library, we haven't provided.
@@ -95,8 +97,6 @@ class Model:
 The model files could ship along with your image or can be downloaded until the model server starts. To download the file at startup, PrimeHub users could create a Deployment with Model URI:
 
 PrimeHub users could create a Deployment with Model URI:&#x20;
-
-<figure><img src="../../.gitbook/assets/mdeploy_quickstart_deploydetail_1_phfs.png" alt=""><figcaption></figcaption></figure>
 
 In the container's view, the model files will mount to a local filesystem, such as `/mnt/models`:
 
