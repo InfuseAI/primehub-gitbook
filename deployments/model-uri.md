@@ -1,7 +1,5 @@
 # Model URI
 
-Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition
-
 ### Supported URIs
 
 | Type                 | Format                           | Note                                                                                                        |

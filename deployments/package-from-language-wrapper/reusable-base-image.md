@@ -1,5 +1,7 @@
 # Reusable Base Image
 
+Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition
+
 ### Overview
 
 This document shows the best practice to reuse a base image and build the model image on top of the base image. Using the base image has some benefits:

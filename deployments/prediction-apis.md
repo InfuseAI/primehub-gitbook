@@ -1,7 +1,5 @@
 # Prediction APIs
 
-Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition
-
 ### Endpoint Format
 
 Follow the [seldon document](https://docs.seldon.io/projects/seldon-core/en/latest/reference/apis/external-prediction.html#prediction).

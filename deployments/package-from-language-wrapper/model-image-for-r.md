@@ -1,5 +1,7 @@
 # Model Image for R
 
+Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition
+
 This doc shows how to package a model into a format-valid docker image for the PrimeHub model deployment feature.
 
 The PrimeHub model deployment feature is based on Seldon. This doc takes [reference](broken-reference) from Seldon official documentations and other resources which are listed in the last part.
