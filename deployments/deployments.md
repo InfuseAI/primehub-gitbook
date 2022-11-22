@@ -12,7 +12,7 @@ PrimeHub provides two ways of Model Deployment, one is to deploy a model image d
 
 First, we have to turn on **Model Deployment** in groups.
 
-<figure><img src="../.gitbook/assets/mdeploy_enable.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/mdeploy_enable (1).png" alt=""><figcaption></figcaption></figure>
 
 If the current group's `Model Deployment` is not enabled, it shows a message
 
@@ -65,7 +65,7 @@ Confirm if the current group is what you desire; switch the group by the `Group:
 
       We can select the suggested pre-packaged model server image or click on its link to access its server information and input/output examples.&#x20;
 
-      <figure><img src="../.gitbook/assets/mdeploy_create_model_image_suggestion (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/mdeploy_create_model_image_suggestion.png" alt=""><figcaption></figcaption></figure>
 * `Model URI`: The location which the trained model is stored in; based on this model file to deploy a model image. Here is supported URIs.
 * `Image Pull Secret`: a pull secret for the model image if required.
 * `Descriptions`: User input description.
