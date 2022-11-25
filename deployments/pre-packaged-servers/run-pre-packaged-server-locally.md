@@ -1,7 +1,5 @@
 # Run Pre-packaged Server Locally
 
-Enterprise Applicable to Enterprise EditionDeploy Applicable to Deploy Edition
-
 Sometimes, we would like to test if the model is working in the pre-packaged model server. We can run the server locally to verify.
 
 Here, we use tensorflow2 server as example

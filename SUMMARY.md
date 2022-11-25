@@ -66,3 +66,7 @@
   * [Reusable Base Image](deployments/package-from-language-wrapper/reusable-base-image.md)
 * [Prediction APIs](deployments/prediction-apis.md)
 * [Model URI](deployments/model-uri.md)
+
+***
+
+* [Shared Files](shared-files.md)
