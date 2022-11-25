@@ -71,3 +71,20 @@
 
 * [Shared Files](shared-files.md)
 * [Datasets](datasets.md)
+
+## Apps
+
+* [PrimeHub Apps](apps/primehub-apps.md)
+* [Tutorial](apps/tutorial/README.md)
+  * [Create Your Own App](apps/tutorial/create-your-own-app.md)
+  * [Create an MLflow server](apps/tutorial/create-an-mlflow-server.md)
+  * [Label Dataset by Label Studio](apps/tutorial/label-dataset-by-label-studio.md)
+
+***
+
+* [Built-in Apps](built-in-apps/README.md)
+  * [Code Server](built-in-apps/code-server.md)
+  * [Label Studio](built-in-apps/label-studio.md)
+  * [MATLAB](built-in-apps/matlab.md)
+  * [MLflow](built-in-apps/mlflow.md)
+  * [Streamlit](built-in-apps/streamlit.md)
