@@ -50,9 +50,7 @@ App Store menu includes built-in Apps templates and user-customizing Apps templa
   * `PrimeHub users only`: Platform-wise users **(Enterprise Edition Only)**
   * `Public`: To anyone who has the URL
 
-{% hint style="warning" %}
-Please assure that Group Resources are sufficient to run the instance.
-{% endhint %}
+> Please assure that Group Resources are sufficient to run the instance.
 
 #### Preset Environment Variables
 

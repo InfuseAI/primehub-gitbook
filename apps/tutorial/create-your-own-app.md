@@ -1,8 +1,5 @@
 # Create Your Own App
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition\
-
-
 This tutorial demostrate how to create your own PrimeHub app using `PhAppTemplate` CRD.
 
 For more information about the PrimeHub app, please check our design document.
@@ -111,6 +108,8 @@ Again, take our `label-studio` phAppTemplate as an example:
 We defined five default environment variables here and some of them are composed from our predefined environment variables.
 
 Now, when the user is trying to create a new `label-studio` app, this form will show up.
+
+<figure><img src="../../.gitbook/assets/app-tutorial-template-defaultenvs.png" alt=""><figcaption></figcaption></figure>
 
 Please note that if the `optional` attribute is set to `false`, then users can remove the defaultEnv. Be sure to set it properly.
 
