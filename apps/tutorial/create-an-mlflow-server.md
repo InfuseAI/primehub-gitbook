@@ -27,14 +27,25 @@ With a running MLflow App, we can bind MLflow service to Models Management. Once
 
 **Steps**
 
-1. On the **Apps** page, find MLflow and click **Manage**.flow
-2. Make a note of the **App URL** and **Service Endpoints** values.
-3. Click **Settings** in the left sidebar and then click the **MLflow** tab.
-4. In the **MLflow Tracking URI** text field enter the **service endpoints** value we copied earlier, preceded by ‘http://’.
+On the **Apps** page, find MLflow and click **Manage**.flow
 
-E.g. `http://your-service-endpoints`
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-configure-mlflow-1.png" alt=""><figcaption></figcaption></figure>
 
-1. In the **MLflow UI URI** text field enter the **App URL** value we copied earlier. Then, click the **Save** button.
+Make a note of the **App URL** and **Service Endpoints** values.
+
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-configure-mlflow-2.png" alt=""><figcaption></figcaption></figure>
+
+Click **Settings** in the left sidebar and then click the **MLflow** tab.
+
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-configure-mlflow-3.png" alt=""><figcaption></figcaption></figure>
+
+In the **MLflow Tracking URI** text field enter the **service endpoints** value we copied earlier, preceded by ‘http://’. E.g. `http://your-service-endpoints`
+
+In the **MLflow UI URI** text field enter the **App URL** value we copied earlier. Then, click the **Save** button.
+
+<figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-configure-mlflow-4.png" alt=""><figcaption></figcaption></figure>
+
+####
 
 #### Using MLflow API from Notebook (CE Way)
 
@@ -49,11 +60,19 @@ E.g. `http://your-service-endpoints`
 
 **Steps**
 
-1. Enter Notebook from User Portal, select the image, the instance type, and start a notebook.
+1.  Enter Notebook from User Portal, select the image, the instance type, and start a notebook.&#x20;
+
+    <figure><img src="../../.gitbook/assets/app_tutorial_mlflow_notebook.png" alt=""><figcaption></figcaption></figure>
 2. From File Browser of Notebook, navigate into the directory of `<group_name>` which is a Group Volume; here **mlflow** is our working group.
 3. While inside the group volume, copy/drag the downloaded `app_tutorial_mlflow_demo_notebook.ipynb` there in File Browser and open it.
-4. Open the notebook, and change the line `mlflow.set_tracking_uri("http://app-mlflow-32adp:5000/")` into the proper link based on the detail page in the `Apps` tab.
-5. Copy the Service Endpoint value and replace `app-mlflow-32adp:5000` in the notebook to this value.
-6. **Run All Cells** in the notebook, you will see a new run in `internal-experiment` in the MLflow UI.
+4.  Open the notebook, and change the line `mlflow.set_tracking_uri("http://app-mlflow-32adp:5000/")` into the proper link based on the detail page in the `Apps` tab.&#x20;
+
+    <figure><img src="../../.gitbook/assets/app_tutorial_mlflow_app_block2.png" alt=""><figcaption></figcaption></figure>
+5.  Copy the Service Endpoint value and replace `app-mlflow-32adp:5000` in the notebook to this value.&#x20;
+
+    <figure><img src="../../.gitbook/assets/app_tutorial_mlflow_app_detail.png" alt=""><figcaption></figcaption></figure>
+6.  **Run All Cells** in the notebook, you will see a new run in `internal-experiment` in the MLflow UI.&#x20;
+
+    <figure><img src="../../.gitbook/assets/app_tutorial_mlflow_run.png" alt=""><figcaption></figcaption></figure>
 
 That's the basic use of how to track your machine learning experiments by using MLflow and PrimeHub.
