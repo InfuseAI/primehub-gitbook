@@ -8,9 +8,12 @@ The **Shared Files** feature is based on PHFS Storage to store shared files. Gro
 
 It lists files and directories with columns of `Name`, `Size`, and `Last Modified`. The list can be sorted by these columns.
 
-*   `<Directory>/`: navigate into the directory by clicking it.
+* `<Directory>/`: navigate into the directory by clicking it.
 
-    > Some directories are created by PrimeHub automatically, such as `jobArtifacts/`.
+{% hint style="info" %}
+Some directories are created by PrimeHub automatically, such as `jobArtifacts/`.
+{% endhint %}
+
 *   `<File>`: there are actions we can perform over files.
 
     * `View file`: view the file in an new tab if the file format is supported. E.g. image, text and notebook(_.ipynb_).
@@ -30,9 +33,9 @@ Click `Upload` to pop up an uploader.
 
 Click or drag files to start uploading them.
 
-<figure><img src=".gitbook/assets/files-uploading.png" alt=""><figcaption></figcaption></figure>
-
 During uploading, the progress bar will show the progress of uploading.
+
+<figure><img src=".gitbook/assets/files-uploading.png" alt=""><figcaption></figcaption></figure>
 
 We can click `Upload in Background` to move the uploading action to the background.
 
