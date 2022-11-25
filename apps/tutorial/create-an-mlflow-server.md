@@ -13,7 +13,11 @@ First, you need to install it in the `Apps` tab. Please check the Overview secti
 
 PrimeHub shows the app's state in the `Apps` tab. You can open the MLflow UI by clicking `Open` after the state becomes `Ready`.
 
+<figure><img src="../../.gitbook/assets/app_tutorial_mlflow_app_block.png" alt=""><figcaption></figcaption></figure>
+
 It will open a new window and show the MLflow UI. You can see your experiments and runs in this UI. We will show you how to record a run in an experiment by using the PrimeHub Notebook function in the next section.
+
+<figure><img src="../../.gitbook/assets/app_tutorial_mlflow_ui.png" alt=""><figcaption></figcaption></figure>
 
 ### Use MLflow Tracking in PrimeHub
 
@@ -23,7 +27,7 @@ With a running MLflow App, we can bind MLflow service to Models Management. Once
 
 **Steps**
 
-1. On the **Apps** page, find MLflow and click **Manage**.
+1. On the **Apps** page, find MLflow and click **Manage**.flow
 2. Make a note of the **App URL** and **Service Endpoints** values.
 3. Click **Settings** in the left sidebar and then click the **MLflow** tab.
 4. In the **MLflow Tracking URI** text field enter the **service endpoints** value we copied earlier, preceded by ‘http://’.
