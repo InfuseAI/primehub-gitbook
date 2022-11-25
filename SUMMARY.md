@@ -74,7 +74,7 @@
 
 ## Apps
 
-* [PrimeHub Apps](apps/primehub-apps.md)
+* [Apps Overview](apps/apps-overview.md)
 * [Tutorial](apps/tutorial/README.md)
   * [Create Your Own App](apps/tutorial/create-your-own-app.md)
   * [Create an MLflow server](apps/tutorial/create-an-mlflow-server.md)
