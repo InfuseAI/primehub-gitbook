@@ -1,12 +1,14 @@
 # Instance Type Management
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 Instance type management provides the capabilities of managing a cluster of the computation resources by instances management such as create, delete, edit instances and of permission-control which allows only specified-groups to use the instances.
 
 ### Creating New Instance Types
 
+<figure><img src="../../.gitbook/assets/instancetype_3_v26.png" alt=""><figcaption></figcaption></figure>
+
 Click `Add` to add an Instance Type, which will pop up the editing screen of Instance Types.
+
+<figure><img src="../../.gitbook/assets/admin_inst_v26.png" alt=""><figcaption></figcaption></figure>
 
 You need to fill in the fields of Basic Info in the above picture:
 
@@ -34,7 +36,11 @@ When a node has a `taint` for certain reasons, an instance won't be scheduled to
 
 For more detail and usage of `kubectl taint`, please refer to Taints and [Tolerations concept](https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/).
 
+<figure><img src="../../.gitbook/assets/instance_type_toleration0_v26.png" alt=""><figcaption></figcaption></figure>
+
 In `Toleration` tab, you can add a Toleration by clicking on `Add` button.
+
+<figure><img src="../../.gitbook/assets/instance_type_toleration1_v26.png" alt=""><figcaption></figcaption></figure>
 
 Filling in the fields in popup to create a toleration.
 
@@ -57,6 +63,8 @@ You can constrain an instance to only be able to run on specific nodes which hav
 
 For more detail, please refer to Assigning Pods to Nodes for usage `kubectl label`.
 
+<figure><img src="../../.gitbook/assets/instance_type_nodeselector_v26.png" alt=""><figcaption></figcaption></figure>
+
 In `Node Selector` tab, you can add a NodeSelector by clicking on `+ Add field` button.
 
 Filling in `key/value` with key-value of a label you want to specify.
@@ -65,14 +73,10 @@ Click `Confirm` to complete the addition.
 
 For a use case, please see Node Selector Use Case.
 
-### Deleting Instance Types
 
-Click `Delete` in the Instance Types list, the confirmation dialog will pop up, and the Instance Type will be deleted when you click `OK`.
-
-### Editing Instance Types
-
-Click `Edit` to enter the edit page of the Instance Type.
 
 ### Edit groups
+
+<figure><img src="../../.gitbook/assets/edit_groups.png" alt=""><figcaption></figcaption></figure>
 
 If `Global` is disabled, please click `edit groups` under the edit Instance Type screen to select the groups that have permission to use the Instance Type.
