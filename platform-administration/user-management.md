@@ -1,22 +1,22 @@
 # User Management
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
+<figure><img src="../.gitbook/assets/user_6_v26.png" alt=""><figcaption></figcaption></figure>
 
 ### Creating New Users
 
 Click `+ Add` to add a user and it will pop up the edit screen of Users.
 
+<figure><img src="../.gitbook/assets/user_4_v26.png" alt=""><figcaption></figcaption></figure>
+
 There have `Username` and `E-mail` need to fill, click `Confirm` to complete.
-
-### Deleting User
-
-Click Delete button of Actions in the users list, the confirmation dialog will pop up, and the user will be deleted when you click `OK`.
 
 ### Editing User
 
 Click Edit button of Actions to enter the edit page of the User.
 
 #### Basic Info
+
+<figure><img src="../.gitbook/assets/user_5_v26.png" alt=""><figcaption></figcaption></figure>
 
 Edit user information & set user usage items on this screen, including:
 
@@ -28,7 +28,11 @@ Edit user information & set user usage items on this screen, including:
 
 Click `edit groups` under the edit user's screen, and to select the group to which the user belongs from the existing groups list and link them.
 
+<figure><img src="../.gitbook/assets/edit_groups.png" alt=""><figcaption></figcaption></figure>
+
 #### Send Email
+
+<figure><img src="../.gitbook/assets/user_18_v26.png" alt=""><figcaption></figcaption></figure>
 
 The administrator can request the user to reset following settings through system E-mail:
 
@@ -38,5 +42,7 @@ The administrator can request the user to reset following settings through syste
 * `Update Profile` Require users to update their profile.
 
 #### Reset Password
+
+<figure><img src="../.gitbook/assets/user_19_v26.png" alt=""><figcaption></figcaption></figure>
 
 Require users to reset their password. Please enter your password twice. If `Temporary` is turned on, the new password only be used once, and the user must change the password immediately after logging in.
