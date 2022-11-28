@@ -93,3 +93,7 @@
 
 * [Images](group-administration/images.md)
 * [Settings](group-administration/settings.md)
+
+## Platform Administration
+
+* [Admin Portal](platform-administration/admin-portal.md)
