@@ -1,7 +1,5 @@
 # MLflow
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### Introduction
 
 MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry.
@@ -9,9 +7,11 @@ MLflow is an open source platform to manage the ML lifecycle, including experime
 | Property         | Description                                                   |
 | ---------------- | ------------------------------------------------------------- |
 | App Image        | [`larribas/mlflow`](https://hub.docker.com/r/larribas/mlflow) |
-| Official Website | https://mlflow.org/                                           |
+| Official Website | [https://mlflow.org/](https://mlflow.org/)                    |
 
 ### Screenshots
+
+<figure><img src="../.gitbook/assets/primehub-app-builtin-mlflow.png" alt=""><figcaption></figcaption></figure>
 
 ### Usage
 

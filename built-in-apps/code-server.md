@@ -1,7 +1,5 @@
 # Code Server
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### Introduction
 
 Run VS Code on any machine anywhere and access it in the browser.
@@ -12,6 +10,8 @@ Run VS Code on any machine anywhere and access it in the browser.
 | Official Website | https://github.com/cdr/code-server                                      |
 
 ### Screenshots
+
+<figure><img src="../.gitbook/assets/primehub-app-builtin-code-server.png" alt=""><figcaption></figcaption></figure>
 
 ### Usage
 

@@ -1,14 +1,20 @@
 # Images
 
-**Images** is a feature that Group Admin can manage images for the managed group. Only group members can access these group-specific images from the image selection when it is required.
+**Images** is a feature that _Group Admin_ can manage images for the managed group. Only group members can access these group-specific images from the image selection when it is required.
 
-> Images is a feature dedicated to Group Admin; only Group Admin can access it from User Portal. Please contact Admin to acquire Group Admin privilege.
+{% hint style="info" %}
+Images is a feature dedicated to Group Admin; only Group Admin can access it from User Portal. Please contact Admin to acquire Group Admin privilege.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/group-image-list.png" alt=""><figcaption></figcaption></figure>
 
 * `Search Image`: Search images by a keyword and press Enter.
 
 ### Add New Image
 
 Click `New Image` to add an Image.
+
+<figure><img src="../.gitbook/assets/group-image-info.png" alt=""><figcaption></figcaption></figure>
 
 * `Display name`: (required): Only lowercase letters, numbers, hyphen `-` and a dot `.` can be filled in.
 * `Image name`: an auto-generated name based on Display name.
@@ -20,9 +26,13 @@ Choose `Use existing image` or `Build custom image`.
 
 Add an existing image for the group.
 
+<figure><img src="../.gitbook/assets/group-image-existing.png" alt=""><figcaption></figcaption></figure>
+
 * `Type`: `cpu`, `gpu` and `universal`: Select what type of the image is.
 * `Container image url`: Fill in the Image's url. See [Reference](broken-reference).
-* `Image Pull Secret` Enable and select the secret if a pull-secret is required.
+*   `Image Pull Secret` Enable and select the secret if a pull-secret is required.&#x20;
+
+    <figure><img src="../.gitbook/assets/images_pull_secret_v26.png" alt=""><figcaption></figcaption></figure>
 * `Specific container image url for GPU` It appears when `universal` is selected. By default, it uses the same url as container image url. Enable it if a specific image url for GPU is desired.
 
 Click `Create` to complete the addition.
@@ -30,6 +40,8 @@ Click `Create` to complete the addition.
 ### Build Custom Image
 
 Instead of adding existing images, Group Admin can build custom images and add them for the group.
+
+<figure><img src="../.gitbook/assets/group-image-custom.png" alt=""><figcaption></figcaption></figure>
 
 * `Type`: `cpu`, `gpu` and `universal`: Select what type of the image is.
 * `Base image url` (required) The url of the base image; we can use any valid image URLs or we can choose images which are added via Image Management from autocompletion. See [Reference](broken-reference).
@@ -68,9 +80,15 @@ Use `-c conda-forge::` to specify the channel:
 
 While building, the image name is amended with an triangular exclamation mark to indicate the image is not ready.
 
+<figure><img src="../.gitbook/assets/group-image-not-ready.png" alt=""><figcaption></figcaption></figure>
+
 Click the image name to view the detail, it shows `Image building in progress` beside Container image url.
 
+<figure><img src="../.gitbook/assets/group-image-building.png" alt=""><figcaption></figcaption></figure>
+
 Click `Image building in progress` to view the `Build Details` and `Log` of the building.
+
+<figure><img src="../.gitbook/assets/group-image-building-detail.png" alt=""><figcaption></figcaption></figure>
 
 The building progress can be cancelled by `Cancel Build`.
 
@@ -78,7 +96,11 @@ The building progress can be cancelled by `Cancel Build`.
 
 Once the building finishes successfully, there is no triangular exclamation mark as a postfix to the image name. The image becomes available from image selection.
 
+<figure><img src="../.gitbook/assets/group-image-built.png" alt=""><figcaption></figcaption></figure>
+
 Click `View build details` to view the detail and logs or to modify the detail for rebuilding.
+
+<figure><img src="../.gitbook/assets/group-image-rebuild.png" alt=""><figcaption></figcaption></figure>
 
 To rebuild a image, by modification to the details and pressing `Rebuild`.
 
@@ -86,9 +108,7 @@ To rebuild a image, by modification to the details and pressing `Rebuild`.
 
 Whether adding an existing image or building a custom image for the managed group, the image can be selected from image selection; `i` hint indicates a `Group` image.
 
-### Actions
-
-Click Pen-icon for the **editing**; click Trash-can-icon for the **deletion**.
+<figure><img src="../.gitbook/assets/group-image-selection.png" alt=""><figcaption></figcaption></figure>
 
 ### Reference
 
