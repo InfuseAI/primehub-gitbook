@@ -1,7 +1,5 @@
 # Custom Image Guideline
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### Build Custom Images
 
 With `Image` feature, administrators can build custom images for users according to requirements of environment such as pre-installed python packages, environmental variables configurations, and so on. Those prerequisites which were required to set up manually every time can be set up once in images. Users are able to re-use images to proceed to projects without spending time on environment setup after images are instantiated as containers.
