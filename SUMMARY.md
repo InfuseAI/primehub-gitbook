@@ -97,3 +97,21 @@
 ## Platform Administration
 
 * [Admin Portal](platform-administration/admin-portal.md)
+* [User Management](platform-administration/user-management.md)
+* [Group Management](platform-administration/group-management.md)
+* [Instance Type Management](platform-administration/instance-type-management/README.md)
+  * [NodeSelector](platform-administration/instance-type-management/nodeselector.md)
+  * [Toleration](platform-administration/instance-type-management/toleration.md)
+* [Image Management](platform-administration/image-management/README.md)
+  * [Custom Image Guideline](platform-administration/image-management/custom-image-guideline.md)
+* [Volume Management](platform-administration/volume-management/README.md)
+  * [Upload Server](platform-administration/volume-management/upload-server.md)
+* [Secret Management](platform-administration/secret-management.md)
+* [Notebooks Admin](platform-administration/notebooks-admin.md)
+* [Usage Reports](platform-administration/usage-reports.md)
+* [App Settings](platform-administration/app-settings.md)
+* [System Settings](platform-administration/system-settings.md)
+
+***
+
+* [Available Images List](available-images-list.md)
