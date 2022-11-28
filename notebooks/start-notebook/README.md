@@ -16,7 +16,7 @@
 1. Log in `User Portal` with a user account, select `Notebooks` and click `Start My Server` to enter the spawner page.
 2.  Confirm if the current group is what you desire; switch the group by the `Group:` dropdown at the top of the right side.
 
-    <figure><img src="../../.gitbook/assets/group_context.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/group_context (1).png" alt=""><figcaption></figcaption></figure>
 3. Select an `Instance Type` for the resource allocation to this project. It lists instance types only within the context of the group.
 4.  Select an `Image` which the project is based on. It lists images only within the context of the group.
 

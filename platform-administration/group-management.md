@@ -1,16 +1,18 @@
 # Group Management
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### Groups List
 
 It lists all of groups in pages, clicking a header of a column for ascending/descending sorting.
+
+<figure><img src="../.gitbook/assets/group_12_v27.png" alt=""><figcaption></figcaption></figure>
 
 ### Creating New Group
 
 Click `Add` to add a group, which will pop up the editing screen of Groups.
 
 ### Info
+
+<figure><img src="../.gitbook/assets/group_add_v37.png" alt=""><figcaption></figcaption></figure>
 
 You need to fill in the fields in the above picture:
 
@@ -50,29 +52,41 @@ Click `Confirm` to complete the addition.
 
 #### Members
 
+<figure><img src="../.gitbook/assets/group_admin.png" alt=""><figcaption></figcaption></figure>
+
 The list shows all of users of this group. Click `edit users` to add/remove users into/from groups.
 
 **Group Admin**
 
 Also, multiple members are able to be assigned **Group Admin** for a group.
 
-> **Group Admin** have the privilege _to access features dedicated to them on User Portal_, such as Image.
+{% hint style="info" %}
+**Group Admin** have the privilege _to access features dedicated to them on User Portal_, such as Image.
+{% endhint %}
 
 ***
 
 ### Instance Types
 
+<figure><img src="../.gitbook/assets/admin_group_it_v31.png" alt=""><figcaption></figcaption></figure>
+
 The list shows connecting instance types which are able to be used by this group.
 
 ### Images
+
+<figure><img src="../.gitbook/assets/admin_group_img_v27.png" alt=""><figcaption></figcaption></figure>
 
 The list shows connecting images which are able to be used by this group.
 
 ### Volumes
 
+<figure><img src="../.gitbook/assets/admin_group_volume.png" alt=""><figcaption></figcaption></figure>
+
 The list shows connecting volumes which can be read or written. We also can edit these volumes through here.
 
 ### Deleting Group
+
+<figure><img src="../.gitbook/assets/admin_group_delete_v311.png" alt=""><figcaption></figcaption></figure>
 
 Click `Delete` button in the group list, the confirmation dialog will pop up.
 
