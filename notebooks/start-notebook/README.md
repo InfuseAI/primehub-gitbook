@@ -27,7 +27,7 @@
 
     From image selection, `i` hint indicates an image `Group` image or `System` image.
 
-    <figure><img src="../../.gitbook/assets/group-image-hint.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/group-image-hint (1).png" alt=""><figcaption></figcaption></figure>
 5.  Enabled Advanced Settings if required. Click `Start Notebook`. Your Server environment would be instantiated. Once the Notebook is spawned, it will pop up a new tab.
 
     <figure><img src="../../.gitbook/assets/v39-jupyter-popup-block.png" alt=""><figcaption></figcaption></figure>
