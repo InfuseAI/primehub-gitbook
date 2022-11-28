@@ -88,3 +88,8 @@
   * [MATLAB](built-in-apps/matlab.md)
   * [MLflow](built-in-apps/mlflow.md)
   * [Streamlit](built-in-apps/streamlit.md)
+
+## Group Administration
+
+* [Images](group-administration/images.md)
+* [Settings](group-administration/settings.md)
