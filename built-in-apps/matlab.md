@@ -13,6 +13,8 @@ MATLAB is a programming and numeric computing platform used by millions of engin
 
 ### Screenshots
 
+<figure><img src="../.gitbook/assets/primehub-app-builtin-matlab.png" alt=""><figcaption></figcaption></figure>
+
 ### Usage
 
 1. Create a MATLAB app

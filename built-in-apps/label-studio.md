@@ -1,5 +1,7 @@
 # Label Studio
 
+Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
+
 ### Introduction
 
 Label Studio is an open source data labeling tool for labeling and exploring multiple types of data.
@@ -10,8 +12,6 @@ Label Studio is an open source data labeling tool for labeling and exploring mul
 | Official Website | https://github.com/heartexlabs/label-studio                                     |
 
 ### Screenshots
-
-<figure><img src="../.gitbook/assets/primehub-app-builtin-label-studio.gif" alt=""><figcaption></figcaption></figure>
 
 ### Usage
 
