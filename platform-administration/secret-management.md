@@ -1,12 +1,14 @@
 # Secret Management
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community EditionCommunity Applicable to Deploy Edition
-
 Secret management provides the capabilities of managing secrets which are used for pull images or volumes, such as create, delete, edit secrets. Before adding secrets, we have to gain those generated secrets from sources of services. Please see [gain and add secrets](broken-reference).
 
 ### Creating New Secrets
 
+<figure><img src="../.gitbook/assets/v310_secret_add.png" alt=""><figcaption></figcaption></figure>
+
 Click `Add` to add a Secret and it will pop up the edit screen of Secret.
+
+<figure><img src="../.gitbook/assets/v310_secret_empty.png" alt=""><figcaption></figcaption></figure>
 
 You need to fill in these fields:
 
@@ -16,9 +18,13 @@ You need to fill in these fields:
 
 #### Type Git Sync
 
+<figure><img src="../.gitbook/assets/v310_secret_git_sync.png" alt=""><figcaption></figcaption></figure>
+
 * `Secret`: A secret of Git Sync is used for pulling a data volume via git. The context is a private key related to a registered public key of ssh. Please see Volume Management to learn how to specify a pull-secret for a volume.
 
 #### Type Image Pull
+
+<figure><img src="../.gitbook/assets/v310_secret_image_pull.png" alt=""><figcaption></figcaption></figure>
 
 It uses the secret of `docker-registry` type to authenticate with a container registry to pull an image. The registry host and credentials are required. Please see Image Management to learn how to specify a pull-secret for an image.
 
@@ -27,14 +33,6 @@ It uses the secret of `docker-registry` type to authenticate with a container re
 * `Password`
 
 Click `Confirm` to complete the addition.
-
-### Deleting Secrets
-
-Click `Delete` in the Secrets list, the confirmation dialog will pop up, and the Secret will be deleted when you click `OK`.
-
-### Editing Secrets
-
-Click `Edit` to enter the edit page of the Secret.
 
 ### Gain and add secrets
 
