@@ -1,14 +1,12 @@
 # Add Image
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 **Image**, is a working environment for an instance, we could have pre-built suitable images from public/private registries. We could even build our own images with customization and push to our registry by building customer. Here is a reference, Custom Image Guideline, describing which official registries we can pull images from and how we build our own ones.
 
-This quickstart shows how we add an pre-built image on PrimeHub for users who can choose it for launching an instance on PrimeHub. If you haven't built any custom image, here is the \[quickstart] build image. Here we are going to add that custom image which is installed with `fastai v1 library` on PrimeHub.
+This quick-start shows how we add an pre-built image on PrimeHub for users who can choose it for launching an instance on PrimeHub. If you haven't built any custom image, here is the [\[quickstart\] build image](build-image.md). Here we are going to add that custom image which is installed with `fastai v1 library` on PrimeHub.
 
 ### Let's Add Image
 
-1. Log in as an administrator and switch to Admin Portal.
+1. Log in as an administrator and [switch to Admin Portal](../admin-portal.md).
 2. Enter `Images` management and click `+ Add` for adding an image spec.
 3. Fill `Name` with `gcr-fastai-v1`.
 4. Select `Type` `cpu`.
@@ -18,6 +16,8 @@ This quickstart shows how we add an pre-built image on PrimeHub for users who ca
 8. Click `Confirm` to save the setting.
 
 Now users can select this custom image when launching an JupyterHub instance, once the jupyterhub is launched, we can check the `fastai` library version in a notebook.
+
+<figure><img src="../../.gitbook/assets/jup-fastai.png" alt=""><figcaption></figcaption></figure>
 
 #### Alternative
 
