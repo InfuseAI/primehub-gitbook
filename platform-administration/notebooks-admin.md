@@ -30,4 +30,4 @@ Before doing it, please make sure why you want to do it and what you are doing. 
 
 It will take time to restart Hub and traverse all of users for the synchronization, i.e., it takes more time while more user accounts. It usually takes few minutes depending on network and user amount.
 
-<figure><img src="../.gitbook/assets/nb-admin-shutdown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/nb-admin-shutdown (1).png" alt=""><figcaption></figcaption></figure>
