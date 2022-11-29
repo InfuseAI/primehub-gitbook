@@ -96,7 +96,16 @@
 
 ## Platform Administration
 
-* [Admin Portal](platform-administration/admin-portal.md)
+* [Admin Portal](platform-administration/admin-portal/README.md)
+  * [Create User](platform-administration/admin-portal/create-user.md)
+  * [Create Group](platform-administration/admin-portal/create-group.md)
+  * [Assign Group Admin](platform-administration/admin-portal/assign-group-admin.md)
+  * [Create/Plan Instance Type](platform-administration/admin-portal/create-plan-instance-type.md)
+  * [Add InfuseAI Image](platform-administration/admin-portal/add-infuseai-image.md)
+  * [Add Image](platform-administration/admin-portal/add-image.md)
+  * [Build Image](platform-administration/admin-portal/build-image.md)
+  * [Gitsync Secret for GitHub](platform-administration/admin-portal/gitsync-secret-for-github.md)
+  * [Pull Secret for GitLab](platform-administration/admin-portal/pull-secret-for-gitlab.md)
 * [User Management](platform-administration/user-management.md)
 * [Group Management](platform-administration/group-management.md)
 * [Instance Type Management](platform-administration/instance-type-management/README.md)

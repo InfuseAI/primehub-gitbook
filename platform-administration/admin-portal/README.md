@@ -4,11 +4,11 @@
 
 When login as an administrator, initially, you are landed on **User Portal**, click the Profile icon at top-right and select **Admin Portal** for the switch.
 
-<figure><img src="../.gitbook/assets/v3-admin-entry.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v3-admin-entry.png" alt=""><figcaption></figcaption></figure>
 
 ### Admin Portal
 
-<figure><img src="../.gitbook/assets/v310-landing-admin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v310-landing-admin.png" alt=""><figcaption></figcaption></figure>
 
 #### Profile Menu
 
