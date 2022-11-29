@@ -1,8 +1,8 @@
 # System Settings
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community EditionDeploy Applicable to Deploy Edition
-
 ### PrimeHub License
+
+<figure><img src="../.gitbook/assets/license_key_v311.png" alt=""><figcaption></figcaption></figure>
 
 Information of the PrimeHub license:
 
@@ -33,12 +33,16 @@ A license issued by InfuseAI contains `Expiration Date`, `Maximum Nodes`, `Maxim
 
 ### System Settings
 
+<figure><img src="../.gitbook/assets/system_1_v24.png" alt=""><figcaption></figcaption></figure>
+
 * `Name` your organization.
 * `Logo` Click `+ add Image` to upload the logo.
 * `Default User Volume Capacity` the default disk quota for user.
 * `Timezone` the system timezone.
 
 ### Email Settings
+
+<figure><img src="../.gitbook/assets/system_2_v26.png" alt=""><figcaption></figcaption></figure>
 
 * `SMTP Host` Sends the Sever host location of the email.
 * `SMTP Port` Sends the Sever host port of Email.
