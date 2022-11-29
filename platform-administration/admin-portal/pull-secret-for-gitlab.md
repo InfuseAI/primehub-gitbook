@@ -1,12 +1,10 @@
 # Pull Secret for GitLab
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 **Secret**, is a credential for proper permissions on repositories or registries.
 
 ### Add a image pull-secret
 
-This quickstart describes how we have/add a secret dedicated to pull an image from GitLab on PrimeHub.
+This quick-start describes how we have/add a secret dedicated to pull an image from GitLab on PrimeHub.
 
 PrimeHub supports to pull an `image` from a **Docker registry**. But what if the registry is private only? Then we need a `secret` to have proper privileges to do it.
 
@@ -18,7 +16,7 @@ Following the guide to have a deploy token and keeping the pair of `Username` an
 
 #### Add a token as a secret on PrimeHub
 
-1. Log in as an administrator and switch to Admin Portal.
+1. Log in as an administrator and [switch to Admin Portal](../admin-portal.md).
 2. Enter the `Secrets` management and click `+ Add` for adding a secret.
 3. Fill `Name`, `Display Name`(Optional) and select `Type` **`Image Pull`**.
 4. Fill `Registry Host` with `registry.gitlab.com`.

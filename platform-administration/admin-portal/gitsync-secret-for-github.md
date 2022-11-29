@@ -1,10 +1,8 @@
 # Gitsync Secret for GitHub
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### Add a secret for gitsync on GitHub
 
-This quickstart describes how we have/add a secret for gitsync with a repo on GitHub.
+This quick-start describes how we have/add a secret for gitsync with a repo on GitHub.
 
 PrimeHub support volumes of type `git`, in other words, we can use a volume located on a repository via gitsync. What if the repository is private only? Then we need a `secret` to have proper privileges for access the repo.
 
@@ -16,7 +14,7 @@ We need to deploy our public key on the GitHub. There is a nice guide from GitHu
 
 Once we have deployed our **public key** on the repo, we can add the key as a secret on PrimeHub.
 
-1. Log in as an administrator and switch to Admin Portal.
+1. Log in as an administrator and [switch to Admin Portal](../admin-portal.md).
 2. Enter `Secrets` management and click `+ Add` for adding a secret.
 3. Fill `Name`, `Display Name`(Optional) and select `Type` **`Git Sync`**.
 4. Fill `Secret` with your **public key**.
