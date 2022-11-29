@@ -96,7 +96,7 @@
 
 ## Platform Administration
 
-* [Admin Portal](platform-administration/admin-portal/README.md)
+* [Admin Portal](platform-administration/admin-portal.md)
   * [Create User](platform-administration/admin-portal/create-user.md)
   * [Create Group](platform-administration/admin-portal/create-group.md)
   * [Assign Group Admin](platform-administration/admin-portal/assign-group-admin.md)
