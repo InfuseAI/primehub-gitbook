@@ -6,7 +6,11 @@ Volume management provides the capabilities of managing volume resources such as
 
 ### Creating New Volume
 
+<figure><img src="../../.gitbook/assets/volume_list.png" alt=""><figcaption></figcaption></figure>
+
 Click `Add` to add a Volume and it will pop up the edit screen of Volumes.
+
+<figure><img src="../../.gitbook/assets/admin_dataset_v3.png" alt=""><figcaption></figcaption></figure>
 
 You need to fill in these fields:
 
@@ -26,9 +30,13 @@ There are several `type`:
 
 **Auto**
 
+<figure><img src="../../.gitbook/assets/volume_pv_auto.png" alt=""><figcaption></figcaption></figure>
+
 Specifying the `volume size`, once it is confirmed, there is a fixed-size volume created and the volume size is not changeable by editing the volume.
 
 **Manual**
+
+<figure><img src="../../.gitbook/assets/volume_pv_manual.png" alt=""><figcaption></figcaption></figure>
 
 Setting provisioning `Manual` allows administrators configure the persistent volume manually with an existing storage. Generally, it is used for storages types which are not listed in PrimeHub Volume. Please refer to the [Kubernetes official documentation](https://kubernetes.io/docs/concepts/storage/persistent-datasets/) for the configuration.
 
@@ -39,6 +47,8 @@ Click `Confirm` to complete the addition.
 ***
 
 #### NFS
+
+<figure><img src="../../.gitbook/assets/volume_nfs.png" alt=""><figcaption></figcaption></figure>
 
 An nfs volume allows an existing NFS(Network File System) share to be mounted into the pod. The data of an nfs volume is preserved even if the volume is unmounted. NFS can be mounted by multiple groups simultaneously.
 
@@ -53,6 +63,8 @@ NFS settings remain editable after the creation.
 
 #### Host Path
 
+<figure><img src="../../.gitbook/assets/volume_hostpath.png" alt=""><figcaption></figcaption></figure>
+
 In PrimeHub, a hostPath volume mounts a directory from the hosting node's filesystem into the pod.
 
 > The hostpath/to/directory must exist on nodes and corresponding permissions must be granted, otherwise unexpected behaviors which are varied with circumstances occur. Please see trouble-shooting.
@@ -63,13 +75,19 @@ In PrimeHub, a hostPath volume mounts a directory from the hosting node's filesy
 
 #### Git Sync
 
+<figure><img src="../../.gitbook/assets/volume_gitsync.png" alt=""><figcaption></figcaption></figure>
+
 Fill the URL of git repo (can be https or git). You can use `#branch` to specify the branch or tag name.
 
 Click `Change` to select a secret from the list if a credential is required.
 
+<figure><img src="../../.gitbook/assets/dataset_secret_list.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 #### Env
+
+<figure><img src="../../.gitbook/assets/volume_env.png" alt=""><figcaption></figcaption></figure>
 
 If volume is an environment variable, not a file, you can use `env` type. Clicking `+ Add field` to add fields and fill the `key` and `value`.
 
@@ -78,6 +96,8 @@ If volume is an environment variable, not a file, you can use `env` type. Clicki
 ***
 
 #### Groups Access Control
+
+<figure><img src="../../.gitbook/assets/edit_groups.png" alt=""><figcaption></figcaption></figure>
 
 `Type`, `Global` and `edit groups` are associated.
 
@@ -88,12 +108,6 @@ If volume is an environment variable, not a file, you can use `env` type. Clicki
   * `Global` is **enabled**, all of groups are read-only by default.
   * `Global` is **disabled**, required to specify groups with read-only permission.
 
-### Deleting Volume
 
-Click `Delete` in the Volumes list, the confirmation dialog will pop up, and the Volume will be deleted when you click `OK`.
-
-### Editing Deataset
-
-Click `Edit` to enter the edit page of the Volume.
 
 In terms of type `pv`, `nfs` and `hostpath` volume, we can turn on `Upload Server` feature on the volume editing page. See Upload Server.

@@ -1,4 +1,4 @@
-# Available Images List
+# InfuseAI Images List
 
 InfuseAI provides and maintains certain images which can be used as base images on [infuseai/docker-stacks↗](https://hub.docker.com/r/infuseai/docker-stacks/tags) on Docker Hub, here available images are:
 

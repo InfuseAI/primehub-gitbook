@@ -22,7 +22,7 @@ Choose `Use existing image` or `Build custom image`.
 
 Add an existing image.
 
-<figure><img src="../../.gitbook/assets/admin-image-use-existing (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/admin-image-use-existing.png" alt=""><figcaption></figcaption></figure>
 
 * `Type`: `cpu`, `gpu` and `universal`: Select what type of the image is.
 * `Container Image URL`: Fill in the Image's url. See [Reference](broken-reference).
@@ -30,7 +30,7 @@ Add an existing image.
 * `Image Pull Secret`: Enable and select the secret if a pull-secret is required.
 *   `Global`: Toggle Global on to allow every group accessing the image; otherwise specifying groups by `Edit Groups`.&#x20;
 
-    <figure><img src="../../.gitbook/assets/admin-image-global (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/admin-image-global.png" alt=""><figcaption></figcaption></figure>
 
 Click `Confirm` to complete the addition.
 
@@ -53,7 +53,7 @@ Instead of adding existing images, Administrators can build custom images and ad
 
     *   `Global`: Toggle Global on to allow every group access the image; otherwise specifying groups by `Edit Groups`.&#x20;
 
-        <figure><img src="../../.gitbook/assets/admin-image-global (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../.gitbook/assets/admin-image-global.png" alt=""><figcaption></figcaption></figure>
 
 Click `Confirm` to start the building and the image will be added automatically once it's done.
 
