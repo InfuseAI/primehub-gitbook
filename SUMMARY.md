@@ -114,4 +114,4 @@
 
 ***
 
-* [Available Images List](available-images-list.md)
+* [InfuseAI Images List](infuseai-images-list.md)
