@@ -1,7 +1,5 @@
 # Available Images List
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 InfuseAI provides and maintains certain images which can be used as base images on [infuseai/docker-stacks↗](https://hub.docker.com/r/infuseai/docker-stacks/tags) on Docker Hub, here available images are:
 
 ### TensorFlow
