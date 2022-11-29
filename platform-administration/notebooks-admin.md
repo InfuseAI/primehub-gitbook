@@ -6,6 +6,8 @@ The page represents Hub of all of user Notebook instances; if an instance is run
 
 Platform Admin can take actions against the instance. `Stop All Activities` will stop all of running instances at once.
 
+<figure><img src="../.gitbook/assets/v310-nb-admin-list.png" alt=""><figcaption></figcaption></figure>
+
 ### Out of Sync
 
 When Admin notices that status of Notebook instance of a single user is out of sync with output of kubectl.
@@ -20,8 +22,12 @@ In this case, use `Remove From Instance` for the reset of the user. Don't worry,
 
 ### Shutdown Hub
 
-> Before doing it, please make sure why you want to do it and what you are doing. If you seen any troubleshooting guide suggesting _Shutdown Hub_ measurement. Here steps are.
+{% hint style="info" %}
+Before doing it, please make sure why you want to do it and what you are doing. If you seen any troubleshooting guide suggesting _Shutdown Hub_ measurement. Here steps are.
+{% endhint %}
 
 **Uncheck the two boxes** as below, and click `Shutdown`.
 
 It will take time to restart Hub and traverse all of users for the synchronization, i.e., it takes more time while more user accounts. It usually takes few minutes depending on network and user amount.
+
+<figure><img src="../.gitbook/assets/nb-admin-shutdown.png" alt=""><figcaption></figcaption></figure>
