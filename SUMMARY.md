@@ -124,3 +124,6 @@
 ## Reference
 
 * [InfuseAI Images List](reference/infuseai-images-list.md)
+* [Environment Variables](reference/environment-variables.md)
+* [Chart Configuration](reference/chart-configuration.md)
+* [Multiple Jupyter Notebook Kernels](reference/multiple-jupyter-notebook-kernels.md)
