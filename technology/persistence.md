@@ -2,9 +2,9 @@
 
 PrimeHub provides several types of persistent data stores. This document describes the characteristics of each of them, and the conditions in which they perform the best.
 
-### Volume Types
+## Volume Types
 
-#### User Volume
+### User Volume
 
 A user's private storage.
 
@@ -16,7 +16,7 @@ A User Volume has the following **limitations**:
 
 * It can only be accessed via notebooks.
 
-#### Shared Volume
+### Shared Volume
 
 A volume shared among group members. All members can read and write data to this volume. It is like an NFS server for a group.
 
@@ -31,7 +31,7 @@ A Shared Volume **cannot be used** for:
 
 A group's Shared Volume is not enabled by default. Please contact the system administrator to enable it. For more information, Please see Group Management.
 
-#### PHFS Storage
+### PHFS Storage
 
 PHFS (PrimeHub File System) is shared among group members, like a Shared Volume. However, PHFS has the added benefit of being [object storage](https://en.wikipedia.org/wiki/Object\_storage), similar to S3. Due to the characteristics of object storage, PHFS provides the best accessibility out of all kinds of storage.
 
@@ -60,7 +60,7 @@ Due to this limitation PHFS **cannot be used for**:
 
 PHFS is not installed by default, please check this document to configure PrimeHub store and PHFS.
 
-#### Data Volume
+### Data Volume
 
 A Data Volume is a storage type that can be shared among multiple groups. The following permission settings can be configured:
 
@@ -87,7 +87,7 @@ A Data Volume has the following **limitations**:
 
 A Data Volume is configured by the system administrator. For more information, Please see Volume Management. In some types of the volume, we can also configure a upload server to upload data to the data volume.
 
-### Comparison
+## Comparison
 
 | Type         | Shared by                | API/UI Access | Use case                 |
 | ------------ | ------------------------ | ------------- | ------------------------ |
