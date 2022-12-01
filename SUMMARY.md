@@ -6,6 +6,17 @@
 * [Install Manually](getting-started/install-manually.md)
 * [Quickstart](getting-started/quickstart.md)
 
+## Technology
+
+* [Platform Introduction](technology/platform-introduction.md)
+* [Concept](technology/concept.md)
+* [Persistence](technology/persistence.md)
+* [Resources Quota](technology/resources-quota.md)
+* [Permission](technology/permission.md)
+* [Tiers Feature Comparison](technology/tiers-feature-comparison.md)
+* [License Comparison](technology/license-comparison.md)
+* [User Portal](technology/user-portal.md)
+
 ## End-to-End Tutorial
 
 * [1 - MLOps Introduction and Scoping the Project](end-to-end-tutorial/1-mlops-introduction-and-scoping-the-project.md)
