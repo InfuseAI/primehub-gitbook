@@ -6,9 +6,13 @@ These quota settings can be adjusted in Groups Management.
 
 ### Group Quota
 
+<figure><img src="../.gitbook/assets/group-quota.png" alt=""><figcaption></figcaption></figure>
+
 By setting the group quota of a specific group, the sum of requested/allocated resources by all of group members cannot exceed the limitation. If a new resources request from group members will cause the exceedance of group quotas, the request will be rejected.
 
 ### User Quota
+
+<figure><img src="../.gitbook/assets/user-quota.png" alt=""><figcaption></figcaption></figure>
 
 By setting the user quota of specific group, a group member cannot request resources more than the user quota. The request will be rejected. And if the request will cause the exeedance of group quotas, the request will be rejected as well.
 
