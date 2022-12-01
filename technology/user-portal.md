@@ -1,7 +1,5 @@
 # User Portal
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### Portal
 
 After login, a user lands on User Portal.

@@ -28,47 +28,14 @@ PrimeHub has **PrimeHub Community**, **PrimeHub Enterprise** and **PrimeHub Depl
 
 ### User Portal
 
-The User Portal provides access to a full MLOps feature set. Data scientists can turn workflows into automated pipelines via Jobs/Recurring Jobs; prepare data and develop trained models from Notebooks; deploy container-wrapped models as services via Model Deployment, and more.
+The [User Portal](user-portal.md) provides access to a full MLOps feature set. Data scientists can turn workflows into automated pipelines via Jobs/Recurring Jobs; prepare data and develop trained models from Notebooks; deploy container-wrapped models as services via Model Deployment, and more.
 
-#### Get Started as a Team/Project Member
-
-* User Portal overview
-* Starts a Jupyter Notebook
-* Start training a model and tuning it `Quick-start`
-* Deploy a model in a quick way `Quick-start`
-* Submit and monitor jobs
-* Schedule routine jobs
-* Share files within a group
-* Start tracking versioned models with Model Management
-* Install the first 3rd-party application from built-in Apps
-* Notebook extension and submit notebooks as jobs
-* Learn about Persistent data stores
-* Access Jupyter Notebook remotely via SSH
-* Manage and Deploy a Model with MLflow `Tutorial`
-* Data Labeling with Label Studio `Tutorial`
-* Install Grafana PrimeHub Dashboard
-* Build Notebook image by repo2docker
-
-#### Get Started as a Group Admin
-
-* Add/Build images for my team/project
-* View the current settings of my team/project
+<figure><img src="../.gitbook/assets/v310-landing-user.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### Admin Portal
 
-The Admin Portal enables administrators to manage all aspects of Primehub, such as access-control, resource and quota control, building custom environments via image builder etc.
+The [Admin Portal](../platform-administration/admin-portal.md) enables administrators to manage all aspects of PrimeHub, such as access-control, resource and quota control, building custom environments via image builder etc.
 
-#### Getting Started as an Administrator
-
-* Admin Portal overview
-* Manage PrimeHub system and the license status
-* Manage users and groups
-* Assign group admin
-* Manage instance types
-* Manage images
-* Manage volumes
-* Custom Image Guideline
-* Manage secrets (credentials)
-* Review monthly usage report
+<figure><img src="../.gitbook/assets/v310-landing-admin.png" alt=""><figcaption></figcaption></figure>

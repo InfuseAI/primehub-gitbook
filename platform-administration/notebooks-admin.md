@@ -6,7 +6,7 @@ The page represents Hub of all of user Notebook instances; if an instance is run
 
 Platform Admin can take actions against the instance. `Stop All Activities` will stop all of running instances at once.
 
-<figure><img src="../.gitbook/assets/v310-nb-admin-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/v310-nb-admin-list (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Out of Sync
 
