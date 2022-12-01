@@ -121,6 +121,6 @@
 * [App Settings](platform-administration/app-settings.md)
 * [System Settings](platform-administration/system-settings.md)
 
-***
+## Reference
 
-* [InfuseAI Images List](available-images-list.md)
+* [InfuseAI Images List](reference/infuseai-images-list.md)
