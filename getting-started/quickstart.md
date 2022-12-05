@@ -45,11 +45,6 @@ The next stage, _parameter-tuning job_, is for Enterprise users. Keep your Noteb
 
 ### What's Next?
 
-As Enterprise users we want to verify the performance of our model, in order to do this we can deploy the model as a service and query the it with test data.
+Walk through a complete end-to-end tutorial on PrimeHub
 
-* Quick-start: PrimeHub Model Deployment
-
-### Reference
-
-* Submit a Notebook as a Job
-* Jobs Submission
+* [End-to\_End Tutorial](broken-reference)
