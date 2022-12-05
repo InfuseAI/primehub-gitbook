@@ -4,7 +4,7 @@
 
 * Community: fundamental features provided to the community. See [Community Edition ⇗](https://github.com/InfuseAI/primehub) GitHub repo.
 * Enterprise: fully complete features.
-* Deploy: mandatory features dedicated to Model Deployment. See PrimeHub Deploy.
+* Deploy: mandatory features dedicated to Model Deployment.&#x20;
 
 Here we list the features comparison among tiers.
 

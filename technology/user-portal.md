@@ -39,21 +39,21 @@ Hovering over top-right icon, there is a Profile Menu containing **User Profile*
 
 ## User Feature
 
-* **Notebooks** where users can launch a Jupyter Notebook for projects. See Notebook environment.
-* **Jobs** where users can submit jobs of time-consuming tasks. See Jobs.
-* **Recurring Jobs** where users can schedule jobs regularly. See Recurring Jobs.
-* **Models** where users can track registered models from MLFlow. See Models Management.
-* **Deployments** where users can deploy and serve models as services. See Deployments Management.
-* **Shared Files** where users can upload files to PHFS storage to share with group members. See Shared Files.
+* **Notebooks** where users can launch a Jupyter Notebook for projects. See [Notebook environment](broken-reference).
+* **Jobs** where users can submit jobs of time-consuming tasks. See [Jobs](../jobs/jobs-recurring-jobs.md).
+* **Recurring Jobs** where users can schedule jobs regularly. See [Recurring Jobs](../jobs/jobs-recurring-jobs.md#recurring-jobs).
+* **Models** where users can track registered models from MLFlow. See [Models Management](../models/model-management-configuration.md).
+* **Deployments** where users can deploy and serve models as services. See [Deployments Management](broken-reference).
+* **Shared Files** where users can upload files to PHFS storage to share with group members. See [Shared Files](../shared-files.md).
 * **Datasets** where users can manage datasets. See Datasets Management.
-* **Apps** where users can install 3rd-party applications to extend capabilities of PrimeHub. See PrimeHub Apps.
+* **Apps** where users can install 3rd-party applications to extend capabilities of PrimeHub. See [PrimeHub Apps](broken-reference).
 
 ### Group admin feature
 
 Features here are Group-Admin only.
 
-* **Images** where Group Admin can add/build group-specific images for the managed group. See Images.
-* **Settings** where Group Admin can view settings configured by Platform Admin of the managed group and modify the default timeout setting of Jobs. See Settings.
+* **Images** where Group Admin can add/build group-specific images for the managed group. See [Images](../group-administration/images.md).
+* **Settings** where Group Admin can view settings configured by Platform Admin of the managed group and modify the default timeout setting of Jobs. See [Settings](../group-administration/settings.md).
 
 {% hint style="info" %}
 Please contact administrators to acquire Group Admin privilege.
@@ -73,4 +73,4 @@ A license issued by InfuseAI contains `Expiration Date`, `Maximum Nodes`, `Maxim
 
     > Please contact your system administrator for assistance to upgrade your license to run more models.
 
-To learn the current PrimeHub license information, see PrimeHub License.
+To learn the current PrimeHub license information, see [PrimeHub License](license-comparison.md).
