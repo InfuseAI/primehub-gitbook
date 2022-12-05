@@ -138,3 +138,13 @@
 * [Environment Variables](reference/environment-variables.md)
 * [Chart Configuration](reference/chart-configuration.md)
 * [Multiple Jupyter Notebook Kernels](reference/multiple-jupyter-notebook-kernels.md)
+
+## Configuration
+
+* [How to configure PrimeHub](configuration/how-to-configure-primehub.md)
+* [Configure PrimeHub Store](configuration/configure-primehub-store.md)
+* [Configure SSH Server](configuration/configure-ssh-server.md)
+* [Configure Job Submission](configuration/configure-job-submission.md)
+* [Configure Model Deployment](configuration/configure-model-deployment.md)
+* [Configure Custom Image Build](configuration/configure-custom-image-build.md)
+* [Setup Self-Signed Certificate for PrimeHub](configuration/setup-self-signed-certificate-for-primehub.md)
