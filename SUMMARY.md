@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-* [One-Click Install](README.md)
+* [🚀 One-Click Install](README.md)
 * [Install Manually](getting-started/install-manually.md)
 * [Quickstart](getting-started/quickstart.md)
 
