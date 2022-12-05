@@ -1,7 +1,5 @@
 # How to configure PrimeHub
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### What We Need?
 
 PrimeHub repo clone is supposed to be at the local environment when PrimeHub installation.

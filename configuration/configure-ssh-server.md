@@ -1,7 +1,5 @@
 # Configure SSH Server
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### Introduction
 
 With **SSH bastion server**, users are able to connect to their jupyter notebooks directly using **SSH** connections.

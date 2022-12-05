@@ -1,7 +1,5 @@
 # Configure Custom Image Build
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 ### Introduction
 
 PrimeHub provides the capability to build custom images. There are two features related to building image
@@ -87,4 +85,6 @@ Once images are built successfully, they will be pushed into specified repositor
 
 #### Notice
 
-> AWS ECR only support push the container image to an existed repository. Please reference the [official document](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html) to create the corresponding repository on AWS ESC before adding the custom image build.
+{% hint style="info" %}
+AWS ECR only support push the container image to an existed repository. Please reference the [official document](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html) to create the corresponding repository on AWS ESC before adding the custom image build.
+{% endhint %}

@@ -1,10 +1,8 @@
 # Configure Job Submission
 
-Enterprise Applicable to Enterprise Edition
-
 ## Installation
 
-For Primehub EE, the job submission is enabled by default. Here is the advanced configuration for job submission
+For PrimeHub EE, the job submission is enabled by default. Here is the advanced configuration for job submission
 
 ## Job Settings
 

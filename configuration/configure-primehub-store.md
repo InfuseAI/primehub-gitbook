@@ -1,7 +1,5 @@
 # Configure PrimeHub Store
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 PrimeHub Store is the central storage for storing PrimeHub files. Many features are based on PrimeHub store to persist, transfer, and load the data.
 
 PrimeHub store selects [MinIO](https://docs.min.io/) as the backend and uses one bucket to store the data. To enable the PrimeHub store, set the `store.enabled` to true.

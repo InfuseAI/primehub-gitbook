@@ -1,7 +1,5 @@
 # Setup Self-Signed Certificate for PrimeHub
 
-Enterprise Applicable to Enterprise tier only
-
 In certain scenarios we may want to use self-signed certificate HTTPS. For example, in private network or corporation network.
 
 This document explains how to setup self-signed certificate for PrimeHub.
@@ -102,7 +100,9 @@ ingress:
 
 **Keycloak Service URL Setting (Optional)**
 
-> Please notice that if you install a standalone Keycloak by using Keycloak chart instead of the one installed during PrimeHub installation, then you need to have a proper TLS.
+{% hint style="info" %}
+Please notice that if you install a standalone Keycloak by using Keycloak chart instead of the one installed during PrimeHub installation, then you need to have a proper TLS.
+{% endhint %}
 
 Set `KC_SVC_URL` in your `.env` file to activate internal connection.
 
@@ -118,7 +118,9 @@ KC_SVC_URL=http://keycloak-http.default/auth
 
 **helm\_override/keycloak.yaml**
 
-> If you installed Keycloak by using Keycloak chart, then you need to configure Keycloak ingress to use self-signed certificate. If you install Keycloak via PrimeHub chart then there's no extra configuration needed.
+{% hint style="info" %}
+If you installed Keycloak by using Keycloak chart, then you need to configure Keycloak ingress to use self-signed certificate. If you install Keycloak via PrimeHub chart then there's no extra configuration needed.
+{% endhint %}
 
 ```yaml
 # helm_override/keycloak.yaml

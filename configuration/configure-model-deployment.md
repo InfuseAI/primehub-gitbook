@@ -1,7 +1,5 @@
 # Configure Model Deployment
 
-Enterprise Applicable to Enterprise Edition
-
 ### Introduction
 
 Here is the advanced configuration for model deployment.
