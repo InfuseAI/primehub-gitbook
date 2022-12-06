@@ -73,4 +73,4 @@ A license issued by InfuseAI contains `Expiration Date`, `Maximum Nodes`, `Maxim
 
     > Please contact your system administrator for assistance to upgrade your license to run more models.
 
-To learn the current PrimeHub license information, see [PrimeHub License](../license-comparison.md).
+To learn the current PrimeHub license information, see [PrimeHub License](../tiers-feature-comparison/license-comparison.md).

@@ -71,11 +71,11 @@ Here are the detail information of the job:
 
 **Artifacts**
 
-If a Job generates data so called **artifacts** under the PHFS storage `artifacts/` during the execution, here it lists those artifacts. Meanwhile, in Notebook, these artifacts are stored under `/phfs/jobArtifacts/job-xxxxx`. See the simple usage of Job Artifacts.
+If a Job generates data so called **artifacts** under the [PHFS storage](../technology/design/primehub-file-system-phfs.md) `artifacts/` during the execution, here it lists those artifacts. Meanwhile, in Notebook, these artifacts are stored under `/phfs/jobArtifacts/job-xxxxx`. See the [simple usage of Job Artifacts](tutorial/job-artifacts-simple-usecase.md).
 
 **Monitoring**
 
-{% hint style="info" %}
+{% hint style="warning" %}
 It shows the message "feature not enabled, please contact admin", if underlying prerequisite phfs is not enabled.
 {% endhint %}
 
@@ -154,8 +154,8 @@ pip install <package>
 
 **Directories/paths the job can access if directories exits:**
 
-{% hint style="info" %}
-**Notice**：The default working directory of a Job is under `/home/jovyan`; This is `/home/jovyan` inside Job Pod _rather than `/home/jovyan` inside JupyterHub Pod_, therefore, _files are located under `/home/jovyan` of JupyterHub **don't exist** here_! There are `<group volume>` and `<data volume>` only mounted here in Job Pod.
+{% hint style="warning" %}
+**Notice**：The default working directory of a Job is under `/home/jovyan`; This is `/home/jovyan` inside Job Pod _rather than `/home/jovyan` inside Notebook_, therefore, _files locating at `/home/jovyan` of Notebook **don't exist** here_! There are `<group volume>` and `<data volume>` only mounted here in Job Pod.
 {% endhint %}
 
 | Directory                                                        | Description                                                                                                                                                                              |

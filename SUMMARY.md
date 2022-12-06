@@ -9,12 +9,16 @@
 ## Technology
 
 * [Platform Introduction](technology/platform-introduction.md)
-* [Concept](technology/concept.md)
-* [Persistence](technology/persistence.md)
-* [Resources Quota](technology/resources-quota.md)
-* [Permission](technology/permission.md)
-* [Tiers Feature Comparison](technology/tiers-feature-comparison.md)
-* [License Comparison](technology/license-comparison.md)
+* [Concept](technology/concept/README.md)
+  * [Persistence](technology/concept/persistence.md)
+  * [Resources Quota](technology/concept/resources-quota.md)
+  * [Privilege](technology/concept/privilege.md)
+* [Design](technology/design/README.md)
+  * [PrimeHub File System (PHFS)](technology/design/primehub-file-system-phfs.md)
+  * [PrimeHub Store](technology/design/primehub-store.md)
+  * [Log Persistence](technology/design/log-persistence.md)
+* [Tiers Feature Comparison](technology/tiers-feature-comparison/README.md)
+  * [License Comparison](technology/tiers-feature-comparison/license-comparison.md)
 * [User Portal](technology/user-portal/README.md)
   * [Generate an PrimeHub API Token](technology/user-portal/generate-an-primehub-api-token.md)
 

@@ -4,7 +4,9 @@ Allows users to store the job output and can be downloaded from the job UI.
 
 ### Prerequisites
 
-The feature is only enabled if PrimeHub store and PHFS is enabled.
+{% hint style="warning" %}
+The feature is only enabled if [PrimeHub store](../technology/design/primehub-store.md) and [PHFS](../technology/design/primehub-file-system-phfs.md) is enabled.
+{% endhint %}
 
 ### Create Artifacts
 

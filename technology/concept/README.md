@@ -10,7 +10,7 @@ Users are project/group members. In order to perform features from User Portal, 
 
 In addition, users can have Group Admin privilege or/and Admin privilege to access dedicated features.
 
-See [User Management](../platform-administration/user-management.md).
+See [User Management](../../platform-administration/user-management.md).
 
 #### Groups
 
@@ -18,7 +18,7 @@ Groups which are arguably considered as projects are critical existence in Prime
 
 PrimeHub adopts the group-centric design, one of core concepts is **Group-Context** that users and various types of resources must be associated with one group at least. Based on the specified working group, users are able to access corresponding resources and to perform features within the group accordingly. Resources are not viewable if no associated group and not set Global.
 
-See [Group Management](../platform-administration/group-management.md).
+See [Group Management](../../platform-administration/group-management.md).
 
 #### Instance Types
 
@@ -26,7 +26,7 @@ PrimeHub is _Kubernetes_-based platform. Instance types are presets of resources
 
 Instance types must be associated with one group at least for being viewable.
 
-See [Instance Type Management](../platform-administration/instance-type-management/).
+See [Instance Type Management](../../platform-administration/instance-type-management/).
 
 #### Images
 
@@ -34,7 +34,7 @@ Images are working environments to **Notebook**, **Job**, **Model**. When launch
 
 Both of Administrator and group administrator are able to add images from Images of Admin Portal and Images of User Portal respectively. Images must be associated with one group at least or be Global for being viewable
 
-See [Image Management(Admin)](../platform-administration/image-management/), [Image(Group Admin)](../group-administration/images.md).
+See [Image Management(Admin)](../../platform-administration/image-management/), [Image(Group Admin)](../../group-administration/images.md).
 
 #### Volumes
 
@@ -44,13 +44,13 @@ Groups can have read-only access volumes on git repository, or can clone volumes
 
 Volumes must be associated with one group at least for being viewable.
 
-See [Volume Management](../platform-administration/volume-management/).
+See [Volume Management](../../platform-administration/volume-management/).
 
 #### Secrets
 
 Secrets are credentials to access certain resources if required. Usually add secrets for pulling images or pulling volumes on git repo which requires credentials, in this case, images must be associated with secrets.
 
-See [Secret Management](../platform-administration/secret-management.md).
+See [Secret Management](../../platform-administration/secret-management.md).
 
 ***
 
@@ -72,13 +72,13 @@ Besides Notebook, users are able to launch an environment to accomplish certain 
 
 By using Jobs, user can turn a workflow into a pipeline of automatic tasks which are time-consuming that users can check the result once jobs finish, in the meantime, users can continue works on Notebook. Also by PrimeHub Notebook Extension, Notebooks are able to be submitted as Jobs which executes cells in Notebook, then generates a page of the result.
 
-See [Jobs](../jobs/jobs-recurring-jobs.md), [PrimeHub Notebook Extension](../notebooks/primehub-notebook-extension/).
+See [Jobs](../../jobs/jobs-recurring-jobs.md), [PrimeHub Notebook Extension](../../notebooks/primehub-notebook-extension/).
 
 #### Recurring Jobs
 
 Jobs are one-time jobs, sometimes, users may want to automate jobs regularly; then **Recurring Jobs** feature can do the work, it could create a schedule which will arrange the submission of a same job recursively.
 
-See [Recurring Job](../jobs/jobs-recurring-jobs.md#recurring-jobs).
+See [Recurring Job](../../jobs/jobs-recurring-jobs.md#recurring-jobs).
 
 #### Deployments
 
@@ -86,4 +86,4 @@ One of the last stages in the MLOps is Model Deployment that by integration of a
 
 By Deployments feature of PrimeHub, users can deploy a model file directly with a specified image of pre-packaged server or can deploy a model image which already packages a model file into.
 
-See [Deployments](broken-reference), [Tutorials](../deployments/tutorial/).
+See [Deployments](broken-reference), [Tutorials](../../deployments/tutorial/).

@@ -1,4 +1,4 @@
-# Permission
+# Privilege
 
 PrimeHub features are accessible/restricted to three different level of roles. A user account can become not only a general user, but also a group administrator or/and a platform administrator. Each role possesses different privileges.
 
@@ -6,7 +6,7 @@ PrimeHub features are accessible/restricted to three different level of roles. A
 
 Every account has the fundamental user privilege, as long as users who are members of groups are able to perform general user features within a working group from User Portal.
 
-See [User Guide](user-portal/).
+See [User Guide](../user-portal/).
 
 ## Group Administrator
 

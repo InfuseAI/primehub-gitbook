@@ -68,4 +68,4 @@ If switching the current working group after the Notebook is launched, it indica
 
 ### Reference
 
-[Accessible Data Store from Notebook](../../technology/persistence.md)
+[Accessible Data Store from Notebook](../../technology/concept/persistence.md)

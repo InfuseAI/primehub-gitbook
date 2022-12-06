@@ -20,7 +20,7 @@ With the addition of 3rd-party app integration, PrimeHub’s capabilities can be
 
 ### Product Tiers
 
-PrimeHub has **PrimeHub Community**, **PrimeHub Enterprise** and **PrimeHub Deploy**, three tiers. Regarding the differences, see [Tiers Feature Comparison](tiers-feature-comparison.md).
+PrimeHub has **PrimeHub Community**, **PrimeHub Enterprise** and **PrimeHub Deploy**, three tiers. Regarding the differences, see [Tiers Feature Comparison](tiers-feature-comparison/).
 
 ***
 
