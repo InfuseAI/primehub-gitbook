@@ -6,11 +6,11 @@ Users are able to run `sudo apt <command>` in a terminal of a Jupyter or `!sudo 
 
 ### Notebook Logs
 
-Notebooks, sometimes, are failed to spawn or run into troubles because user programs/environments. Now users are able to investigate failures and shoot troubles from logs of Notebook Logs.
+Notebooks, sometimes, are failed to spawn or run into troubles because user programs/environments. Now users are able to investigate failures and shoot troubles from logs of [Notebook Logs](./#notebook-logs).
 
 ### Safe Mode
 
-When a user's jupyter pod cannot be launched successfully, try to launch the Notebook under Safe Mode for _**troubleshooting**_. If the Notebook can be launched under Safe Mode, which implies two possible causes
+When a user's jupyter pod cannot be launched successfully, try to launch the Notebook under [Safe Mode](advanced-settings.md#safe-mode) for _**troubleshooting**_. If the Notebook can be launched under Safe Mode, which implies two possible causes
 
 * User's home folder `/home/jovyan`is full so that jupyter is not able to write its own files successfully.
 * There is something wrong with packages which are installed by users causing problems during Jupyter initialization.

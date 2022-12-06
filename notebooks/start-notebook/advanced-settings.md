@@ -22,4 +22,4 @@ If **Jupyter Kernel Gateway** is required, enable this setting. Go to [\[Jupyter
 
 ### SSH Server
 
-Enable it to allow the access to the Jupyter Notebook via SSH remotely. Please see SSH Server Feature for the detail.
+Enable it to allow the access to the Jupyter Notebook via SSH remotely. Please see [SSH Server](../ssh-server-feature/) Feature for the detail.

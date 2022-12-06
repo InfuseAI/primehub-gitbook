@@ -1,12 +1,12 @@
 # Submit Notebook as Job
 
-### Simple Usecase
+### Simple Use-case
 
-{% hint style="info" %}
+{% hint style="warning" %}
 The working group's Group Volume is required.
 {% endhint %}
 
-1.  Select **API Token** from the extension and add your own token. See How to generate a API Token.
+1.  Select **API Token** from the extension and add your own token. See [How to generate a API](../../technology/user-portal/generate-an-primehub-api-token.md) Token.
 
     <figure><img src="../../.gitbook/assets/ph-extension-token.png" alt=""><figcaption></figcaption></figure>
 2. Launch Notebook instance from User Portal by using a base image from InfuseAI or a image built on top of a base image from InfuseAI.

@@ -1,18 +1,18 @@
 # SSH Server Feature
 
-**PrimeHub v3.0+** provides a new feature of SSH Server that users are allowed to access into their own launched JupyterHub via **SSH**. A practical use-case is that users are able to use IDEs such as **VSCode** which has **remote-ssh** extension for the development remotely. In other words, it provides other possible development options for users who like to use rich-features IDEs instead.
+**PrimeHub** provides a feature of SSH Server that users are allowed to access into their own launched Notebook via **SSH**. A practical use-case is that users are able to use IDEs such as **VSCode** which has **remote-ssh** extension for the development remotely. In other words, it provides other possible development options for users who like to use rich-features IDEs instead.
 
 ### Enable SSH Server
 
 {% hint style="info" %}
-To activate SSH Server, administrators have to configure SSH Server of PrimeHub. Please contact administrators and see Configure SSH Server.
+To activate SSH Server, administrators have to configure SSH Server of PrimeHub. Please contact administrators and see [Configure SSH Server](../../configuration/configure-ssh-server.md).
 {% endhint %}
 
 {% hint style="info" %}
-Before using this feature, you are required to have a **public/private key pair**, please go to SSH key generation to generate your own pair at local.
+Before using this feature, you are required to have a **public/private key pair**, please go to [SSH key generation](generate-ssh-key-pair.md) to generate your own pair at local.
 {% endhint %}
 
-1.  Enter `JupyterHub` from side-menu, before staring a notebook, expand `Show advanced settings` and check `Enable SSH Server`.
+1.  Before starting a notebook, expand `Show advanced settings` and check `Enable SSH Server`.
 
     <figure><img src="../../.gitbook/assets/ssh-enable.png" alt=""><figcaption></figcaption></figure>
 2. Hovering the cursor over the code block, copy the configuration by clicking the copy icon.
@@ -25,10 +25,10 @@ If you want to assign other private key, please change the path `~/.ssh/id_rsa` 
 
 ### Deploy Public key into JupyterHub
 
-After JupyterHub is launched,
+After Notebook is launched,
 
 {% hint style="info" %}
-In JupyterHub menu on User Portal, it shows the same instruction for the reference
+In Notebook page, it shows the same instruction for the reference
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/ssh-server-instruction.png" alt=""><figcaption></figcaption></figure>
@@ -36,7 +36,7 @@ In JupyterHub menu on User Portal, it shows the same instruction for the referen
 1.  Drag-n-drop a public key (e.g. `id_rsa.pub`) from your local to the `File Browser` of the opened JupyterHub tab on browser.
 
     <figure><img src="../../.gitbook/assets/ssh-dragdrop-pub.png" alt=""><figcaption></figcaption></figure>
-2.  Open `Terminal` on JupyterHub, run the commands
+2.  Open `Terminal` on Notebook, run the commands
 
     ```bash
     mkdir -p ~/.ssh
@@ -48,19 +48,19 @@ In JupyterHub menu on User Portal, it shows the same instruction for the referen
     ssh jupyter
     ```
 
-    After SSH into the JupyterHub successfully, you should see the prompt:
+    After SSH into the Notebook successfully, you should see the prompt:
 
     ```
     jovyan@jupyter-<your_username>:~$
     ```
 
 {% hint style="info" %}
-Once the initial setup is completed, only step 1 is required for accessing JupyterHub via SSH.
+Once the initial setup is completed, only step 1 is required for accessing Notebook via SSH.
 {% endhint %}
 
 ### Practical Usecase - VSCode
 
-If you are familiar with **VSCode**, check our guide, VSCode + Remote-SSH.
+If you are familiar with **VSCode**, check our guide, [VSCode + Remote-SSH](vscode-ssh-notebook-remotely.md).
 
 ### Troubleshooting
 

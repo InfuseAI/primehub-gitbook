@@ -1,7 +1,7 @@
 # VSCode SSH Notebook Remotely
 
 {% hint style="info" %}
-This guide requires prerequisites of Notebook with enabled SSH Server feature and key-pair. Please go to SSH Server feature if it hasn't been set up yet.
+This guide requires prerequisites of Notebook with enabled SSH Server feature and key-pair. Please go to [SSH Server feature](./#enable-ssh-server) if it hasn't been set up yet.
 {% endhint %}
 
 ### Steps

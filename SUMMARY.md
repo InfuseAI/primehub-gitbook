@@ -39,6 +39,8 @@
 * [SSH Server Feature](notebooks/ssh-server-feature/README.md)
   * [VSCode SSH Notebook Remotely](notebooks/ssh-server-feature/vscode-ssh-notebook-remotely.md)
   * [Generate SSH Key Pair](notebooks/ssh-server-feature/generate-ssh-key-pair.md)
+  * [Permission Denied](notebooks/ssh-server-feature/permission-denied.md)
+  * [Connection Refused](notebooks/ssh-server-feature/connection-refused.md)
 * [PrimeHub Notebook Extension](notebooks/primehub-notebook-extension/README.md)
   * [Submit Notebook as Job](notebooks/primehub-notebook-extension/submit-notebook-as-job.md)
 

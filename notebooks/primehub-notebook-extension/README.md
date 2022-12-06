@@ -6,7 +6,7 @@
 The latest images provided by InfuseAI are built with **PrimeHub Extension** and the corresponding environment to execute extension features smoothly. To Use these features, please make sure the running image is the latest one or is built on top of the latest one from InfuseAI. See the list.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="success" %}
 How to build own images including **PrimeHub Extensions**? See the [repo](https://github.com/InfuseAI/primehub-job/tree/master/jupyterlab\_primehub).
 {% endhint %}
 
@@ -16,7 +16,7 @@ After opening a Notebook file (\*.ipynb), there is **PrimeHub** extension on the
 
 ### API Token
 
-PrimeHub Extension needs an API Token to submit a Job, Please generate a API Token and setup it.
+PrimeHub Extension needs an API Token to submit a Job, Please [generate a API Token](../../technology/user-portal/generate-an-primehub-api-token.md) and setup it.
 
 You could open the PrimeHub Extension dropdown list to find the `API Token` setting:
 
@@ -28,9 +28,9 @@ You could open the PrimeHub Extension dropdown list to find the `API Token` sett
 The working group's Group Volume is required.
 {% endhint %}
 
-Users could submit their Notebook to the PrimeHub Jobs. See Simple UseCase.
+Users could submit their Notebook to the PrimeHub Jobs. See [Simple UseCase](submit-notebook-as-job.md).
 
-{% hint style="info" %}
+{% hint style="warning" %}
 However, there are differences between jobs from Notebook and jobs from Job Submission directly:
 {% endhint %}
 
@@ -63,7 +63,7 @@ cp -r logs artifacts/
 
 However, a _Notebook Job_ starts at `/home/jovyan/<group_volume>/path/to/` where the notebook locates, the _relative path_ of same codes above becomes `/home/jovyan/<group_volume>/path/to/artifcats` **incorrectly**.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Hence, we encourage using _absolute path_ in both of cases instead to avoid the mistake and the confusion.
 {% endhint %}
 
