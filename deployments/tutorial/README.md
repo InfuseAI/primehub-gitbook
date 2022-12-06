@@ -9,6 +9,6 @@ To deploy a model, we need to provide a model image. There are two ways to prepa
 
 In the following tutorials, we will present several different ways to deploy models.
 
-* Deploy a Model by Pre-packaged Server
-* Deploy a Model by Pre-packaged Server (PHFS)
-* Deploy a Model by Image built from Language Wrapper
+* [Deploy a Model by Pre-packaged Server](model-by-pre-packaged-server.md)
+* [Deploy a Model by Pre-packaged Server (PHFS)](model-by-pre-packaged-server-phfs.md)
+* [Deploy a Model by Image built from Language Wrapper](../package-from-language-wrapper/)

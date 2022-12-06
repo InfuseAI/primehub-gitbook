@@ -71,7 +71,7 @@
 * [Tutorial](deployments/tutorial/README.md)
   * [Model by Pre-packaged Server](deployments/tutorial/model-by-pre-packaged-server.md)
   * [Model by Pre-packaged Server (PHFS)](deployments/tutorial/model-by-pre-packaged-server-phfs.md)
-  * [Deploy Model by Pre-packaged Server](deployments/tutorial/deploy-model-by-pre-packaged-server.md)
+  * [Model by Image built from Language Wrapper](deployments/tutorial/model-by-image-built-from-language-wrapper.md)
 * [Pre-packaged servers](deployments/pre-packaged-servers/README.md)
   * [TensorFlow server](deployments/pre-packaged-servers/tensorflow-server.md)
   * [PyTorch server](deployments/pre-packaged-servers/pytorch-server.md)
