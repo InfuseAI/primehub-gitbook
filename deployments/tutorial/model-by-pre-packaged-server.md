@@ -13,7 +13,7 @@ Remember to enable model deployment in your group, contact your admin if it is n
 ### Tutorial Steps
 
 1. Go to User Portal and select `Deployments`.
-2. Then we are in model deployment list page, now clicking on `Create Deployment` button.
+2. Then we are in [model deployment list](../deployments.md#overview) page, now clicking on `Create Deployment` button.
 3.  Fill in the `Deployment name` field with `quickstart-iris`
 
     Select the `Model Image` field with `SKLearn server`; This is a pre-packaged model server image that can serve `scikit-learn` model.&#x20;
@@ -89,5 +89,5 @@ Congratulations! We have deployed a model as an endpoint service that can respon
 
 ### Reference
 
-* For the completed model deployment feature introduction, see Model Deployment.
-* For the customized pre-packaged server instruction, see Pre-packaged servers.
+* For the completed model deployment feature introduction, see [Model Deployment](../deployments.md).
+* For the customized pre-packaged server instruction, see [Pre-packaged servers](../pre-packaged-servers/).

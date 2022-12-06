@@ -60,18 +60,18 @@ Confirm if the current group is what you desire; switch the group by the `Group:
 * `Deployment Name`: The name of the deployment.
 * `Deployment ID`: An system-generated unique ID or a user-input unique ID.
 * `Model Image`:
-  * The image which has integrated a model file into can be deployed directly (Tutorial: Deploy a Model by Image built from Language Wrapper).
-  *   Or acted as the pre-packaged model server image which must be deployed with a specified model file (Tutorial: Deploy a Model by Pre-packaged Server、Tutorial: Deploy a Model by Pre-packaged Server (PHFS)).
+  * The image which has integrated a model file into can be deployed directly ([Tutorial: Deploy a Model by Image built from Language Wrapper](tutorial/model-by-image-built-from-language-wrapper.md)).
+  *   Or acted as the pre-packaged model server image which must be deployed with a specified model file ([Tutorial: Deploy a Model by Pre-packaged Server](tutorial/model-by-pre-packaged-server.md)、[Tutorial: Deploy a Model by Pre-packaged Server (PHFS)](tutorial/model-by-pre-packaged-server-phfs.md)).
 
       We can select the suggested pre-packaged model server image or click on its link to access its server information and input/output examples.&#x20;
 
       <figure><img src="../.gitbook/assets/mdeploy_create_model_image_suggestion (1).png" alt=""><figcaption></figcaption></figure>
-* `Model URI`: The location which the trained model is stored in; based on this model file to deploy a model image. Here is supported URIs.
+* `Model URI`: The location which the trained model is stored in; based on this model file to deploy a model image. Here is [supported URIs](model-uri.md).
 * `Image Pull Secret`: a pull secret for the model image if required.
 * `Descriptions`: User input description.
 
 {% hint style="info" %}
-Since **Model URI** is introduced, there are two ways for model deployments. One way is to deploy a _ready-to-serve packaged model image_ which is packaged by user already directly using **Model Image** field; the other way is to assign a model file using the **Model URI** field with a specified pre-packaged image using **Model Image** field, under the hood, the model file will be packaged into images.
+Since **Model URI** is introduced, there are two ways for model deployments. One way is to deploy a _ready-to-serve packaged model image_ which is [packaged by user already](package-from-language-wrapper/) directly using **Model Image** field; the other way is to assign a model file using the **Model URI** field with a [specified pre-packaged image](pre-packaged-servers/) using **Model Image** field, under the hood, the model file will be packaged into images.
 {% endhint %}
 
 #### Environment Variables
@@ -269,4 +269,4 @@ when used model amount > granted model amount + 10%, a warning message appears, 
 Please contact your system administrator for assistance to upgrade your license to run more models.
 {% endhint %}
 
-To learn the current PrimeHub license information, please see PrimeHub License.
+To learn the current PrimeHub license information, please see [PrimeHub License](../platform-administration/system-settings.md#primehub-license).

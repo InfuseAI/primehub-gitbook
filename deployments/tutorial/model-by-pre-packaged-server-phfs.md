@@ -12,19 +12,19 @@ Remember to enable model deployment in your group, contact your admin if it is n
 
 #### Enable PHFS Storage
 
-Remember to enable PHFS Storage, contact your admin if it is not enabled yet.
+Remember to [enable PHFS Storage](../../technology/design/primehub-file-system-phfs.md), contact your admin if it is not enabled yet.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 PHFS, currently, supports _writing files sequentially only_; within this limitation, writing model files in `HDF5` format directly into PHFS will cause the error, `Problems closing file (file write failed: ...)` since `HDF5` uses _seek_ while writing.
 {% endhint %}
 
-{% hint style="success" %}
+{% hint style="info" %}
 In this case, we suggest this step: _writing HDF5 files into user home directory directly_ rather than PHFS, then copying files to PHFS for the preparation of model deployments
 {% endhint %}
 
 ### Tutorial Steps
 
-1. Go to User Portal and select `Notebooks`.
+1. Go to `Notebooks`.
 2.  Then we are in spawner page, here we choose the instance type with configuration `(CPU: 1 / Memory: 2 G / GPU: 0)`. &#x20;
 
     <figure><img src="../../.gitbook/assets/mdeploy_quickstart_notebook_instanceType.png" alt=""><figcaption></figcaption></figure>
@@ -32,9 +32,11 @@ In this case, we suggest this step: _writing HDF5 files into user home directory
     Also, we choosing the `TensorFlow 2.2` as our runtime image and clicking on `Start Notebook` button, e.g. `infuseai/docker-stacks:tensorflow-notebook-v2-2-1-a7f9696a`
 
     <figure><img src="../../.gitbook/assets/mdeploy_quickstart_notebook_image.png" alt=""><figcaption></figcaption></figure>
-3.  Once the notebook is started, running this example notebook to train and save a simple MNIST model.&#x20;
+3.  Once the notebook is started, running this [example notebook](model-by-pre-packaged-server-phfs.md#example-file) to train and save a simple MNIST model.&#x20;
 
     <figure><img src="../../.gitbook/assets/mdeploy_quickstart_notebook.png" alt=""><figcaption></figcaption></figure>
+
+
 4.  If we want to deploy a model trained from Notebook, just move it to the `phfs` directory.&#x20;
 
     <figure><img src="../../.gitbook/assets/mdeploy_quickstart_notebook_phfs.png" alt=""><figcaption></figcaption></figure>
@@ -43,7 +45,7 @@ In this case, we suggest this step: _writing HDF5 files into user home directory
 
     <figure><img src="../../.gitbook/assets/mdeploy_quickstart_shared_files_upload.gif" alt=""><figcaption></figcaption></figure>
 5. Then, back to User Portal and select `Deployments`.
-6. We are in model deployment list page, now clicking on `Create Deployment` button.
+6. In the model deployment list page, now clicking on `Create Deployment` button.
 7.  Fill in the `Deployment name` field with `quickstart-mnist`
 
     Select the `Model Image` field with `TensorFlow2 server`; This is a pre-packaged model server image that can serve `TensorFlow 2` model.&#x20;
@@ -155,7 +157,11 @@ In this case, we suggest this step: _writing HDF5 files into user home directory
     }
     ```
 
+### Example File
+
+{% file src="../../.gitbook/assets/tf-train-mnist.ipynb" %}
+
 ### Reference
 
-* For the completed model deployment feature introduction, see Model Deployment.
-* For the customized pre-packaged server instruction, see Pre-packaged servers.
+* For the completed model deployment feature introduction, see [Model Deployment](../deployments.md).
+* For the customized pre-packaged server instruction, see [Pre-packaged servers](../pre-packaged-servers/).
