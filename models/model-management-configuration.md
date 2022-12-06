@@ -1,6 +1,6 @@
 # Model Management Configuration
 
-In order to use the Model Management feature, a running reachable MLflow instance is required. Also, Group Administrator must configure Group Setting with MLflow-related information.
+In order to use the Model Management feature, a running reachable MLflow instance is required. Also, Group Administrator must configure [Group Setting](../group-administration/settings.md#mlflow) with MLflow-related information.
 
 According to a binding MLflow instance, Group Administrators could choose either one of ways:
 
@@ -9,7 +9,7 @@ According to a binding MLflow instance, Group Administrators could choose either
 
 ### MLflow instances
 
-There are some key considerations when setting up a MLflow instance to make **Model Management** and **Deployment** working together, especially deploy a model from the `MLflow Model Registry`.
+There are some key considerations when setting up a [MLflow instance](../apps/tutorial/create-an-mlflow-server.md) to make **Model Management** and **Deployment** working together, especially deploy a model from the `MLflow Model Registry`.
 
 #### Installed MLflow server by PrimeHub Apps
 
@@ -48,7 +48,7 @@ So far, you supposedly already have a running MLFlow instance, either installed 
 
 <figure><img src="../.gitbook/assets/group-mlflow-configuration-example.png" alt=""><figcaption></figcaption></figure>
 
-If using **installed MLflow server by Apps**, see Group Setting - MLflow section.
+If using **installed MLflow server by Apps**, see [Group Setting - MLflow section](../group-administration/settings.md#mlflow).
 
 Otherwise, in MLflow tab of Group Setting, configure these two settings with the information of externally-hosted MLflow:
 

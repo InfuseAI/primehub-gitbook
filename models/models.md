@@ -12,7 +12,7 @@ Regarding managing versioned models, PrimeHub, by integrating well-known _MLflow
 
 ### MLflow is required
 
-A running installed MLflow instance is required and Group Setting has to be configured with relative information.
+A running installed [MLflow instance](../apps/tutorial/create-an-mlflow-server.md) is required and [Group Setting](../group-administration/settings.md) has to be configured with relative information.
 
 **MLflow setting is not configured yet**
 
@@ -26,7 +26,7 @@ A running installed MLflow instance is required and Group Setting has to be conf
 
 The page displays registered models from binding MLflow.
 
-* See Tutorial: Use MLflow Tracking.
+* See [Tutorial: Use MLflow Tracking](../apps/tutorial/create-an-mlflow-server.md).
 
 {% hint style="info" %}
 If a loading page displays only, please double check `MLflow Tracking URI` configuration of MLflow setting in Group Setting.
@@ -80,7 +80,7 @@ In order to deploy a certain versioned model, click `Deploy` of a versioned mode
 
 #### Deployed
 
-The model which is used for the deployment is with the information of the **deployment name** under `Deployed by` column. Click the deployment will navigate into the deployment detail page.
+The model which is used for the deployment is with the information of the **deployment name** under `Deployed by` column. Click the deployment will navigate into the [deployment detail](../deployments/deployments.md#deployment-detail) page.
 
 <figure><img src="../.gitbook/assets/model-mgt-deployed.png" alt=""><figcaption></figcaption></figure>
 
@@ -90,4 +90,4 @@ From the deployment information page, `Model URI` presents `models:/<model_name>
 * `<model_name>`:the name of the model
 * `<model_version`: the version number of the model
 
-See Tutorial: Manage and Deploy a Model.
+See [Tutorial: Manage and Deploy a Model](manage-and-deploy-model.md).

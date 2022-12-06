@@ -1,10 +1,14 @@
+---
+description: Tutorial
+---
+
 # Manage and Deploy Model
 
 In this tutorial, we will use the MNIST model in TensorFlow 2 as an example to show how to train, manage, and deploy a model.
 
 ### What we need?
 
-* Remember to follow configuration to enable model management in your group, contact your admin if it is not enabled yet.
+* Remember to follow [configuration](model-management-configuration.md) to enable model management in your group, contact your admin if it is not enabled yet.
 *   Remember to enable model deployment in your group, contact your admin if it is not enabled yet.&#x20;
 
     <figure><img src="../.gitbook/assets/mdeploy_enable.png" alt=""><figcaption></figcaption></figure>
@@ -15,6 +19,8 @@ In this tutorial, we will use the MNIST model in TensorFlow 2 as an example to s
     Download model\_management\_tutorial.ipynb. This example file is referred to [TensorFlow 2 quickstart for beginners](https://www.tensorflow.org/tutorials/quickstart/beginner) with added cell to enable [MLflow autologging API](https://www.mlflow.org/docs/latest/python\_api/mlflow.tensorflow.html#mlflow.tensorflow.autolog).&#x20;
 * Choose a group with enabled Shared Volume (a.k.a Group Volume).
 
+{% file src="../.gitbook/assets/model_management_tutorial.ipynb" %}
+
 {% hint style="info" %}
 Please have the image, the instance type on PrimeHub, or request administrators for assistance before we start.
 {% endhint %}
@@ -23,7 +29,7 @@ Please have the image, the instance type on PrimeHub, or request administrators 
 
 1. Enter Notebooks from User Portal, select the image, the instance type, and start a notebook.
 2. While inside the group volume, copy/drag the downloaded `model_management_tutorial.ipynb` to File Browser. Then, let's open it and **Run All Cells**.
-3.  Enter Models from User Portal then click on `MLflow UI` button.&#x20;
+3.  Enter Models then click on `MLflow UI` button.&#x20;
 
     <figure><img src="../.gitbook/assets/model-mgt-mlflow-ui-button.png" alt=""><figcaption></figcaption></figure>
 4.  In the MLflow UI, We will see a newly completed run under the `Default` experiment. Now clicking on this run.&#x20;
@@ -38,7 +44,7 @@ Please have the image, the instance type on PrimeHub, or request administrators 
 7.  We choose `Create New Model` and fill in the `Model Name` field with `tensorflow-mnist-model`. Let's clicking on `Register` button to complete model registration.&#x20;
 
     <figure><img src="../.gitbook/assets/model-mgt-mlflow-register-model-2.png" alt=""><figcaption></figcaption></figure>
-8.  Enter Models from User Portal, we will see the registered model in the model list. Now clicking on our model `tensorflow-mnist-model`.&#x20;
+8.  Enter Models, we will see the registered model in the model list. Now clicking on our model `tensorflow-mnist-model`.&#x20;
 
     <figure><img src="../.gitbook/assets/model-mgt-model-list.png" alt=""><figcaption></figcaption></figure>
 9.  In the model detail page, we can find all registered model version here. Let's clicking on the `Deploy` button of `Version 1`.&#x20;
@@ -47,7 +53,7 @@ Please have the image, the instance type on PrimeHub, or request administrators 
 10. We can deploy the selected model version to a new deployment or update to the existing deployment. We choose `Create new deployment` and click on `OK` button.&#x20;
 
     <figure><img src="../.gitbook/assets/model-mgt-deploy-model.png" alt=""><figcaption></figcaption></figure>
-11. We will be directed to create deployment page. Fill in the `Deployment Name` field with `tensorflow-mnist`. Select the `Model Image` field with `TensorFlow2 server`; this is a pre-packaged model server image that can serve `MLflow autologged TensorFlow model`.&#x20;
+11. We will be directed to [create deployment page](../deployments/deployments.md#create). Fill in the `Deployment Name` field with `tensorflow-mnist`. Select the `Model Image` field with `TensorFlow2 server`; this is a pre-packaged model server image that can serve `MLflow autologged TensorFlow model`.&#x20;
 
     <figure><img src="../.gitbook/assets/mdeploy_create_model_image_suggestion.png" alt=""><figcaption></figcaption></figure>
 
@@ -94,5 +100,5 @@ Please have the image, the instance type on PrimeHub, or request administrators 
 
 ### Reference
 
-* For the completed model management feature introduction, see Model Management.
+* For the completed model management feature introduction, see [Model Management](models.md).
 * For the reference and limitation of MLflow autologging API in TensorFlow, see [MLflow autologging](https://www.mlflow.org/docs/latest/python\_api/mlflow.tensorflow.html#mlflow.tensorflow.autolog).
