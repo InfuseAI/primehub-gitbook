@@ -15,7 +15,8 @@
 * [Permission](technology/permission.md)
 * [Tiers Feature Comparison](technology/tiers-feature-comparison.md)
 * [License Comparison](technology/license-comparison.md)
-* [User Portal](technology/user-portal.md)
+* [User Portal](technology/user-portal/README.md)
+  * [Generate an PrimeHub API Token](technology/user-portal/generate-an-primehub-api-token.md)
 
 ## End-to-End Tutorial
 

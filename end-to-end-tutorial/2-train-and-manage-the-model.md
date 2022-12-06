@@ -1,4 +1,4 @@
-# Part 2 - Train and Manage the Model
+# 2 - Train and Manage the Model
 
 ### Introduction
 
@@ -14,13 +14,13 @@ MLFlow is an open-source platform to manage the machine learning model, includin
 * [MLflow Website](https://mlflow.org/)
 * [MLflow Documentation](https://mlflow.org/docs/latest/index.html)
 
-The PrimeHub platform integrates MLFlow as the model management function. You can see the result on the PrimeHub model page. You can see the detailed information here:
+The PrimeHub platform integrates MLFlow as the model management function. You can see the result on the [PrimeHub model](../models/manage-and-deploy-model.md) page. You can see the detailed information here:
 
 ### Step 1: Create the MLflow Server
 
 To track our experiments, we must first install MLflow, which is available as part of PrimeHub Apps. Use the guide at the following link to install MLflow:
 
-* Create an MLflow server
+* [Create an MLflow server](../apps/tutorial/create-an-mlflow-server.md)
 
 ### Step 2: Training the model
 
@@ -58,13 +58,17 @@ kaggle_key = <kaggle-key>
 label_data_file_path = "project-6-at-2022-09-19-04-17-b9f72b54.json"
 ```
 
-> More information about obtaining your Kaggle username and key can be found in the [Kaggle API documentation](https://www.kaggle.com/docs/api)
+{% hint style="info" %}
+More information about obtaining your Kaggle username and key can be found in the [Kaggle API documentation](https://www.kaggle.com/docs/api)
+{% endhint %}
 
 #### 3. Run the Notebook and train the model
 
 <figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-train-model (1).png" alt=""><figcaption></figcaption></figure>
 
-> Note: If you want to run the training Notebook in the background job, we also support submitting the Jupyter Notebook as a job method. Please see the advanced tutorial section for details.
+{% hint style="success" %}
+Note: If you want to run the training Notebook in the background job, we also support submitting the Jupyter Notebook as a job method. Please see the [advanced tutorial](advanced/notebook-as-a-job.md) section for details.
+{% endhint %}
 
 ### Step 3: Use MLFlow to manage the model
 

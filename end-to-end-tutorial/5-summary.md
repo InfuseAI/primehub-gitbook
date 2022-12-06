@@ -1,6 +1,4 @@
-# Summary
-
-Enterprise Applicable to Enterprise Edition
+# 5 - Summary
 
 We've achieved a lot during this tutorial, let's review what we have achieved and how PrimeHub helped us at each stage of the process.
 
@@ -12,15 +10,15 @@ In this part, we introduced the MLOps concept and learned how to build a good da
 
 ### Part 2 - Train and Tune the Model
 
-In this part, we trained the model in Jupyter Notebook. The results were **automatically logged into MLflow** for experiment tracking. Also, if you want to run these PrimeHub functions in CI/CD pipeline automatically, you can see the detailed information about the PrimeHub SDK/CLI tool in the advanced tutorial section.
+In this part, we trained the model in Jupyter Notebook. The results were **automatically logged into MLflow** for experiment tracking. Also, if you want to run these PrimeHub functions in CI/CD pipeline automatically, you can see the detailed information about the [PrimeHub SDK/CLI tool](advanced/primehub-sdk-cli-tools.md) in the advanced tutorial section.
 
 Once connected to PrimeHub, **MLflow auto logging** means that job results can be collected and reviewed easily. Data on parameters, metrics, and artifacts are available for model training history.
 
-If you want to label the image dataset we can used **Label Studio**, installed via **PrimeHub Apps**, to label a series of screw images in this part. You can see the detailed information about labeling data in the advanced tutorial section.
+If you want to label the image dataset we can used **Label Studio**, installed via **PrimeHub Apps**, to label a series of screw images in this part. You can see the detailed information about [labeling data](advanced/labeling-the-data.md) in the advanced tutorial section.
 
 ### Part 3 - Manage, Compare, and Deploy the Model
 
-In this part, we **compared the results** of our jobs and **registered the better-performing model** to **Primehub Models**. After customizing a server image, we **deployed the model** as a web service endpoint.
+In this part, we **compared the results** of our jobs and **registered the better-performing model** to **PrimeHub Models**. After customizing a server image, we **deployed the model** as a web service endpoint.
 
 PrimeHub's **Model Management** stores version-managed models for use in different projects, frameworks, or any designated use. Users can access previously trained models, deploy models, and share well-trained models across teams.
 

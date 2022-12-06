@@ -43,7 +43,7 @@ If you see the content that want us to insert the authorization code, please cli
 
 #### Step 3: Check the group information
 
-```bash
+```python
 if ph.is_ready():
     print("PrimeHub Python SDK setup successfully")
     print("Current Group:", ph.primehub_config.current_group)
@@ -51,13 +51,13 @@ else:
     print("PrimeHub Python SDK couldn't get the group information, please check the configuration.")
 ```
 
-```bash
+```json
 Current Group: {'id': <group-id>, 'name': 'InfuseAI', 'displayName': 'InfuseAI'}
 ```
 
 #### Step 4: Use Primehub python SDK to submit the PrimeHub job.
 
-```bash
+```python
 # Submit a job
 config = {
     "instanceType": "cpu-1",
@@ -74,7 +74,7 @@ print(short_job)
 
 Submit the job and check the logs.
 
-```bash
+```python
 # Wait the job to be done
 print('[ Waiting ]')
 ph.jobs.wait(short_job['id'])

@@ -1,4 +1,4 @@
-# Part 3 - Compare, Register and Deploy the Model
+# 3 - Compare, Register and Deploy the Model
 
 ### Introduction
 
@@ -24,7 +24,7 @@ There are two methods to get your pre-package docker image:
 1.  You can use our model pre-package docker image:
 
     Image Name: `infuseaidev/tensorflow2-prepackaged:screw-classification`
-2. You can build your own pre-packaged docker image by followed the advanced guide.
+2. You can [build your own pre-packaged docker image](advanced/custom-build-the-seldon-server.md) by followed the advanced guide.
 
 ### Step 1: Compared and Register the model
 

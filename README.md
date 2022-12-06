@@ -2,7 +2,9 @@
 description: PrimeHub Installation on Amazon Web Services
 ---
 
-# One-Click Install
+# 🚀 One-Click Install
+
+## Amazon Web Services (AWS)
 
 PrimeHub is a Kubernetes-based cloud-native Machine Learning platform.
 
@@ -10,4 +12,4 @@ With AWS CloudFormation, the distance between you and ready-to-use PrimeHub is j
 
 Visit [one.primehub.io ⇗](https://one.primehub.io/) to start.
 
-Don't have an AWS account? We have other ways for you.
+Don't have an AWS account? We have [manual ways](getting-started/install-manually.md) for you.

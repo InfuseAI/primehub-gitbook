@@ -1,4 +1,4 @@
-# Part 1 - MLOps Introduction and Scoping the Project
+# 1 - MLOps Introduction and Scoping the Project
 
 ### What is MLOps?
 
@@ -28,7 +28,9 @@ Build the data processing pipeline, we can call it the DataOps pipeline. includi
 * **P**: Check the data **P**rofiling content. We can use the dashboard to show the data insight and keep modifying the Data ETL pipeline.
 * **A:** Check the data quality and **A**ssertion status. We must ensure that the dataset quality can be assured before using it.
 
-> InfuseAI provides the open-source data assertion and profiling tool - Piperider to check the data quality toolkit for data professionals. Please see more detail [here](https://www.piperider.io/).
+{% hint style="info" %}
+InfuseAI provides the open-source data assertion and profiling tool - _**Piperider**_ to check the data quality toolkit for data professionals. Visit [here](https://www.piperider.io/) for the detail.
+{% endhint %}
 
 #### 3. Model Engineering
 
@@ -47,16 +49,16 @@ Here are some steps to build up a modeling pipeline.
 
 In this demo showcase, we can use the project table to define the project scope and check the information:
 
-| Variable              | Content                                                                             |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| Project Name          | Screw defect detection                                                              |
-| Dataset               | Screw dataset                                                                       |
-| Dataset Resource Link | https://www.kaggle.com/datasets/ruruamour/screw-dataset                             |
-| Model                 | Image Classification Model                                                          |
-| Code language         | Python 3.7 + Tensorflow 2.5                                                         |
-| Project Goal          | Use the computer vision recognition method to analyze the screw images.             |
-| Measurement           | Accuracy, Loss                                                                      |
-| Delivery              | <p>1. Metrics information<br>2. deployment service<br>3. Application service UI</p> |
+| Variable              | Content                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Project Name          | Screw defect detection                                                                                             |
+| Dataset               | Screw dataset                                                                                                      |
+| Dataset Resource Link | [https://www.kaggle.com/datasets/ruruamour/screw-dataset](https://www.kaggle.com/datasets/ruruamour/screw-dataset) |
+| Model                 | Image Classification Model                                                                                         |
+| Code language         | Python 3.7 + Tensorflow 2.5                                                                                        |
+| Project Goal          | Use the computer vision recognition method to analyze the screw images.                                            |
+| Measurement           | Accuracy, Loss                                                                                                     |
+| Delivery              | <p>1. Metrics information<br>2. deployment service<br>3. Application service UI</p>                                |
 
 ### Next Section
 

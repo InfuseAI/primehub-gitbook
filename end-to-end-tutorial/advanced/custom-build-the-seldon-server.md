@@ -4,8 +4,6 @@ description: How to custom build the Seldon server
 
 # Custom build the Seldon server
 
-Enterprise Applicable to Enterprise Edition
-
 ### Introduction
 
 We need to set up the container environment to deploy our registered model. We’ll customize a pre-packaged model image for this step to suit our needs. This will demonstrate how to modify, build, and deploy a custom image using PrimeHub Deployments.
