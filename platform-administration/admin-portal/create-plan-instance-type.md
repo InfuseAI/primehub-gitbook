@@ -41,7 +41,7 @@ According to our plan, let's create instance types for users, here we will creat
 3. Fill in `Name` with _medium-with-gpu_.
 4. Fill in `CPU Limit` with _16_ and fill in `Memory Limit` with _256GB_.
 5. Fill in `GPU Limit` with _2_.
-6. (Optional) `Overcommitting`, if required, enabled it and fill in `CPU Request` with _14_ and `Memory Request` with _200GB_. More detail \[Overcommitting].
+6. (Optional) `Overcommitting`, if required, enabled it and fill in `CPU Request` with _14_ and `Memory Request` with _200GB_. More detail \[[Overcommitting](../instance-type-management/#overcommitting-advanced-feature)].
 7. Click `edit groups` and select groups which can have this instance type.
 8. (Optional) `Tolerations` if required: \[[Reference](../instance-type-management/toleration.md)]
 9. (Optional) `NodeSelector` if required: \[[Reference](../instance-type-management/nodeselector.md)]

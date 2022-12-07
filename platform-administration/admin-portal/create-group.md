@@ -1,6 +1,8 @@
-# Create Group
+---
+description: This quickstart shows how to create a new group.
+---
 
-This quickstart shows how to create a new group.
+# Create Group
 
 PrimeHub is group-centric. This means that users, instance types, images, and datasets must be assigned to a group. Without being assigned to a group, these elements cannot be utilized, and users will not be able to access any features of PrimeHub.
 

@@ -16,14 +16,14 @@ Hovering over top-right icon, there is a Profile Menu containing **User Profile*
 
 ### Administration Features
 
-* `Groups` where Admin can manage groups. See Group Management.
-* `Users` where Admin can manage users. See User Management.
-* `Instance Types` where Admin can manage instance types. See Instance Type Management.
-* `Images` where Admin can manage images. See Image Management.
-* `Volumes` where Admin can manage volumes. See Volume Management.
-* `Secrets` where Admin can manage secrets. See Secret Management.
+* `Groups` where Admin can manage groups. See [Group Management](group-management.md).
+* `Users` where Admin can manage users. See [User Management](user-management.md).
+* `Instance Types` where Admin can manage instance types. See [Instance Type Management](instance-type-management/).
+* `Images` where Admin can manage images. See [Image Management](image-management/).
+* `Volumes` where Admin can manage volumes. See [Volume Management](volume-management/).
+* `Secrets` where Admin can manage secrets. See [Secret Management](secret-management.md).
 * `Notebooks Admin` where Admin can manage Notebooks of users.
-* `Usage Report` where Admin can review monthly reports of usage. See Usage Report. Enterprise
-* `App Settings` where Admin can import customized apps. See App Settings.
-* `System Settings` where Admin can configure system-wise settings. See System Settings.
+* `Usage Report` where Admin can review monthly reports of usage. See [Usage Report](usage-reports.md). Enterprise
+* `App Settings` where Admin can import customized apps. See [App Settings](app-settings.md).
+* `System Settings` where Admin can configure system-wise settings. See [System Settings](system-settings.md).
 * `Grafana` where Admin can view dashboards on **Grafana**.

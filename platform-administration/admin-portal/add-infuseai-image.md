@@ -1,6 +1,6 @@
 # Add InfuseAI Image
 
-InfuseAI provides and maintain a serious of public images on DockerHub. This document shows how to add images provided by InfuseAI.
+InfuseAI provides and maintains a serious of public images on DockerHub. This document shows how to add images provided by InfuseAI.
 
 First of all we check and pick up a pari of images from [Available Image List](../../reference/infuseai-images-list.md).
 
