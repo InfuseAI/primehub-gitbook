@@ -4,10 +4,10 @@
 
 Run VS Code on any machine anywhere and access it in the browser.
 
-| Property         | Description                                                             |
-| ---------------- | ----------------------------------------------------------------------- |
-| App Image        | [`codercom/code-server`](https://hub.docker.com/r/codercom/code-server) |
-| Official Website | https://github.com/cdr/code-server                                      |
+| Property         | Description                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
+| App Image        | [`codercom/code-server`](https://hub.docker.com/r/codercom/code-server)  |
+| Official Website | [https://github.com/cdr/code-server](https://github.com/cdr/code-server) |
 
 ### Screenshots
 

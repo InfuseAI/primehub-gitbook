@@ -4,10 +4,10 @@
 
 Label Studio is an open source data labeling tool for labeling and exploring multiple types of data.
 
-| Property         | Description                                                                     |
-| ---------------- | ------------------------------------------------------------------------------- |
-| App Image        | [`heartexlabs/label-studio`](https://hub.docker.com/r/heartexlabs/label-studio) |
-| Official Website | https://github.com/heartexlabs/label-studio                                     |
+| Property         | Description                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| App Image        | [`heartexlabs/label-studio`](https://hub.docker.com/r/heartexlabs/label-studio)            |
+| Official Website | [https://github.com/heartexlabs/label-studio](https://github.com/heartexlabs/label-studio) |
 
 ### Screenshots
 

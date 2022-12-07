@@ -33,4 +33,6 @@ You can manage external dependencies by adding:
 
 When initializing, Streamlit will look for requirements files in the same directory of `FILE_PATH` and install external dependencies. Your Streamlit app is ready while the "You can now view your Streamlit app in your browser." shows up in the app logs.&#x20;
 
+<figure><img src="../.gitbook/assets/primehub-app-builtin-streamlit-opencv-example.png" alt=""><figcaption></figcaption></figure>
+
 If there are a lots of dependencies, it may take some time to install while starting your app. Any change not related to dependencies should show up immediately. Remember to restart your app after adding new dependencies.
