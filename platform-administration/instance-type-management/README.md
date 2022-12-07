@@ -24,7 +24,7 @@ You need to fill in the fields of Basic Info in the above picture:
 * `CPU Request` define how many CPU are requested to use by this Instance Type initially. Once it is enabled, instances are guaranteed to get the amount of CPU they request. If `CPU Request` < `CPU Limit`, the system will try to overcommit CPU resources within the limit if more resources are available.
 * `Memory Request` define how many Memory are requested to use by this Instance Type initially. Once it is enabled, instances are guaranteed to get the amount of Memory they request. If `Memory Request` < `Memory Limit`, the system will try to overcommit Memory resources within the limit if more resources are available.
 
-For details, please see Quality of Service for Pods and [Resource QoS](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/node/resource-qos.md#resource-quality-of-service-in-kubernetes).
+For details, please see [Quality of Service for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/) and [Resource QoS](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/node/resource-qos.md#resource-quality-of-service-in-kubernetes).
 
 * `Global` If it is turned on, this Instance Type can be chosen by everyone. You can grant permission to specific groups in the `edit groups`.
 
@@ -71,7 +71,7 @@ Filling in `key/value` with key-value of a label you want to specify.
 
 Click `Confirm` to complete the addition.
 
-For a use case, please see Node Selector Use Case.
+For a use case, please see [Node Selector Use Case](nodeselector.md).
 
 
 
