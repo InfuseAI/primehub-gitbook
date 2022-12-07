@@ -17,6 +17,7 @@
   * [PrimeHub File System (PHFS)](technology/design/primehub-file-system-phfs.md)
   * [PrimeHub Store](technology/design/primehub-store.md)
   * [Log Persistence](technology/design/log-persistence.md)
+  * [PrimeHub Apps](technology/design/primehub-apps.md)
 * [Tiers Feature Comparison](technology/tiers-feature-comparison/README.md)
   * [License Comparison](technology/tiers-feature-comparison/license-comparison.md)
 * [User Portal](technology/user-portal/README.md)

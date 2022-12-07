@@ -1,6 +1,6 @@
 # Shared Files
 
-The **Shared Files** feature is based on PHFS Storage to store shared files. Group members are able to browse shared files and able to upload files for sharing with other group members.
+The **Shared Files** feature is based on [PHFS Storage](technology/design/primehub-file-system-phfs.md) to store shared files. Group members are able to browse shared files and able to upload files for sharing with other group members.
 
 <figure><img src=".gitbook/assets/v311-shared-file-list.png" alt=""><figcaption></figcaption></figure>
 
@@ -71,7 +71,7 @@ The nested directories won't be created until a file is uploaded into, in other 
 
 ### Create/Update a Dataset
 
-The `Shared Files` is the whole files storage and the Datasets is the specified collection of files that based on the `Shared Files`.
+The `Shared Files` is the whole files storage and the [Datasets](datasets.md) is the specified collection of files that based on the `Shared Files`.
 
 We can directly choose some files or directories from the `Shared Files` list, it will pop-up dialogue to `Create new dataset` or `Add to existing dataset`.
 

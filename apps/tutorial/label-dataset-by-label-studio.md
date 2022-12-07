@@ -26,11 +26,11 @@ It will open a new window and show the Label Studio UI. You can find your login 
 
 #### What we need?
 
-* The data volume in PrimeHub you want to label (we use `/datasets/dog-demo` in this tutorial)
+* The dataset in PrimeHub you want to label (we use `/datasets/dog-demo` in this tutorial)
 * The directory in group volume that you want to save the labeled results (we use `/project/<group_name>/dog-demo-labeled` in the tutorial)
 
 {% hint style="info" %}
-Please have the dataset, group volume, or request administrators for assistance before we start.
+Please have the data volume, group volume, or request administrators for assistance before we start.
 {% endhint %}
 
 #### Steps
@@ -74,19 +74,25 @@ Here are examples of good and bad screws. The first image is the good screw. The
 
 #### What we need?
 
-* Create a data volume in PrimeHub called `screw`, and set the read/write permission to your group. Please download the app\_tutorial\_labelstudio\_screw\_dataset.zip, unzip it and upload images to the `~/datasets/screw` folder by the notebook
+* Create a [data volume](../../platform-administration/volume-management/#creating-new-volume) in PrimeHub called `screw`, and set the read/write permission to your group. Please download the _app\_tutorial\_labelstudio\_screw\_dataset.zip_, unzip it and upload images to the `~/datasets/screw` folder by the notebook
 * Create a directory `/project/<group_name>/screw-labeled` in group volume to save the labeled results
 * The image `infuseai/docker-stacks:pytorch-notebook-v1-7-0-04b2c51f`
 * An instance type >= minimal requirement (CPU=1, GPU=0, Mem=2G)
-* The prepared python file of the example app\_tutorial\_labelstudio\_screw\_prepare.py and upload it to `~/screw_train` by the notebook
-* The prepared notebook file of the example app\_tutorial\_labelstudio\_screw\_train.ipynb and upload it to `~/screw_train` by the notebook
+* The prepared python file of the example _app\_tutorial\_labelstudio\_screw\_prepare.py_ and upload it to `~/screw_train` by the notebook
+* The prepared notebook file of the example _app\_tutorial\_labelstudio\_screw\_train.ipynb_ and upload it to `~/screw_train` by the notebook
 
-{% hint style="info" %}
+{% file src="../../.gitbook/assets/app_tutorial_labelstudio_screw_dataset.zip" %}
+
+{% file src="../../.gitbook/assets/app_tutorial_labelstudio_screw_prepare (1).py" %}
+
+{% file src="../../.gitbook/assets/app_tutorial_labelstudio_screw_train (1).ipynb" %}
+
+{% hint style="warning" %}
 Please have the data volume, group volume, or request administrators for assistance before we start.
 {% endhint %}
 
-{% hint style="info" %}
-To use the new data volume, you cannot use the label studio app that has been created before you created the new data volume. You need to create a new label studio app.
+{% hint style="warning" %}
+To use the new data volume, you need to create a label studio app **after** the creation of the data volume.&#x20;
 {% endhint %}
 
 #### Steps

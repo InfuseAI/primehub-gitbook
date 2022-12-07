@@ -28,7 +28,7 @@ likewise it displays a blank when no installed one.
 
 ### App Store
 
-App Store menu includes built-in Apps templates and user-customizing Apps template if any.
+App Store menu includes built-in Apps templates and [user-customizing](tutorial/create-your-own-app.md) Apps template if any.
 
 <figure><img src="../.gitbook/assets/app_store_v310 (1).png" alt=""><figcaption></figcaption></figure>
 

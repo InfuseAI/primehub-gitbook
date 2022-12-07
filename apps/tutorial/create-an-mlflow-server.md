@@ -1,13 +1,10 @@
 # Create an MLflow server
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition\
-
-
 This tutorial covers the basic flow to help you get started with MLflow in PrimeHub.
 
 ### Install MLflow
 
-First, you need to install it in the `Apps` tab. Please check the Overview section to learn how to install an App. In the installing process, you can change the `backend store` and `artifact store` environment variables. If you don't know the meaning of the environment variables, can just use the default values or check the [MLflow Official Doc](https://mlflow.org/docs/latest/tracking.html#mlflow-tracking-servers) and Our Setting for more details.
+First, you need to install it in the `Apps` tab. Please check the [Overview](../apps-overview.md) section to learn how to install an App. In the installing process, you can change the `backend store` and `artifact store` environment variables. If you don't know the meaning of the environment variables, can just use the default values or check the [MLflow Official Doc](https://mlflow.org/docs/latest/tracking.html#mlflow-tracking-servers) and Our Setting for more details.
 
 ### MLflow UI
 
@@ -23,7 +20,7 @@ It will open a new window and show the MLflow UI. You can see your experiments a
 
 #### Binding MLflow App to Models (EE Way)
 
-With a running MLflow App, we can bind MLflow service to Models Management. Once binding, on Models, we can view registered models, furthermore deploy these models via Deployments at ease on PrimeHub.
+With a running MLflow App, we can bind MLflow service to [Models Management](../../models/models.md). Once binding, on Models, we can view registered models, furthermore deploy these models via Deployments at ease on PrimeHub.
 
 **Steps**
 
@@ -55,6 +52,8 @@ In the **MLflow UI URI** text field enter the **App URL** value we copied earlie
 
     Download app\_tutorial\_mlflow\_demo\_notebook.ipynb
 * Choose a group with enabled Shared Volume (a.k.a Group Volume)
+
+{% file src="../../.gitbook/assets/app_tutorial_mlflow_demo_notebook (1).ipynb" %}
 
 > Please have the image, the instance type on PrimeHub, or request administrators for assistance before we start.
 

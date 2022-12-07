@@ -1,8 +1,8 @@
 # Create Your Own App
 
-This tutorial demostrate how to create your own PrimeHub app using `PhAppTemplate` CRD.
+This tutorial shows how to create your own PrimeHub app using `PhAppTemplate` CRD.
 
-For more information about the PrimeHub app, please check our design document.
+For more information about the PrimeHub app, please check our [design document](../../technology/design/primehub-apps.md).
 
 ### Limitations
 
@@ -134,7 +134,7 @@ The `svcTemplate` is basically the same as `Service` resource in Kubernetes. Pri
 
 If your application requires a persistant storage to keep your data, you can use the `group volume`.
 
-Every PrimeHub app is created inside a group context. If you have enabled group volume feature for that group, then that group volume will be mounted to your application container at `<group-volume>/phapplications/<app-id>`. You can use the predefined environment variable `PRIMEHUB_APP_ROOT` to tell your application to store persistant data into that location.
+Every PrimeHub app is created inside a group context. If you have [enabled group volume](../../platform-administration/group-management.md#shared-volume) feature for that group, then that group volume will be mounted to your application container at `<group-volume>/phapplications/<app-id>`. You can use the predefined environment variable `PRIMEHUB_APP_ROOT` to tell your application to store persistant data into that location.
 
 ### Label Studio Example
 
