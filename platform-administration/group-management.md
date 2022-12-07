@@ -61,7 +61,7 @@ The list shows all of users of this group. Click `edit users` to add/remove user
 Also, multiple members are able to be assigned **Group Admin** for a group.
 
 {% hint style="info" %}
-**Group Admin** have the privilege _to access features dedicated to them on User Portal_, such as Image.
+**Group Admin** have the privilege _to access features dedicated to them on User Portal_, such as [Image](../group-administration/images.md).
 {% endhint %}
 
 ***
