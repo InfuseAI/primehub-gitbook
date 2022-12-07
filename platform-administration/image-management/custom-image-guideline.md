@@ -20,7 +20,7 @@ For the sake of building images with JupyterHub, we must use base images which a
 
 There are two official registries where we can have JupyterHub-compatible base images, one is from **Jupyter**, the other is from **InfuseAI**.
 
-Please refer to the Available Images List for details on images maintained by InfuseAI.
+Please refer to the [Available Images List](../../reference/infuseai-images-list.md) for details on images maintained by InfuseAI.
 
 | Provider | Registry                                      | Reference                                                                                                        |
 | -------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -30,7 +30,7 @@ Please refer to the Available Images List for details on images maintained by In
 
 ### Build Images via Images
 
-We can build images via `Images` by specification of a base image with required packages, please goes to Images feature for details and try a build image quickstart.
+We can build images via `Images` by specification of a base image with required packages, please goes to [Images](./#add-new-image) feature for details and try a [build image](../admin-portal/build-image.md) quickstart.
 
 ### Build Images via Dockerfile
 
@@ -58,13 +58,9 @@ E.g. a Dockerfile using a existing image provided by InfuseAI.
 FROM infuseai/docker-stacks/<image>
 ```
 
-Please refer to Available Images List for the latest InfuseAI provided images.
+Please refer to [Available Images List ](../../reference/infuseai-images-list.md)for the latest InfuseAI provided images.
 
 #### Dockerfile Reference
 
 1. [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
 2. [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile\_best-practices/)
-
-### Images Built by repo2docker
-
-For tech savvy users who want to try [repo2docker](https://repo2docker.readthedocs.io/en/latest/) for building images. Please see our technical document repo2docker image to make sure it can be used by PrimeHub.
