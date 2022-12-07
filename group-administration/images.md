@@ -3,7 +3,7 @@
 **Images** is a feature that _Group Admin_ can manage images for the managed group. Only group members can access these group-specific images from the image selection when it is required.
 
 {% hint style="info" %}
-Images is a feature dedicated to Group Admin; only Group Admin can access it from User Portal. Please contact Admin to acquire Group Admin privilege.
+Images is a feature dedicated to [Group Admin](../technology/concept/privilege.md#group-administrator); only Group Admin can access it from User Portal. Please contact Admin to acquire Group Admin privilege.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/group-image-list.png" alt=""><figcaption></figcaption></figure>
@@ -29,7 +29,7 @@ Add an existing image for the group.
 <figure><img src="../.gitbook/assets/group-image-existing.png" alt=""><figcaption></figcaption></figure>
 
 * `Type`: `cpu`, `gpu` and `universal`: Select what type of the image is.
-* `Container image url`: Fill in the Image's url. See [Reference](broken-reference).
+* `Container image url`: Fill in the Image's url. See [Reference](../reference/infuseai-images-list.md).
 *   `Image Pull Secret` Enable and select the secret if a pull-secret is required.&#x20;
 
     <figure><img src="../.gitbook/assets/images_pull_secret_v26.png" alt=""><figcaption></figcaption></figure>
@@ -109,7 +109,3 @@ To rebuild a image, by modification to the details and pressing `Rebuild`.
 Whether adding an existing image or building a custom image for the managed group, the image can be selected from image selection; `i` hint indicates a `Group` image.
 
 <figure><img src="../.gitbook/assets/group-image-selection.png" alt=""><figcaption></figcaption></figure>
-
-### Reference
-
-* Available images provided by InfuseAI
