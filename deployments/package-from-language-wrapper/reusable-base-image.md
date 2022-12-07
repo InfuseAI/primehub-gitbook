@@ -20,7 +20,7 @@ To prepare the base image, there are two methods
 
 ### Build the Base Image by Language Wrapper
 
-Here, we use Tensorflow 2 as a simple showcase. The code is in the [Github](https://github.com/InfuseAI/model-deployment-examples/tree/master/tensorflow2\_prepackage) repo.
+Here, we use Tensorflow 2 as a simple showcase. The code is under [Github](https://github.com/InfuseAI/model-deployment-examples/tree/master/tensorflow2\_prepackage).
 
 #### Build the Base Image
 
@@ -163,7 +163,7 @@ Here, we use Tensorflow 2 as a simple showcase. The code is in the [Github](http
 
 ### Use Pre-packaged Server as Base Image
 
-Here, we use the [tensorflow2 pre-packaged server](../pre-packaged-servers/tensorflow-server.md) as an example.
+Here, we use the tensorflow2 pre-packaged server as an example.
 
 #### Build the Model Image
 

@@ -68,7 +68,7 @@ The PrimeHub model deployment feature is based on Seldon. This doc takes [refere
     * Load or initiate your model under the `__init__` function
     * The predict method takes a numpy-array `X` and list of string `feature_names` (optional), then returns an array of predictions (the return array should be at least 2-dimensional)
 
-    More detailed information on how to write the Python file for model deployment in different frameworks, please refer to the section [Example Codes of Different Frameworks](model-image-for-python.md#optional-example-codes-for-different-frameworks).
+    More detailed information on how to write the Python file for model deployment in different frameworks, please refer to the section [Example Codes for Different Frameworks](broken-reference).
 
 ### Build the Image
 
