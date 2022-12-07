@@ -2,11 +2,11 @@
 
 Datasets feature provides the capabilities of managing datasets resources such as create, update, and delete actions.
 
-Datasets feature is based on Shared Files to store dataset files with additional metadata. Group members can browse dataset files and upload files for sharing with other group members.
+Datasets feature is based on [Shared Files](shared-files.md) to store dataset files with additional metadata. Group members can browse dataset files and upload files for sharing with other group members.
 
 ### Prerequisites
 
-Datasets feature is only enabled if PHFS is enabled.
+Datasets feature is only enabled if [PHFS](technology/design/primehub-file-system-phfs.md) is enabled.
 
 ### Creating New Dataset
 
