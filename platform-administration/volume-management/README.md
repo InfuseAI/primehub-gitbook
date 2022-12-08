@@ -1,7 +1,5 @@
 # Volume Management
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 Volume management provides the capabilities of managing volume resources such as create, delete, edit volumes and of permission-control so that volumes can be accessed only by specific groups accordingly.
 
 ### Creating New Volume
@@ -54,7 +52,9 @@ An nfs volume allows an existing NFS(Network File System) share to be mounted in
 
 NFS settings remain editable after the creation.
 
-> You must have an existing NFS server running with the share exported before you can use it, otherwise unexpected behaviors which are varied with circumstances occur. Please see trouble-shooting.
+{% hint style="info" %}
+You must have an existing NFS server running with the share exported before you can use it, otherwise unexpected behaviors which are varied with circumstances occur.&#x20;
+{% endhint %}
 
 * `NFS Server` Fill in the URL of the server.
 * `NFS Path` Fill in the path to the share.
@@ -91,9 +91,9 @@ Click `Change` to select a secret from the list if a credential is required.
 
 If volume is an environment variable, not a file, you can use `env` type. Clicking `+ Add field` to add fields and fill the `key` and `value`.
 
-> Please be noticed that any `-` will be replaced by `_` in full variable name; the _full name_ of env variables will be `<volume_name>_<variable_key>` in the circumstance.
-
-***
+{% hint style="info" %}
+Please be noticed that any `-` will be replaced by `_` in full variable name; the _full name_ of env variables will be `<volume_name>_<variable_key>` in the circumstance.
+{% endhint %}
 
 #### Groups Access Control
 
@@ -110,4 +110,4 @@ If volume is an environment variable, not a file, you can use `env` type. Clicki
 
 
 
-In terms of type `pv`, `nfs` and `hostpath` volume, we can turn on `Upload Server` feature on the volume editing page. See Upload Server.
+In terms of type `pv`, `nfs` and `hostpath` volume, we can turn on `Upload Server` feature on the volume editing page. See [Upload Server](upload-server.md).
