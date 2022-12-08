@@ -18,18 +18,29 @@ Information of the PrimeHub license:
 
 A license issued by InfuseAI contains `Expiration Date`, `Maximum Nodes`, `Maximum Users`, and `Maximum Deployments`.
 
-*   When a license has expired, a warning message appears.
+{% hint style="info" %}
+When a license has expired, a warning message appears:
 
-    > Your license has expired. Please contact your sales team to extend your license.
-*   When used node amount > granted node amount, a warning message appears.
+<mark style="color:red;">Your license has expired. Please contact your sales team to extend your license.</mark>
+{% endhint %}
 
-    > You are using more nodes than your license allows. Please contact your system administrator.
-*   When used user amount > granted user amount, a warning message appears.
+{% hint style="info" %}
+When used node amount > granted node amount, a warning message appears:
 
-    > Exceed Quota - Number of users exceeds license limitation.
-*   When used deployment amount > granted deployment amount + 10%, a warning message appears.
+<mark style="color:red;">You are using more nodes than your license allows. Please contact your system administrator.</mark>
+{% endhint %}
 
-    > Exceed Quota - Group Maximum Deployments exceeded
+{% hint style="info" %}
+When used user amount > granted user amount, a warning message appears:
+
+<mark style="color:red;">Exceed Quota - Number of users exceeds license limitation.</mark>
+{% endhint %}
+
+{% hint style="info" %}
+When used deployment amount > granted deployment amount + 10%, a warning message appears:
+
+<mark style="color:red;">Exceed Quota - Group Maximum Deployments exceeded</mark>
+{% endhint %}
 
 ### System Settings
 
