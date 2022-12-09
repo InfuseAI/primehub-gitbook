@@ -150,3 +150,5 @@ pip install tensorflow==2.1
 ```
 
 The library/package version varies with different kernels(virtual environment)
+
+<figure><img src="../.gitbook/assets/two_env_tf.png" alt=""><figcaption></figcaption></figure>

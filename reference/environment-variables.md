@@ -23,4 +23,4 @@ The following environment variables are available in the PrimeHub runtime.
 
 #### Volume
 
-We could also add custom environment variables by creating a type `env` of Volume. See Volume.
+We could also add custom environment variables by creating a type `env` of Volume. See [Volume Management](../platform-administration/volume-management/#env).
