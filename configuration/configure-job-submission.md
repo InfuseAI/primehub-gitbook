@@ -58,15 +58,15 @@ jobSubmission:
 
 By default, the job submission log is persistent for 7 days (configured by `jobSubmission.defaultTTLSecondsAfterFinished`). The log is removed once the underlying pod is deleted. Log persistence feature allows to upload log to primehub store.
 
-| Path                           | Description                                                                                                                                                        | Default Value                      |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------- |
-| `store.enabled`                | If the PrimeHub store is enabled                                                                                                                                   | `false`                            |
-| `store.logPersistence.enabled` | If the log persistence is enabled                                                                                                                                  | `true`                             |
-| `fluentd.flushAtShutdown`      | Flush when flunetd is shutdown. Please see `flush_interval` setting in [flunetd buffer document](https://docs.fluentd.org/configuration/buffer-section)            | `false`                            |
-| `fluentd.flushInterval`        | The flush interval. Please see `flush_interval` in [flunetd buffer document](https://docs.fluentd.org/configuration/buffer-section)                                | `3600s`                            |
-| `fluentd.chunkLimitSize`       | The max size of each chunks. Please see `chunk_limit_size` setting in [flunetd buffer document](https://docs.fluentd.org/configuration/buffer-section)             | "256m"                             |
-| `fluentd.storeAs`              | The log format stored in the store. We supports `txt` or `gzip`. Please see `store_as` setting in [flunetd s3 plugin document](https://docs.fluentd.org/output/s3) | `txt`                              |
-| `fluentd.*`                    | The other fluentd settings                                                                                                                                         | Please see the chart configuration |
+| Path                           | Description                                                                                                                                                        | Default Value                                                             |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| `store.enabled`                | If the PrimeHub store is enabled                                                                                                                                   | `false`                                                                   |
+| `store.logPersistence.enabled` | If the log persistence is enabled                                                                                                                                  | `true`                                                                    |
+| `fluentd.flushAtShutdown`      | Flush when flunetd is shutdown. Please see `flush_interval` setting in [flunetd buffer document](https://docs.fluentd.org/configuration/buffer-section)            | `false`                                                                   |
+| `fluentd.flushInterval`        | The flush interval. Please see `flush_interval` in [flunetd buffer document](https://docs.fluentd.org/configuration/buffer-section)                                | `3600s`                                                                   |
+| `fluentd.chunkLimitSize`       | The max size of each chunks. Please see `chunk_limit_size` setting in [flunetd buffer document](https://docs.fluentd.org/configuration/buffer-section)             | "256m"                                                                    |
+| `fluentd.storeAs`              | The log format stored in the store. We supports `txt` or `gzip`. Please see `store_as` setting in [flunetd s3 plugin document](https://docs.fluentd.org/output/s3) | `txt`                                                                     |
+| `fluentd.*`                    | The other fluentd settings                                                                                                                                         | Please see the [chart configuration](../reference/chart-configuration.md) |
 
 ```yaml
 store:

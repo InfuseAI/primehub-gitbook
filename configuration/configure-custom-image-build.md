@@ -4,8 +4,8 @@
 
 PrimeHub provides the capability to build custom images. There are two features related to building image
 
-* _Image > Build custom image_: Allows group admin to create custom image.
-* _Admin Portal > Images (EE only)_: Allows system admin to create custom image
+* __[_Image > Build custom image_](../group-administration/images.md): Allows group admin to create custom image.
+* __[_Admin Portal > Images_](../platform-administration/image-management/) _(EE only)_: Allows system admin to create custom image
 
 Once images are built successfully, they will be pushed into specified repositories of a registry. Here we show how to configure PrimeHub using a remote registry for it.
 
