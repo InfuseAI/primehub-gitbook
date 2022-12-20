@@ -48,17 +48,17 @@ PHFS is **good** for:
 * Uploading and downloading files via the Shared Files UI
 * Data exchange through [PrimeHub SDK/CLI](https://github.com/infuseai/primehub-python-sdk)
 * Storing the [artifacts](../../jobs/job-artifacts.md) of a job's output
-* The [source of model files](http://localhost:3000/docs/next/model-deployment-model-uri) for model deployment
+* The source of model files for model deployment
 
 Even though we can access the PHFS from the filesystem, the access mode is **not fully POSIX-compatible**. It does not allow _random access_ and _append write_. It's only suitable for _sequential read_ and _sequential write_ operation.
 
 Due to this limitation PHFS **cannot be used for**:
 
-* Uploading a file with size **> 1MB** from the notebook UI (i.e. Jupterlab upload feature). An error will occur and the uploaded file will be truncated to 1MB. **To upload files larger than 1MB, please use the **_**Shared Files**_** UI.**
+* Uploading a file with size **> 1MB** from the notebook UI (i.e. Jupterlab upload feature). An error will occur and the uploaded file will be truncated to 1MB. **To upload files larger than 1MB, please use the \_Shared Files**\_\*\* UI.\*\*
 * The output of training. Some ML frameworks cannot output training results successfully to PHFS. For example, in TensorFlow, writing model files in _HDF5_ format to PHFS will cause the error `Problems closing file (file write failed: ...)` due to _HDF5_ using _seek_ while writing. **To store training results in PHFS, first output to a User Volume or Shared Volume, and then copy to PHFS.**
 * The input of training. PHFS has the worst performance out of all kinds of storage. **To train a dataset multiple runs, we recommend putting them in user volume or group volume.**
 
-PHFS is not installed by default, please check this document to [configure PrimeHub store and PHFS](broken-reference).
+PHFS is not installed by default, please check this document to [configure PrimeHub store and PHFS](broken-reference/).
 
 ### Data Volume
 
