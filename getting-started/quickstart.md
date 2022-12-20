@@ -25,14 +25,12 @@ In this quick-start, we will learn how to use a Notebook to train/generate a sim
 1.  **Open TensorFlow Notebook** from the Home page, then you will be redirected to the Notebooks page.
 
     <figure><img src="../.gitbook/assets/quickstart_home (1).png" alt=""><figcaption></figcaption></figure>
-2.  Click on **Start Notebook** to spawn a notebook with basic settings. If you want to use different instance types, click on **Change Settings** and start the notebook.&#x20;
+2.  Click on **Start Notebook** to spawn a notebook with basic settings. If you want to use different instance types, click on **Change Settings** and start the notebook.
 
     <figure><img src="../.gitbook/assets/quickstart_create_notebook (1).png" alt=""><figcaption></figcaption></figure>
 3.  Wait for the notebook spawn. When the notebook is ready, you will be redirected to the notebook with prepared example notebook.
 
     <figure><img src="../.gitbook/assets/quickstart_notebook_spwaning (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
     <figure><img src="../.gitbook/assets/quickstart_notebook_started (1).png" alt=""><figcaption></figcaption></figure>
 4.  **Run All Cells**, it will train a classification model for MNIST dataset and save it.
@@ -47,4 +45,4 @@ The next stage, _parameter-tuning job_, is for Enterprise users. Keep your Noteb
 
 Walk through a complete end-to-end tutorial on PrimeHub
 
-* [End-to\_End Tutorial](broken-reference)
+* [End-to-End Tutorial](broken-reference)
