@@ -16,8 +16,8 @@ Unlike user volume, group volume, and data volume, which are designed for storin
 
 ### Use cases
 
-1. ****[**Log Persistence**](log-persistence.md)**:** Currently, the job submission log is to retrieve the log from a pod. With the PrimeHub store, we can collect the log and store them in the PrimeHub store. The log can still be accessible even the pod is deleted.
-2. ****[**PrimeHub File System (PHFS)**](primehub-file-system-phfs.md)**:** new shared storage for groups.
+1. [**Log Persistence**](log-persistence.md)**:** Currently, the job submission log is to retrieve the log from a pod. With the PrimeHub store, we can collect the log and store them in the PrimeHub store. The log can still be accessible even the pod is deleted.
+2. [**PrimeHub File System (PHFS)**](primehub-file-system-phfs.md)**:** new shared storage for groups.
 
 ### Design
 
