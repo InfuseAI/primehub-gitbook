@@ -6,7 +6,7 @@ PrimeHub features are accessible/restricted to three different level of roles. A
 
 Every account has the fundamental user privilege, as long as users who are members of groups are able to perform general user features within a working group from User Portal.
 
-See [User Guide](../../guides/user-portal/).
+See [User Guide](../../guides/user-guide/user-portal/).
 
 ## Group Administrator
 

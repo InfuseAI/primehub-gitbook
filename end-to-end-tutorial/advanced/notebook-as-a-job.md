@@ -10,7 +10,7 @@ If you want to run the jupyter notebook in the background, you can submit your P
 
 ### Input Parameters and API Access
 
-Now that we have a runnable notebook to train the screw classification model, we can tweak parameter values and then submit our notebook as a job via the [PrimeHub Notebook Extension](../../notebooks/primehub-notebook-extension/).
+Now that we have a runnable notebook to train the screw classification model, we can tweak parameter values and then submit our notebook as a job via the [PrimeHub Notebook Extension](../../guides/user-guide/notebooks/primehub-notebook-extension/).
 
 #### Tweak Parameters
 
@@ -28,7 +28,7 @@ Click **Add Tag** and enter **parameters** as the tag name, then click the **+**
 
 #### **Set up an API Token**
 
-To submit the notebook as a job, we need to set up an [API Token](../../guides/user-portal/generate-an-primehub-api-token.md).
+To submit the notebook as a job, we need to set up an [API Token](../../guides/user-guide/user-portal/generate-an-primehub-api-token.md).
 
 Click on the **PrimeHub** dropdown menu in the toolbar, then click **API Token**.
 

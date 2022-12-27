@@ -30,7 +30,7 @@ With the addition of 3rd-party app integration, PrimeHub’s capabilities can be
 
 ### User Portal
 
-The [User Portal](guides/user-portal/) provides access to a full MLOps feature set. Data scientists can turn workflows into automated pipelines via Jobs/Recurring Jobs; prepare data and develop trained models from Notebooks; deploy container-wrapped models as services via Model Deployment, and more.
+The [User Portal](guides/user-guide/user-portal/) provides access to a full MLOps feature set. Data scientists can turn workflows into automated pipelines via Jobs/Recurring Jobs; prepare data and develop trained models from Notebooks; deploy container-wrapped models as services via Model Deployment, and more.
 
 <figure><img src=".gitbook/assets/v311-landing-user-ui.png" alt=""><figcaption></figcaption></figure>
 
@@ -44,7 +44,7 @@ The [User Portal](guides/user-portal/) provides access to a full MLOps feature s
 
 ### Admin Portal
 
-The [Admin Portal](platform-administration/admin-portal.md) enables platform administrators to manage all aspects of PrimeHub, such as access-control, resources and quota control, building custom environments via image builder etc.
+The [Admin Portal](guides/administrator-guide/admin-portal/) enables platform administrators to manage all aspects of PrimeHub, such as access-control, resources and quota control, building custom environments via image builder etc.
 
 <figure><img src=".gitbook/assets/v310-landing-admin-ui.png" alt=""><figcaption></figcaption></figure>
 

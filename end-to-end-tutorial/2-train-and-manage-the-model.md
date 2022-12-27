@@ -14,13 +14,13 @@ MLFlow is an open-source platform to manage the machine learning model, includin
 * [MLflow Website](https://mlflow.org/)
 * [MLflow Documentation](https://mlflow.org/docs/latest/index.html)
 
-The PrimeHub platform integrates MLFlow as the model management function. You can see the result on the [PrimeHub model](../models/manage-and-deploy-model.md) page. You can see the detailed information here:
+The PrimeHub platform integrates MLFlow as the model management function. You can see the result on the [PrimeHub model](../guides/user-guide/models/manage-and-deploy-model.md) page. You can see the detailed information here:
 
 ### Step 1: Create the MLflow Server
 
 To track our experiments, we must first install MLflow, which is available as part of PrimeHub Apps. Use the guide at the following link to install MLflow:
 
-* [Create an MLflow server](../apps/tutorial/create-an-mlflow-server.md)
+* [Create an MLflow server](../guides/user-guide/apps/tutorial/create-an-mlflow-server.md)
 
 ### Step 2: Training the model
 

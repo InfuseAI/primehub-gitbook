@@ -1,0 +1,80 @@
+# Instance Type Management
+
+Instance type management provides the capabilities of managing a cluster of the computation resources by instances management such as create, delete, edit instances and of permission-control which allows only specified-groups to use the instances.
+
+### Creating New Instance Types
+
+<figure><img src="../../../.gitbook/assets/instancetype_3_v26.png" alt=""><figcaption></figcaption></figure>
+
+Click `Add` to add an Instance Type, which will pop up the editing screen of Instance Types.
+
+<figure><img src="../../../.gitbook/assets/admin_inst_v26.png" alt=""><figcaption></figcaption></figure>
+
+You need to fill in the fields of Basic Info in the above picture:
+
+* `Name` Only lowercase letters, numbers, hyphen `-` and a dot `.` can be filled in.
+* `Display name` The display name of this Instance Type, and will be seen by users.
+* `Description` The description of this Instance Type, and will be seen by users.
+* `CPU Limit` define how many CPU are allowed to use by this Instance Type. The value is also applied to CPU Request when `CPU Request` is disabled.
+* `Memory Limit` define how many memory are allowed to use by this Instance Type. The value also applied to Memory Request when `Memory Request` is disabled.
+* `GPU Limit` define how many GPU can be used by this Instance Type. GPU can only be integer.
+
+#### Overcommitting (advanced feature)
+
+* `CPU Request` define how many CPU are requested to use by this Instance Type initially. Once it is enabled, instances are guaranteed to get the amount of CPU they request. If `CPU Request` < `CPU Limit`, the system will try to overcommit CPU resources within the limit if more resources are available.
+* `Memory Request` define how many Memory are requested to use by this Instance Type initially. Once it is enabled, instances are guaranteed to get the amount of Memory they request. If `Memory Request` < `Memory Limit`, the system will try to overcommit Memory resources within the limit if more resources are available.
+
+For details, please see [Quality of Service for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/) and [Resource QoS](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/node/resource-qos.md#resource-quality-of-service-in-kubernetes).
+
+* `Global` If it is turned on, this Instance Type can be chosen by everyone. You can grant permission to specific groups in the `edit groups`.
+
+Finally, click `Confirm` to complete the addition.
+
+### Toleration
+
+When a node has a `taint` for certain reasons, an instance won't be scheduled to run on that node until an instance has a specific toleration to tolerate specified taint. Here we will show you how to add a toleration only.
+
+For more detail and usage of `kubectl taint`, please refer to Taints and [Tolerations concept](https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/).
+
+<figure><img src="../../../.gitbook/assets/instance_type_toleration0_v26.png" alt=""><figcaption></figcaption></figure>
+
+In `Toleration` tab, you can add a Toleration by clicking on `Add` button.
+
+<figure><img src="../../../.gitbook/assets/instance_type_toleration1_v26.png" alt=""><figcaption></figcaption></figure>
+
+Filling in the fields in popup to create a toleration.
+
+* `Key` The key of taint which you want to tolerate.
+* `Value` The value of taint is required if `Equal` from `Operator` is selected.
+* `Operator (Mandatary)` Select `Equal`, `Exists`.
+* `Effect` Select `None`, `NoSchedule`, `PreferNoSchedule`, `NoExecute`
+
+Regarding options of `Operator` and `Effect`, please refer to [Taints and Tolerations](https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/).
+
+Click `OK` to add a toleration.
+
+Finally, click `Confirm` to complete the addition.
+
+For a use case of toleration, please see Toleration Use Case.
+
+### Node Selector
+
+You can constrain an instance to only be able to run on specific nodes which have specific labels. A `label` is a map of key-value pair. Here we will show you how to add a nodeSelector only.
+
+For more detail, please refer to Assigning Pods to Nodes for usage `kubectl label`.
+
+<figure><img src="../../../.gitbook/assets/instance_type_nodeselector_v26.png" alt=""><figcaption></figcaption></figure>
+
+In `Node Selector` tab, you can add a NodeSelector by clicking on `+ Add field` button.
+
+Filling in `key/value` with key-value of a label you want to specify.
+
+Click `Confirm` to complete the addition.
+
+For a use case, please see [Node Selector Use Case](nodeselector.md).
+
+### Edit groups
+
+<figure><img src="../../../.gitbook/assets/edit_groups.png" alt=""><figcaption></figcaption></figure>
+
+If `Global` is disabled, please click `edit groups` under the edit Instance Type screen to select the groups that have permission to use the Instance Type.
