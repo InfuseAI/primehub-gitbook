@@ -12,7 +12,7 @@ Remember to enable model deployment in your group, contact your admin if it is n
 
 #### Enable PHFS Storage
 
-Remember to [enable PHFS Storage](../../../../technology/design/primehub-file-system-phfs.md), contact your admin if it is not enabled yet.
+Remember to [enable PHFS Storage](../../../developer-guide/design/primehub-file-system-phfs.md), contact your admin if it is not enabled yet.
 
 {% hint style="warning" %}
 PHFS, currently, supports _writing files sequentially only_; within this limitation, writing model files in `HDF5` format directly into PHFS will cause the error, `Problems closing file (file write failed: ...)` since `HDF5` uses _seek_ while writing.

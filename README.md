@@ -37,10 +37,10 @@ The [User Portal](guides/user-guide/user-portal/) provides access to a full MLOp
 #### Landing Page Layout
 
 1. User features
-2. Group admin features (Viewable only to the [group admin](technology/concept/privilege.md#group-administrator))
+2. Group admin features (Viewable only to the [group admin](introduction/platform-introduction/concept/privilege.md#group-administrator))
 3. Group switch
 4. Group context
-5. Admin Portal entry (Viewable only the the [platform admin](technology/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
+5. Admin Portal entry (Viewable only the the [platform admin](introduction/platform-introduction/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
 
 ### Admin Portal
 

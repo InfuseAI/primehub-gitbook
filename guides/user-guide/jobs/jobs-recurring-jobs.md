@@ -71,7 +71,7 @@ Here are the detail information of the job:
 
 **Artifacts**
 
-If a Job generates data so called **artifacts** under the [PHFS storage](../../../technology/design/primehub-file-system-phfs.md) `artifacts/` during the execution, here it lists those artifacts. Meanwhile, in Notebook, these artifacts are stored under `/phfs/jobArtifacts/job-xxxxx`. See the [simple usage of Job Artifacts](tutorial/job-artifacts-simple-usecase.md).
+If a Job generates data so called **artifacts** under the [PHFS storage](../../developer-guide/design/primehub-file-system-phfs.md) `artifacts/` during the execution, here it lists those artifacts. Meanwhile, in Notebook, these artifacts are stored under `/phfs/jobArtifacts/job-xxxxx`. See the [simple usage of Job Artifacts](tutorial/job-artifacts-simple-usecase.md).
 
 **Monitoring**
 

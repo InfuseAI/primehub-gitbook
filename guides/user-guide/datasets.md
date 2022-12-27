@@ -6,7 +6,7 @@ Datasets feature is based on [Shared Files](shared-files.md) to store dataset fi
 
 ### Prerequisites
 
-Datasets feature is only enabled if [PHFS](../../technology/design/primehub-file-system-phfs.md) is enabled.
+Datasets feature is only enabled if [PHFS](../developer-guide/design/primehub-file-system-phfs.md) is enabled.
 
 ### Creating New Dataset
 

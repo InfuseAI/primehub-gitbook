@@ -3,6 +3,10 @@
 ## Introduction
 
 * [Platform](README.md)
+  * [Concept](introduction/platform-introduction/concept/README.md)
+    * [Persistence](introduction/platform-introduction/concept/persistence.md)
+    * [Resources Quota](introduction/platform-introduction/concept/resources-quota.md)
+    * [Privilege](introduction/platform-introduction/concept/privilege.md)
 * [Installation](introduction/install-manually.md)
 * [Tiers Feature Comparison](introduction/tiers-feature-comparison.md)
 
@@ -108,34 +112,25 @@
   * [Usage Reports](guides/administrator-guide/usage-reports.md)
   * [App Settings](guides/administrator-guide/app-settings.md)
   * [System Settings](guides/administrator-guide/system-settings.md)
-* [Developer Guide](guides/developer-guide.md)
+* [Developer Guide](guides/developer-guide/README.md)
+  * [Design](guides/developer-guide/design/README.md)
+    * [PrimeHub File System (PHFS)](guides/developer-guide/design/primehub-file-system-phfs.md)
+    * [PrimeHub Store](guides/developer-guide/design/primehub-store.md)
+    * [Log Persistence](guides/developer-guide/design/log-persistence.md)
+    * [PrimeHub Apps](guides/developer-guide/design/primehub-apps.md)
+  * [Configuration](guides/developer-guide/configuration/README.md)
+    * [How to configure PrimeHub](guides/developer-guide/configuration/how-to-configure-primehub.md)
+    * [Multiple Jupyter Notebook Kernels](guides/developer-guide/configuration/multiple-jupyter-notebook-kernels.md)
+    * [Configure SSH Server](guides/developer-guide/configuration/configure-ssh-server.md)
+    * [Configure Job Submission](guides/developer-guide/configuration/configure-job-submission.md)
+    * [Configure Custom Image Build](guides/developer-guide/configuration/configure-custom-image-build.md)
+    * [Configure Model Deployment](guides/developer-guide/configuration/configure-model-deployment.md)
+    * [Setup Self-Signed Certificate for PrimeHub](guides/developer-guide/configuration/setup-self-signed-certificate-for-primehub.md)
+    * [Chart Configuration](guides/developer-guide/configuration/chart-configuration.md)
+    * [Configure PrimeHub Store](guides/developer-guide/configuration/configure-primehub-store.md)
+  * [Environment Variables](guides/developer-guide/environment-variables.md)
 * [Roadmap](https://github.com/orgs/InfuseAI/projects/4/views/1)
-
-## Technology
-
-* [Concept](technology/concept/README.md)
-  * [Persistence](technology/concept/persistence.md)
-  * [Resources Quota](technology/concept/resources-quota.md)
-  * [Privilege](technology/concept/privilege.md)
-* [Design](technology/design/README.md)
-  * [PrimeHub File System (PHFS)](technology/design/primehub-file-system-phfs.md)
-  * [PrimeHub Store](technology/design/primehub-store.md)
-  * [Log Persistence](technology/design/log-persistence.md)
-  * [PrimeHub Apps](technology/design/primehub-apps.md)
 
 ## Reference
 
 * [InfuseAI Images List](reference/infuseai-images-list.md)
-* [Environment Variables](reference/environment-variables.md)
-* [Chart Configuration](reference/chart-configuration.md)
-* [Multiple Jupyter Notebook Kernels](reference/multiple-jupyter-notebook-kernels.md)
-
-## Configuration
-
-* [How to configure PrimeHub](configuration/how-to-configure-primehub.md)
-* [Configure PrimeHub Store](configuration/configure-primehub-store.md)
-* [Configure SSH Server](configuration/configure-ssh-server.md)
-* [Configure Job Submission](configuration/configure-job-submission.md)
-* [Configure Model Deployment](configuration/configure-model-deployment.md)
-* [Configure Custom Image Build](configuration/configure-custom-image-build.md)
-* [Setup Self-Signed Certificate for PrimeHub](configuration/setup-self-signed-certificate-for-primehub.md)

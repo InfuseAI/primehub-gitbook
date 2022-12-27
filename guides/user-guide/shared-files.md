@@ -1,6 +1,6 @@
 # Shared Files
 
-The **Shared Files** feature is based on [PHFS Storage](../../technology/design/primehub-file-system-phfs.md) to store shared files. Group members are able to browse shared files and able to upload files for sharing with other group members.
+The **Shared Files** feature is based on [PHFS Storage](../developer-guide/design/primehub-file-system-phfs.md) to store shared files. Group members are able to browse shared files and able to upload files for sharing with other group members.
 
 <figure><img src="../../.gitbook/assets/v311-shared-file-list.png" alt=""><figcaption></figcaption></figure>
 

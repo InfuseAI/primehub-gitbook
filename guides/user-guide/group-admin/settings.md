@@ -52,5 +52,5 @@ Furthermore, if we have another installed MLflow app instance, then we can learn
     <figure><img src="../../../.gitbook/assets/app_detail (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-By integrating externally-hosted MLflow server, see [Configuration](../../../configuration/configure-model-deployment.md) for the detail.
+By integrating externally-hosted MLflow server, see [Configuration](../../developer-guide/configuration/configure-model-deployment.md) for the detail.
 {% endhint %}

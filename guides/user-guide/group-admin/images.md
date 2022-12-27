@@ -3,7 +3,7 @@
 **Images** is a feature that _Group Admin_ can manage images for the managed group. Only group members can access these group-specific images from the image selection when it is required.
 
 {% hint style="info" %}
-Images is a feature dedicated to [Group Admin](../../../technology/concept/privilege.md#group-administrator); only Group Admin can access it from User Portal. Please contact Admin to acquire Group Admin privilege.
+Images is a feature dedicated to [Group Admin](../../../introduction/platform-introduction/concept/privilege.md#group-administrator); only Group Admin can access it from User Portal. Please contact Admin to acquire Group Admin privilege.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/group-image-list.png" alt=""><figcaption></figcaption></figure>

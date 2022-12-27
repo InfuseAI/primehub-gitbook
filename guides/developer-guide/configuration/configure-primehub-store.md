@@ -4,13 +4,13 @@ PrimeHub Store is the central storage for storing PrimeHub files. Many features 
 
 PrimeHub store selects [MinIO](https://docs.min.io/) as the backend and uses one bucket to store the data. To enable the PrimeHub store, set the `store.enabled` to true.
 
-| Path              | Description                            | Default Value                                                             |
-| ----------------- | -------------------------------------- | ------------------------------------------------------------------------- |
-| `store.enabled`   | If the PrimeHub store is enabled       | `false`                                                                   |
-| `store.accessKey` | The access key for the PrimeHub store  | `AKIAIOSFODNN7EXAMPLE`                                                    |
-| `store.secretKey` | The secret key for the PrimeHub store  | `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`                                |
-| `store.bucket`    | The bucket name the PrimeHub store use | `primehub`                                                                |
-| `minio.*`         | The MinIO configuration                | Please see the [chart configuration](../reference/chart-configuration.md) |
+| Path              | Description                            | Default Value                                                |
+| ----------------- | -------------------------------------- | ------------------------------------------------------------ |
+| `store.enabled`   | If the PrimeHub store is enabled       | `false`                                                      |
+| `store.accessKey` | The access key for the PrimeHub store  | `AKIAIOSFODNN7EXAMPLE`                                       |
+| `store.secretKey` | The secret key for the PrimeHub store  | `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`                   |
+| `store.bucket`    | The bucket name the PrimeHub store use | `primehub`                                                   |
+| `minio.*`         | The MinIO configuration                | Please see the [chart configuration](chart-configuration.md) |
 
 ### Configure MinIO
 
@@ -154,10 +154,10 @@ Log persistence enables logs to be stored persistently in the PrimeHub store und
 
 By default, if the PrimeHub store is enabled, the log persistence is enabled as well. But we can manually disable log persistence by configuring `store.logPersistence.enabled` as false.
 
-| Path                           | Description                       | Default Value                                                             |
-| ------------------------------ | --------------------------------- | ------------------------------------------------------------------------- |
-| `store.logPersistence.enabled` | If the log persistence is enabled | `true`                                                                    |
-| `fluentd.*`                    | The fluentd configuration         | Please see the [chart configuration](../reference/chart-configuration.md) |
+| Path                           | Description                       | Default Value                                                |
+| ------------------------------ | --------------------------------- | ------------------------------------------------------------ |
+| `store.logPersistence.enabled` | If the log persistence is enabled | `true`                                                       |
+| `fluentd.*`                    | The fluentd configuration         | Please see the [chart configuration](chart-configuration.md) |
 
 The following components would be installed if log persistence is enabled
 

@@ -2,7 +2,7 @@
 
 This tutorial shows how to create your own PrimeHub app using `PhAppTemplate` CRD.
 
-For more information about the PrimeHub app, please check our [design document](../../../../technology/design/primehub-apps.md).
+For more information about the PrimeHub app, please check our [design document](../../../developer-guide/design/primehub-apps.md).
 
 ### Limitations
 

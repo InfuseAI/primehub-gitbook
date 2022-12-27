@@ -21,7 +21,7 @@ Unlike user volume, group volume, and data volume, which are designed for storin
 
 ### Design
 
-<figure><img src="../../.gitbook/assets/primehub-store (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/primehub-store (1).png" alt=""><figcaption></figcaption></figure>
 
 #### MinIO
 

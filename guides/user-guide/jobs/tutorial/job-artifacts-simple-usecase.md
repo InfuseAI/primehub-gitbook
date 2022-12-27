@@ -1,6 +1,6 @@
 # Job Artifacts Simple Usecase
 
-This simple tutorial shows where to store generated data so called job artifacts during a job execution in `artifacts/` which is under a [PHFS storage](../../../../technology/design/primehub-file-system-phfs.md) `/phfs/`. This storage is shared among same group members.
+This simple tutorial shows where to store generated data so called job artifacts during a job execution in `artifacts/` which is under a [PHFS storage](../../../developer-guide/design/primehub-file-system-phfs.md) `/phfs/`. This storage is shared among same group members.
 
 ### Steps
 

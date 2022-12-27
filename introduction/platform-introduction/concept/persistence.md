@@ -29,7 +29,7 @@ A Shared Volume **cannot be used** for:
 
 * Downloading and uploading data through an API/CLI/SDK
 
-A group's Shared Volume is not enabled by default. Please contact the system administrator to enable it. For more information, Please see [Group Management](../../guides/administrator-guide/group-management.md).
+A group's Shared Volume is not enabled by default. Please contact the system administrator to enable it. For more information, Please see [Group Management](../../../guides/administrator-guide/group-management.md).
 
 ### PHFS Storage
 
@@ -40,14 +40,14 @@ Data stored in PHFS can be found under the subpath `/groups/<group>` of an objec
 There are several ways to **access data stored in PHFS**:
 
 * PHFS can be mounted in notebooks, apps, and jobs.
-* Users can download/upload content from the [Shared Files](../../guides/user-guide/shared-files.md) UI in the User Portal.
+* Users can download/upload content from the [Shared Files](../../../guides/user-guide/shared-files.md) UI in the User Portal.
 * Users can list and download files from the [PrimeHub SDK/CLI](https://github.com/infuseai/primehub-python-sdk).
 
 PHFS is **good** for:
 
 * Uploading and downloading files via the Shared Files UI
 * Data exchange through [PrimeHub SDK/CLI](https://github.com/infuseai/primehub-python-sdk)
-* Storing the [artifacts](../../guides/user-guide/jobs/job-artifacts.md) of a job's output
+* Storing the [artifacts](../../../guides/user-guide/jobs/job-artifacts.md) of a job's output
 * The source of model files for model deployment
 
 Even though we can access the PHFS from the filesystem, the access mode is **not fully POSIX-compatible**. It does not allow _random access_ and _append write_. It's only suitable for _sequential read_ and _sequential write_ operation.
@@ -58,7 +58,7 @@ Due to this limitation PHFS **cannot be used for**:
 * The output of training. Some ML frameworks cannot output training results successfully to PHFS. For example, in TensorFlow, writing model files in _HDF5_ format to PHFS will cause the error `Problems closing file (file write failed: ...)` due to _HDF5_ using _seek_ while writing. **To store training results in PHFS, first output to a User Volume or Shared Volume, and then copy to PHFS.**
 * The input of training. PHFS has the worst performance out of all kinds of storage. **To train a dataset multiple runs, we recommend putting them in user volume or group volume.**
 
-PHFS is not installed by default, please check this document to [configure PrimeHub store and PHFS](broken-reference/).
+PHFS is not installed by default, please check this document to [configure PrimeHub store and PHFS](../../../technology/concept/broken-reference/).
 
 ### Data Volume
 
@@ -85,7 +85,7 @@ A Data Volume has the following **limitations**:
 * Data cannot downloaded and uploaded through API/CLI/SDK
 * If the volume is to be used by only one group then, due to its ease of use, a Shared Volume is preferred
 
-A Data Volume is configured by the system administrator. For more information, Please see [Volume Management](../../guides/administrator-guide/volume-management/). In some types of the volume, we can also configure a [upload server ](../../guides/administrator-guide/volume-management/upload-server.md)to upload data to the data volume.
+A Data Volume is configured by the system administrator. For more information, Please see [Volume Management](../../../guides/administrator-guide/volume-management/). In some types of the volume, we can also configure a [upload server ](../../../guides/administrator-guide/volume-management/upload-server.md)to upload data to the data volume.
 
 ## Comparison
 

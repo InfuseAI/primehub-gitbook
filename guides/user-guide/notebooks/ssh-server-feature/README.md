@@ -5,7 +5,7 @@
 ### Enable SSH Server
 
 {% hint style="info" %}
-To activate SSH Server, administrators have to configure SSH Server of PrimeHub. Please contact administrators and see [Configure SSH Server](../../../../configuration/configure-ssh-server.md).
+To activate SSH Server, administrators have to configure SSH Server of PrimeHub. Please contact administrators and see [Configure SSH Server](../../../developer-guide/configuration/configure-ssh-server.md).
 {% endhint %}
 
 {% hint style="info" %}

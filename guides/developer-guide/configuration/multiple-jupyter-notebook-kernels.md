@@ -4,7 +4,7 @@
 
 Use Coda or venv to manage packages environment with specific Python versions
 
-<figure><img src="../.gitbook/assets/two_kernels.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/two_kernels.png" alt=""><figcaption></figcaption></figure>
 
 ### What is virtual environment
 
@@ -56,11 +56,11 @@ Launch a new Notebook using the `myenv` kernel
 
 <div>
 
-<figure><img src="../.gitbook/assets/coda_python_version.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/coda_python_version.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../.gitbook/assets/coda_console.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/coda_console.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -110,11 +110,11 @@ source myenv_py_version/bin/activate
 
 Launch Notebook with specific kernel/venv
 
-<figure><img src="../.gitbook/assets/two_python_kernel.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/two_python_kernel.png" alt=""><figcaption></figcaption></figure>
 
 Switch Notebook Kernel anytime
 
-<figure><img src="../.gitbook/assets/switch_kernel.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/switch_kernel.gif" alt=""><figcaption></figcaption></figure>
 
 Verify Python version in Notebook
 
