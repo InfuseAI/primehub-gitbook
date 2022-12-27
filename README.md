@@ -24,10 +24,6 @@ With the addition of 3rd-party app integration, PrimeHub’s capabilities can be
 
 {% embed url="https://youtu.be/PL2J6KPijdw" %}
 
-### Product Tiers
-
-PrimeHub has **PrimeHub Community**, **PrimeHub Enterprise** and **PrimeHub Deploy**, three tiers. Regarding the differences, see [Tiers Feature Comparison](introduction/tiers-feature-comparison.md).
-
 ***
 
 **PrimeHub** is composed of a **User Portal** and an **Admin Portal**. The User Portal provides features aimed at data scientists and team members, and the Admin Portal provides configuration options relevant to platform administrators.
@@ -36,12 +32,23 @@ PrimeHub has **PrimeHub Community**, **PrimeHub Enterprise** and **PrimeHub Depl
 
 The [User Portal](guides/user-portal/) provides access to a full MLOps feature set. Data scientists can turn workflows into automated pipelines via Jobs/Recurring Jobs; prepare data and develop trained models from Notebooks; deploy container-wrapped models as services via Model Deployment, and more.
 
-<figure><img src=".gitbook/assets/v310-landing-user.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/v311-landing-user-ui.png" alt=""><figcaption></figcaption></figure>
 
-***
+#### Landing Page Layout
+
+1. User features
+2. Group admin features (Viewable only to the [group admin](technology/concept/privilege.md#group-administrator))
+3. Group switch
+4. Group context
+5. Admin Portal entry (Viewable only the the [platform admin](technology/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
 
 ### Admin Portal
 
-The [Admin Portal](platform-administration/admin-portal.md) enables administrators to manage all aspects of PrimeHub, such as access-control, resource and quota control, building custom environments via image builder etc.
+The [Admin Portal](platform-administration/admin-portal.md) enables platform administrators to manage all aspects of PrimeHub, such as access-control, resources and quota control, building custom environments via image builder etc.
 
-<figure><img src=".gitbook/assets/v310-landing-admin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/v310-landing-admin-ui.png" alt=""><figcaption></figcaption></figure>
+
+#### Landing Page Layout
+
+1. Platform administrator features
+2. Feature context
