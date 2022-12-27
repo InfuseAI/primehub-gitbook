@@ -1,27 +1,10 @@
 # Table of contents
 
-## Getting Started
+## Introduction
 
-* [🚀 One-Click Install](README.md)
-* [Install Manually](getting-started/install-manually.md)
-* [Quickstart](getting-started/quickstart.md)
-
-## Technology
-
-* [Platform Introduction](technology/platform-introduction.md)
-* [Concept](technology/concept/README.md)
-  * [Persistence](technology/concept/persistence.md)
-  * [Resources Quota](technology/concept/resources-quota.md)
-  * [Privilege](technology/concept/privilege.md)
-* [Design](technology/design/README.md)
-  * [PrimeHub File System (PHFS)](technology/design/primehub-file-system-phfs.md)
-  * [PrimeHub Store](technology/design/primehub-store.md)
-  * [Log Persistence](technology/design/log-persistence.md)
-  * [PrimeHub Apps](technology/design/primehub-apps.md)
-* [Tiers Feature Comparison](technology/tiers-feature-comparison/README.md)
-  * [License Comparison](technology/tiers-feature-comparison/license-comparison.md)
-* [User Portal](technology/user-portal/README.md)
-  * [Generate an PrimeHub API Token](technology/user-portal/generate-an-primehub-api-token.md)
+* [Platform](README.md)
+* [Installation](introduction/install-manually.md)
+* [Tiers Feature Comparison](introduction/tiers-feature-comparison.md)
 
 ## End-to-End Tutorial
 
@@ -35,6 +18,23 @@
   * [Notebook as a Job](end-to-end-tutorial/advanced/notebook-as-a-job.md)
   * [Custom build the Seldon server](end-to-end-tutorial/advanced/custom-build-the-seldon-server.md)
   * [PrimeHub SDK/CLI Tools](end-to-end-tutorial/advanced/primehub-sdk-cli-tools.md)
+
+## Guides
+
+* [User Portal](guides/user-portal/README.md)
+  * [Generate an PrimeHub API Token](guides/user-portal/generate-an-primehub-api-token.md)
+
+## Technology
+
+* [Concept](technology/concept/README.md)
+  * [Persistence](technology/concept/persistence.md)
+  * [Resources Quota](technology/concept/resources-quota.md)
+  * [Privilege](technology/concept/privilege.md)
+* [Design](technology/design/README.md)
+  * [PrimeHub File System (PHFS)](technology/design/primehub-file-system-phfs.md)
+  * [PrimeHub Store](technology/design/primehub-store.md)
+  * [Log Persistence](technology/design/log-persistence.md)
+  * [PrimeHub Apps](technology/design/primehub-apps.md)
 
 ## Notebooks
 

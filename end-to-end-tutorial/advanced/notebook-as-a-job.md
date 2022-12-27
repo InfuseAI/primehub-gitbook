@@ -28,7 +28,7 @@ Click **Add Tag** and enter **parameters** as the tag name, then click the **+**
 
 #### **Set up an API Token**
 
-To submit the notebook as a job, we need to set up an [API Token](../../technology/user-portal/generate-an-primehub-api-token.md).
+To submit the notebook as a job, we need to set up an [API Token](../../guides/user-portal/generate-an-primehub-api-token.md).
 
 Click on the **PrimeHub** dropdown menu in the toolbar, then click **API Token**.
 
@@ -72,8 +72,6 @@ In the pop-up dialog, we can adjust the following settings:
 After you Submit the Job, you can see the following message.
 
 <figure><img src="../../.gitbook/assets/primehub-end-to-end-tutorial-job-submitted.png" alt=""><figcaption></figcaption></figure>
-
-
 
 You can click `view your job details here` to get the job information.
 

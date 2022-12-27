@@ -16,7 +16,7 @@ After opening a Notebook file (\*.ipynb), there is **PrimeHub** extension on the
 
 ### API Token
 
-PrimeHub Extension needs an API Token to submit a Job, Please [generate a API Token](../../technology/user-portal/generate-an-primehub-api-token.md) and setup it.
+PrimeHub Extension needs an API Token to submit a Job, Please [generate a API Token](../../guides/user-portal/generate-an-primehub-api-token.md) and setup it.
 
 You could open the PrimeHub Extension dropdown list to find the `API Token` setting:
 
