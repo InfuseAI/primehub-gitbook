@@ -8,7 +8,7 @@
     * [Resources Quota](introduction/platform-introduction/concept/resources-quota.md)
     * [Privilege](introduction/platform-introduction/concept/privilege.md)
 * [Installation](introduction/install-manually.md)
-* [Tiers Feature Comparison](introduction/tiers-feature-comparison.md)
+* [Tiers and Licenses](introduction/tiers-feature-comparison.md)
 
 ## End-to-End Tutorial
 
