@@ -87,6 +87,7 @@
   * [Group Admin](guides/user-guide/group-admin/README.md)
     * [Images](guides/user-guide/group-admin/images.md)
     * [Settings](guides/user-guide/group-admin/settings.md)
+  * [Python SDK](guides/user-guide/python-sdk.md)
 * [Administrator Guide](guides/administrator-guide/README.md)
   * [Admin Portal](guides/administrator-guide/admin-portal/README.md)
     * [Create User](guides/administrator-guide/admin-portal/create-user.md)
