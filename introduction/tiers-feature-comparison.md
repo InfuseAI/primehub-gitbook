@@ -45,7 +45,6 @@ In addition to feature differences among tiers, some features are also varied in
 
 * EE Trial: Enterprise Edition with Default License.
 * EE Licensed: Enterprise Edition with Authorized License.
-* Deploy Trial: Deploy Edition with Default License.
 * Deploy Licensed: Deploy Edition with Authorized License.
 
 Here we list the features comparison among licenses.
