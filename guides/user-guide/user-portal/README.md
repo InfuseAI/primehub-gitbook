@@ -31,8 +31,11 @@ At Home, the layout has multiple areas:
     _Quick-launch for TensorFlow and PyTorch_
 
     <figure><img src="../../../.gitbook/assets/v39-quick-launch-tf.gif" alt=""><figcaption></figcaption></figure>
-* **Recent**: it displays recent activities (such as Job, Model) done by the user; where users can have an quick-view of activities status.
-* **Resource Dashboard**: it displays _permitted user quota in this group_ and _used/limit group quotas_.
+*   **Resource Usage:** the section displays the current status of resource usage. It lists all of being used resources by types/group users.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/resourcer usage.png" alt=""><figcaption></figcaption></figure>
+* **Recent**: the section displays recent activities (such as Job, Model) done by the user; where users can have an quick-view of activities status.
+* **Resource Dashboard**: the section displays _permitted user quota in this group_ and _used/limit group quotas_.
 * **Invite Users**: it makes possible to invite more users to experience PrimeHub via the _invitation link_.
 
 ### Profile Menu
