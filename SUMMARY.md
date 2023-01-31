@@ -30,7 +30,7 @@
     * [(Advanced) Model Serving by Seldon](user-guide/jobs-recurring-jobs/tutorial/advanced-model-serving-by-seldon.md)
     * [Job Artifacts Simple Usecase](user-guide/jobs-recurring-jobs/tutorial/job-artifacts-simple-usecase.md)
   * [Job Artifacts](user-guide/jobs-recurring-jobs/job-artifacts.md)
-* [Models Management](user-guide/models/README.md)
+* [Models](user-guide/models/README.md)
   * [Manage and Deploy Model](user-guide/models/manage-and-deploy-model.md)
   * [Model Management Configuration](user-guide/models/model-management-configuration.md)
 * [Deployments](user-guide/deployments/README.md)
