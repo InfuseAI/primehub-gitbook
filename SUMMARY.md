@@ -109,7 +109,7 @@
 
 ## Developer Guide
 
-* [GitHub Repository](developer-guide/github-repository.md)
+* [GitHub](https://github.com/infuseAI/primehub)
 * [Design](developer-guide/design/README.md)
   * [PrimeHub File System (PHFS)](developer-guide/design/primehub-file-system-phfs.md)
   * [PrimeHub Store](developer-guide/design/primehub-store.md)
