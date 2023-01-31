@@ -10,11 +10,11 @@ In this part, we introduced the MLOps concept and learned how to build a good da
 
 ### Part 2 - Train and Tune the Model
 
-In this part, we trained the model in Jupyter Notebook. The results were **automatically logged into MLflow** for experiment tracking. Also, if you want to run these PrimeHub functions in CI/CD pipeline automatically, you can see the detailed information about the [PrimeHub SDK/CLI tool](advanced/primehub-sdk-cli-tools.md) in the advanced tutorial section.
+In this part, we trained the model in Jupyter Notebook. The results were **automatically logged into MLflow** for experiment tracking. Also, if you want to run these PrimeHub functions in CI/CD pipeline automatically, you can see the detailed information about the [PrimeHub SDK/CLI tool](../user-guide/advanced/primehub-sdk-cli-tools.md) in the advanced tutorial section.
 
 Once connected to PrimeHub, **MLflow auto logging** means that job results can be collected and reviewed easily. Data on parameters, metrics, and artifacts are available for model training history.
 
-If you want to label the image dataset we can used **Label Studio**, installed via **PrimeHub Apps**, to label a series of screw images in this part. You can see the detailed information about [labeling data](advanced/labeling-the-data.md) in the advanced tutorial section.
+If you want to label the image dataset we can used **Label Studio**, installed via **PrimeHub Apps**, to label a series of screw images in this part. You can see the detailed information about [labeling data](../user-guide/advanced/labeling-the-data.md) in the advanced tutorial section.
 
 ### Part 3 - Manage, Compare, and Deploy the Model
 

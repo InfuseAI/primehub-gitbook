@@ -67,7 +67,7 @@ More information about obtaining your Kaggle username and key can be found in th
 <figure><img src="../.gitbook/assets/primehub-end-to-end-tutorial-train-model (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-Note: If you want to run the training Notebook in the background job, we also support submitting the Jupyter Notebook as a job method. Please see the [advanced tutorial](advanced/notebook-as-a-job.md) section for details.
+Note: If you want to run the training Notebook in the background job, we also support submitting the Jupyter Notebook as a job method. Please see the [advanced tutorial](../user-guide/advanced/notebook-as-a-job.md) section for details.
 {% endhint %}
 
 ### Step 3: Use MLFlow to manage the model
