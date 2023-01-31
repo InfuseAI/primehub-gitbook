@@ -30,21 +30,21 @@ With the addition of 3rd-party app integration, PrimeHub’s capabilities can be
 
 ### User Portal
 
-The [User Portal](guides/user-guide/user-portal/) provides access to a full MLOps feature set. Data scientists can turn workflows into automated pipelines via Jobs/Recurring Jobs; prepare data and develop trained models from Notebooks; deploy container-wrapped models as services via Model Deployment, and more.
+The [User Portal](user-guide/user-portal.md) provides access to a full MLOps feature set. Data scientists can turn workflows into automated pipelines via Jobs/Recurring Jobs; prepare data and develop trained models from Notebooks; deploy container-wrapped models as services via Model Deployment, and more.
 
 <figure><img src=".gitbook/assets/v311-landing-user-ui.png" alt=""><figcaption></figcaption></figure>
 
 #### Landing Page Layout
 
 1. User features
-2. Group admin features (Viewable only to the [group admin](introduction/platform-introduction/concept/privilege.md#group-administrator))
+2. Group admin features (Viewable only to the [group admin](developer-guide/concept/privilege.md#group-administrator))
 3. Group switch
 4. Group context
-5. Admin Portal entry (Viewable only the the [platform admin](introduction/platform-introduction/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
+5. Admin Portal entry (Viewable only the the [platform admin](developer-guide/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
 
 ### Admin Portal
 
-The [Admin Portal](guides/administrator-guide/admin-portal/) enables platform administrators to manage all aspects of PrimeHub, such as access-control, resources and quota control, building custom environments via image builder etc.
+The [Admin Portal](administrator-guide/admin-portal/) enables platform administrators to manage all aspects of PrimeHub, such as access-control, resources and quota control, building custom environments via image builder etc.
 
 <figure><img src=".gitbook/assets/v310-landing-admin-ui.png" alt=""><figcaption></figcaption></figure>
 

@@ -6,9 +6,9 @@
 The working group's Group Volume is required.
 {% endhint %}
 
-1.  Select **API Token** from the extension and add your own token. See [How to generate a API](../../user-portal/generate-an-primehub-api-token.md) Token.
+1.  Select **API Token** from the extension and add your own token. See [How to generate a API](../generate-an-primehub-api-token.md) Token.
 
-    <figure><img src="../../../../.gitbook/assets/ph-extension-token.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/ph-extension-token.png" alt=""><figcaption></figcaption></figure>
 2. Launch Notebook instance from User Portal by using a base image from InfuseAI or a image built on top of a base image from InfuseAI.
 3.  Enter the **Group Volume** directory of the current working group, open an empty notebook file there.
 
@@ -44,10 +44,10 @@ The working group's Group Volume is required.
    4. Fill in **Notebook Parameters** `start=1; end=10`.(using `;` as separator, \_new lin\_e is not allowed.)
    5.  Submit.
 
-       <figure><img src="../../../../.gitbook/assets/ph-extension-sub-nb.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/ph-extension-sub-nb.png" alt=""><figcaption></figcaption></figure>
 6.  View the job status by clicking the link.
 
-    <figure><img src="../../../../.gitbook/assets/ph-extension-success.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/ph-extension-success.png" alt=""><figcaption></figcaption></figure>
 7.  Once the job succeeded, go back to Notebook. There is a generated notebook file with the result beside the original notebook file. We can notice the parameter we gave is inserted as the first cell.
 
-    <figure><img src="../../../../.gitbook/assets/nb-as-job-output.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/nb-as-job-output.png" alt=""><figcaption></figcaption></figure>

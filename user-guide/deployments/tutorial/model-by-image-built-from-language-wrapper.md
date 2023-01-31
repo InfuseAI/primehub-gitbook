@@ -10,7 +10,7 @@ In this tutorial, we will show how to deploy a model built from [language wrappe
 Remember to enable model deployment in your group, contact your admin if it is not enabled yet.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/mdeploy_enable (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mdeploy_enable (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Tutorial Steps
 
@@ -20,27 +20,27 @@ Remember to enable model deployment in your group, contact your admin if it is n
 
     Fill in the `Model Image` field with `infuseai/model-tensorflow2-mnist:v0.2.0`; This image is a pre-built image hosted on Docker Hub by InfuseAI.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_deploydetail_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/mdeploy_quickstart_deploydetail_2.png" alt=""><figcaption></figcaption></figure>
 4. In the `Resources`,
    * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
    *   leave `Replicas` as default (1)
 
-       <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_deployresource.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/mdeploy_quickstart_deployresource.png" alt=""><figcaption></figcaption></figure>
 5.  Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.
 
     <div>
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_deploying.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/mdeploy_quickstart_deploying.png" alt=""><figcaption></figcaption></figure>
 
      
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_deployed.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/mdeploy_quickstart_deployed.png" alt=""><figcaption></figcaption></figure>
 
     </div>
 
     When the deployment is deployed successfully, we can click on cell to check its detail.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_detailpage_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/mdeploy_quickstart_detailpage_2.png" alt=""><figcaption></figcaption></figure>
 6.  We can view some detailed information in detail page, now let's test our deployed model! Copy the `endpoint URL` and replace the `${YOUR_ENDPOINT_URL}` in the following block.
 
     ```bash
@@ -123,6 +123,6 @@ Remember to enable model deployment in your group, contact your admin if it is n
 
 ### Reference
 
-* For the completed model deployment feature introduction, see [Model Deployment](../deployments.md).
+* For the completed model deployment feature introduction, see [Model Deployment](../).
 * For the model image package instruction, see [Package from Language Wrapper](../package-from-language-wrapper/).
 * [Pushing a Docker container image to Docker Hub](https://docs.docker.com/docker-hub/repos/).

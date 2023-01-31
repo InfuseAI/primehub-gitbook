@@ -1,73 +1,80 @@
-# Model by Pre-packaged Server (PHFS)
+---
+description: Tutorial
+---
 
-In this tutorial, we will show how to deploy a model trained from Jupyter Notebook via PHFS storage. We deploy a MNIST model by TensorFlow2 pre-packaged server.
+# Manage and Deploy Model
 
-### Prerequisites
+In this tutorial, we will use the MNIST model in TensorFlow 2 as an example to show how to train, manage, and deploy a model.
 
-#### Enable Model Deployment in Group Management
+### What we need?
 
-Remember to enable model deployment in your group, contact your admin if it is not enabled yet.
+* Remember to follow [configuration](model-management-configuration.md) to enable model management in your group, contact your admin if it is not enabled yet.
+*   Remember to enable model deployment in your group, contact your admin if it is not enabled yet.
 
-<figure><img src="../../../../.gitbook/assets/mdeploy_enable (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/mdeploy_enable.png" alt=""><figcaption></figcaption></figure>
+* The `TensorFlow 2.4` image `infuseai/docker-stacks:tensorflow-notebook-v2-4-1-dbdcead1`.
+* An instance type >= minimal requirement (CPU=1, GPU=0, Mem=2G).
+*   The prepared notebook file of the example,
 
-#### Enable PHFS Storage
+    Download model\_management\_tutorial.ipynb. This example file is referred to [TensorFlow 2 quickstart for beginners](https://www.tensorflow.org/tutorials/quickstart/beginner) with added cell to enable [MLflow autologging API](https://www.mlflow.org/docs/latest/python\_api/mlflow.tensorflow.html#mlflow.tensorflow.autolog).
+* Choose a group with enabled Shared Volume (a.k.a Group Volume).
 
-Remember to [enable PHFS Storage](../../../developer-guide/design/primehub-file-system-phfs.md), contact your admin if it is not enabled yet.
-
-{% hint style="warning" %}
-PHFS, currently, supports _writing files sequentially only_; within this limitation, writing model files in `HDF5` format directly into PHFS will cause the error, `Problems closing file (file write failed: ...)` since `HDF5` uses _seek_ while writing.
-{% endhint %}
+{% file src="../../.gitbook/assets/model_management_tutorial.ipynb" %}
 
 {% hint style="info" %}
-In this case, we suggest this step: _writing HDF5 files into user home directory directly_ rather than PHFS, then copying files to PHFS for the preparation of model deployments
+Please have the image, the instance type on PrimeHub, or request administrators for assistance before we start.
 {% endhint %}
 
-### Tutorial Steps
+### Steps
 
-1. Go to `Notebooks`.
-2.  Then we are in spawner page, here we choose the instance type with configuration `(CPU: 1 / Memory: 2 G / GPU: 0)`.
+1. Enter Notebooks from User Portal, select the image, the instance type, and start a notebook.
+2. While inside the group volume, copy/drag the downloaded `model_management_tutorial.ipynb` to File Browser. Then, let's open it and **Run All Cells**.
+3.  Enter Models then click on `MLflow UI` button.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_notebook_instanceType.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/model-mgt-mlflow-ui-button.png" alt=""><figcaption></figcaption></figure>
+4.  In the MLflow UI, We will see a newly completed run under the `Default` experiment. Now clicking on this run.
 
-    Also, we choosing the `TensorFlow 2.2` as our runtime image and clicking on `Start Notebook` button, e.g. `infuseai/docker-stacks:tensorflow-notebook-v2-2-1-a7f9696a`
+    <figure><img src="../../.gitbook/assets/model-mgt-mlflow-run-list.png" alt=""><figcaption></figcaption></figure>
+5.  In the run information page, scroll down to the `Artifacts` section. Clicking on the exported model and `Register Model` button.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_notebook_image.png" alt=""><figcaption></figcaption></figure>
-3.  Once the notebook is started, running this [example notebook](model-by-pre-packaged-server-phfs.md#example-file) to train and save a simple MNIST model.
+    <figure><img src="../../.gitbook/assets/model-mgt-mlflow-run-artifacts.png" alt=""><figcaption></figcaption></figure>
+6.  We can register a new model or update version to the existing model.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_notebook.png" alt=""><figcaption></figcaption></figure>
-4.  If we want to deploy a model trained from Notebook, just move it to the `phfs` directory.
+    <figure><img src="../../.gitbook/assets/model-mgt-mlflow-register-model-1.png" alt=""><figcaption></figcaption></figure>
+7.  We choose `Create New Model` and fill in the `Model Name` field with `tensorflow-mnist-model`. Let's clicking on `Register` button to complete model registration.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_notebook_phfs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/model-mgt-mlflow-register-model-2.png" alt=""><figcaption></figcaption></figure>
+8.  Enter Models, we will see the registered model in the model list. Now clicking on our model `tensorflow-mnist-model`.
 
-    Alternatively, you can upload files to the `phfs` directory using the Shared Files feature in the User Portal:
+    <figure><img src="../../.gitbook/assets/model-mgt-model-list.png" alt=""><figcaption></figcaption></figure>
+9.  In the model detail page, we can find all registered model version here. Let's clicking on the `Deploy` button of `Version 1`.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_shared_files_upload.gif" alt=""><figcaption></figcaption></figure>
-5. Then, back to User Portal and select `Deployments`.
-6. In the model deployment list page, now clicking on `Create Deployment` button.
-7.  Fill in the `Deployment name` field with `quickstart-mnist`
+    <figure><img src="../../.gitbook/assets/model-mgt-model-detail.png" alt=""><figcaption></figcaption></figure>
+10. We can deploy the selected model version to a new deployment or update to the existing deployment. We choose `Create new deployment` and click on `OK` button.
 
-    Select the `Model Image` field with `TensorFlow2 server`; This is a pre-packaged model server image that can serve `TensorFlow 2` model.
+    <figure><img src="../../.gitbook/assets/model-mgt-deploy-model.png" alt=""><figcaption></figcaption></figure>
+11. We will be directed to [create deployment page](../deployments/#create). Fill in the `Deployment Name` field with `tensorflow-mnist`. Select the `Model Image` field with `TensorFlow2 server`; this is a pre-packaged model server image that can serve `MLflow autologged TensorFlow model`.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_create_model_image_suggestion (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/mdeploy_create_model_image_suggestion.png" alt=""><figcaption></figcaption></figure>
 
-    Fill in the `Model URI` field with `phfs:///TF-MNIST-Model`; This path is included the trained model in the PHFS Storage.
+    As for the `Model URI` field, it will be auto fill-in with registered model scheme.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_deploydetail_1_phfs.png" alt=""><figcaption></figcaption></figure>
-8. In the `Resources`,
-   * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
-   *   leave `Replicas` as default (1)
+    <figure><img src="../../.gitbook/assets/model-mgt-create-deployment.png" alt=""><figcaption></figcaption></figure>
+12. In the `Resources`,
+    * choose the instance type, here we use the one with configuration `(CPU: 0.5 / Memory: 1 G / GPU: 0)`
+    *   leave `Replicas` as default (1)
 
-       <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_deployresource.png" alt=""><figcaption></figcaption></figure>
-9.  Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.
+        <figure><img src="../../.gitbook/assets/mdeploy_quickstart_deployresource (1).png" alt=""><figcaption></figcaption></figure>
+13. Click on `Deploy` button, then we will be redirected to model deployment list page. Wait for a while and click on `Refresh` button to check our model is deployed or not.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_deploying_phfs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/model-mgt-model-deploying.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_deployed_phfs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/model-mgt-model-deployed.png" alt=""><figcaption></figcaption></figure>
 
     When the deployment is deployed successfully, we can click on cell to check its detail.
 
-    <figure><img src="../../../../.gitbook/assets/mdeploy_quickstart_detailpage_1_phfs.png" alt=""><figcaption></figcaption></figure>
-10. We can view some detailed information in detail page, now let's test our deployed model! Copy the `endpoint URL` and replace the `${YOUR_ENDPOINT_URL}` in the following block.
+    <figure><img src="../../.gitbook/assets/model-mgt-deployment-detail.png" alt=""><figcaption></figcaption></figure>
+14. We can view some detailed information in detail page, now let's test our deployed model! Copy the `endpoint URL` and replace the `${YOUR_ENDPOINT_URL}` in the following block.
 
     ```bash
     curl -X POST ${YOUR_ENDPOINT_URL} \
@@ -75,89 +82,23 @@ In this case, we suggest this step: _writing HDF5 files into user home directory
         -d '{ "data": {"ndarray": [[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.32941176470588235, 0.7254901960784313, 0.6235294117647059, 0.592156862745098, 0.23529411764705882, 0.1411764705882353, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8705882352941177, 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.9450980392156862, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.6666666666666666, 0.20392156862745098, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2627450980392157, 0.4470588235294118, 0.2823529411764706, 0.4470588235294118, 0.6392156862745098, 0.8901960784313725, 0.996078431372549, 0.8823529411764706, 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.9803921568627451, 0.8980392156862745, 0.996078431372549, 0.996078431372549, 0.5490196078431373, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.06666666666666667, 0.25882352941176473, 0.054901960784313725, 0.2627450980392157, 0.2627450980392157, 0.2627450980392157, 0.23137254901960785, 0.08235294117647059, 0.9254901960784314, 0.996078431372549, 0.41568627450980394, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3254901960784314, 0.9921568627450981, 0.8196078431372549, 0.07058823529411765, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.08627450980392157, 0.9137254901960784, 1.0, 0.3254901960784314, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5058823529411764, 0.996078431372549, 0.9333333333333333, 0.17254901960784313, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.23137254901960785, 0.9764705882352941, 0.996078431372549, 0.24313725490196078, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5215686274509804, 0.996078431372549, 0.7333333333333333, 0.0196078431372549, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.03529411764705882, 0.803921568627451, 0.9725490196078431, 0.22745098039215686, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.49411764705882355, 0.996078431372549, 0.7137254901960784, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.29411764705882354, 0.984313725490196, 0.9411764705882353, 0.2235294117647059, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.07450980392156863, 0.8666666666666667, 0.996078431372549, 0.6509803921568628, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.011764705882352941, 0.796078431372549, 0.996078431372549, 0.8588235294117647, 0.13725490196078433, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14901960784313725, 0.996078431372549, 0.996078431372549, 0.30196078431372547, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.12156862745098039, 0.8784313725490196, 0.996078431372549, 0.45098039215686275, 0.00392156862745098, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5215686274509804, 0.996078431372549, 0.996078431372549, 0.20392156862745098, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.23921568627450981, 0.9490196078431372, 0.996078431372549, 0.996078431372549, 0.20392156862745098, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4745098039215686, 0.996078431372549, 0.996078431372549, 0.8588235294117647, 0.1568627450980392, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4745098039215686, 0.996078431372549, 0.8117647058823529, 0.07058823529411765, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]]] } }'
     ```
 
-    Then copy the entire block to the terminal for execution. This Curl example is from [PrimeHub model deployment example](https://github.com/InfuseAI/model-deployment-examples/tree/master/tensorflow2\_mnist), and we are sending ndarray as request data.
+    Then copy the entire block to the terminal for execution, and we are sending tensor as request data.
 
     *   Example of request data
 
         ```bash
-        curl -X POST https://hub.xxx.demo.primehub.io/deployment/quickstart-mnist-xxx/api/v1.0/predictions \
+        curl -X POST https://hub.xxx.primehub.io/deployment/tensorflow-mnist-xxx/api/v1.0/predictions \
             -H 'Content-Type: application/json' \
             -d '{ "data": {"ndarray": [[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.32941176470588235, 0.7254901960784313, 0.6235294117647059, 0.592156862745098, 0.23529411764705882, 0.1411764705882353, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8705882352941177, 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.9450980392156862, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.7764705882352941, 0.6666666666666666, 0.20392156862745098, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2627450980392157, 0.4470588235294118, 0.2823529411764706, 0.4470588235294118, 0.6392156862745098, 0.8901960784313725, 0.996078431372549, 0.8823529411764706, 0.996078431372549, 0.996078431372549, 0.996078431372549, 0.9803921568627451, 0.8980392156862745, 0.996078431372549, 0.996078431372549, 0.5490196078431373, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.06666666666666667, 0.25882352941176473, 0.054901960784313725, 0.2627450980392157, 0.2627450980392157, 0.2627450980392157, 0.23137254901960785, 0.08235294117647059, 0.9254901960784314, 0.996078431372549, 0.41568627450980394, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3254901960784314, 0.9921568627450981, 0.8196078431372549, 0.07058823529411765, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.08627450980392157, 0.9137254901960784, 1.0, 0.3254901960784314, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5058823529411764, 0.996078431372549, 0.9333333333333333, 0.17254901960784313, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.23137254901960785, 0.9764705882352941, 0.996078431372549, 0.24313725490196078, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5215686274509804, 0.996078431372549, 0.7333333333333333, 0.0196078431372549, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.03529411764705882, 0.803921568627451, 0.9725490196078431, 0.22745098039215686, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.49411764705882355, 0.996078431372549, 0.7137254901960784, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.29411764705882354, 0.984313725490196, 0.9411764705882353, 0.2235294117647059, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.07450980392156863, 0.8666666666666667, 0.996078431372549, 0.6509803921568628, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.011764705882352941, 0.796078431372549, 0.996078431372549, 0.8588235294117647, 0.13725490196078433, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14901960784313725, 0.996078431372549, 0.996078431372549, 0.30196078431372547, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.12156862745098039, 0.8784313725490196, 0.996078431372549, 0.45098039215686275, 0.00392156862745098, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5215686274509804, 0.996078431372549, 0.996078431372549, 0.20392156862745098, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.23921568627450981, 0.9490196078431372, 0.996078431372549, 0.996078431372549, 0.20392156862745098, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4745098039215686, 0.996078431372549, 0.996078431372549, 0.8588235294117647, 0.1568627450980392, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4745098039215686, 0.996078431372549, 0.8117647058823529, 0.07058823529411765, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]]] } }'
         ```
-    *   Example of response data (it predicts the number is `7` as the highest probability is in index-7)
+    *   Example of response data
 
         ```bash
-        {
-          "data": {
-            "names": [],
-            "ndarray": [
-              [
-                1.2198711374367122e-07,
-                9.869326333955541e-08,
-                3.0142302421154454e-05,
-                0.0001249201741302386,
-                3.9266562223971846e-10,
-                8.974412253337505e-07,
-                6.341080438510005e-11,
-                0.9998371601104736,
-                2.2463413529294485e-07,
-                6.454149115597829e-06
-              ]
-            ]
-          },
-          "meta": {}
-        }
+        {"data":{"names":["t:0","t:1","t:2","t:3","t:4","t:5","t:6","t:7","t:8","t:9"],"ndarray":[[-6.807936668395996,-6.156848907470703,-0.5300902128219604,2.158026695251465,-12.060927391052246,-5.6181864738464355,-19.14385223388672,11.28002643585205,-4.458962440490723,-2.8637030124664307]]},"meta":{"requestPath":{"model":"infuseai/tensorflow2-prepackaged:v0.2.0"}}}
         ```
-11. Congratulations! We have trained a model in Notebook and directly deployed it as an endpoint service that can respond requests anytime from everywhere.
-12. (Advanced) We went through a simple MNIST example by sending ndarray data to the deployed model. Next, we can also try to send an exact image file to the deployed model.
-
-*   Follow previous tutorial steps but with `Model Image` to be `infuseai/tensorflow2-prepackaged_rest:v0.4.3`.
-
-    (starting from v0.4.3, the TensorFlow2 model server image hosted by InfuseAI can handle the image file input)
-*   Using this Curl example,
-
-    ```bash
-    curl -F 'binData=@${YOUR_IMAGE_FILE}' ${YOUR_ENDPOINT_URL}
-    ```
-*   Example of request data
-
-    ```bash
-    curl -F 'binData=@test_image.jpg' https://hub.xxx.demo.primehub.io/deployment/quickstart-mnist-xxx/api/v1.0/predictions
-    ```
-*   Example of response data
-
-    ```bash
-    {
-      "data": {
-        "names": [],
-        "tensor": {
-          "shape": [
-            1, 
-            10
-          ],
-          "values": [
-            2.2407566291349212e-07,
-            1.2446706776358951e-08,
-            2.6079691451741382e-05,
-            0.00012795013026334345,
-            3.6888220256159343e-10,
-            8.873519163898891e-07,
-            1.7562220774869353e-11,
-            0.9998427629470825,
-            5.136769800628826e-07,
-            1.499530753790168e-06
-          ]
-        }
-      },
-      "meta": {}
-    }
-    ```
-
-### Example File
-
-{% file src="../../../../.gitbook/assets/tf-train-mnist.ipynb" %}
+15. Congratulations! We have versioned our trained model and further deploy it as an endpoint service that can respond requests anytime from everywhere.
 
 ### Reference
 
-* For the completed model deployment feature introduction, see [Model Deployment](../deployments.md).
-* For the customized pre-packaged server instruction, see [Pre-packaged servers](../pre-packaged-servers/).
+* For the completed model management feature introduction, see [Model Management](./).
+* For the reference and limitation of MLflow autologging API in TensorFlow, see [MLflow autologging](https://www.mlflow.org/docs/latest/python\_api/mlflow.tensorflow.html#mlflow.tensorflow.autolog).

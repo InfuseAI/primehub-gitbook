@@ -19,11 +19,11 @@ Label Studio is an open-source data labeling web platform. You can label the ima
 * [Label Studio website](https://labelstud.io/)
 * [Label Studio Documentation](https://labelstud.io/guide/)
 
-We can easily start the label studio platform in the PrimeHub platform. You can follow the document to learn how to [create the label studio](../../guides/user-guide/apps/tutorial/label-dataset-by-label-studio.md) in PrimeHub Apps.
+We can easily start the label studio platform in the PrimeHub platform. You can follow the document to learn how to [create the label studio](../../user-guide/apps/tutorial/label-dataset-by-label-studio.md) in PrimeHub Apps.
 
 ### Prerequisites
 
-1. Create a group and [enable a shared volume](../../guides/administrator-guide/group-management.md#shared-volume) for storage:
+1. Create a group and [enable a shared volume](../../administrator-guide/group-management.md#shared-volume) for storage:
 2. Download the [images ZIP file](https://www.kaggle.com/datasets/ruruamour/screw-dataset) and unzip the file.
 
 ### End-to-end Steps

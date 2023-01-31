@@ -1,8 +1,8 @@
-# Start Notebook
+# Notebook
 
 ### Overview
 
-<figure><img src="../../../../.gitbook/assets/spawner_v310.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/spawner_v310.png" alt=""><figcaption></figcaption></figure>
 
 * `Instance Types`: The selection of instance types according to the current group context
 * `Images`: The selection of images according to the current group context
@@ -16,7 +16,7 @@
 1. Log in `User Portal` with a user account, select `Notebooks` and click `Start My Server` to enter the spawner page.
 2.  Confirm if the current group is what you desire; switch the group by the `Group:` dropdown at the top of the right side.
 
-    <figure><img src="../../../../.gitbook/assets/group_context (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/group_context (1).png" alt=""><figcaption></figcaption></figure>
 3. Select an `Instance Type` for the resource allocation to this project. It lists instance types only within the context of the group.
 4.  Select an `Image` which the project is based on. It lists images only within the context of the group.
 
@@ -27,10 +27,10 @@
 
     From image selection, `i` hint indicates an image `Group` image or `System` image.
 
-    <figure><img src="../../../../.gitbook/assets/group-image-hint (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/group-image-hint (1).png" alt=""><figcaption></figcaption></figure>
 5.  Enabled [Advanced Settings](advanced-settings.md) if required. Click `Start Notebook`. Your Server environment would be instantiated. Once the Notebook is spawned, it will pop up a new tab.
 
-    <figure><img src="../../../../.gitbook/assets/v39-jupyter-popup-block.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/v39-jupyter-popup-block.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 At very first time, browser will block the pop-up from PrimeHub by default, please allow the pop-up from PrimeHub. Click `Launch Notebook Server` to open Notebook in a new tab once the pop-up is allowed.
@@ -40,7 +40,7 @@ At very first time, browser will block the pop-up from PrimeHub by default, plea
 
 From Notebook tab, it shows the spawning progress.
 
-<figure><img src="../../../../.gitbook/assets/spawner_cancel_v33.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/spawner_cancel_v33.png" alt=""><figcaption></figcaption></figure>
 
 Spawning can be cancelled by clicking `Cancel`.
 
@@ -48,7 +48,7 @@ Spawning can be cancelled by clicking `Cancel`.
 
 Logs are retrieved from Jupyter Pod since Notebook spawning to Notebook end. The logs can be viewed from `Logs` tab and be downloaded as a file _as long as Notebook is alive_. Once Notebook is terminated, logs are gone with it. In this case, we can only check latest logs cached by UI.
 
-<figure><img src="../../../../.gitbook/assets/spawner_log.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/spawner_log.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Logs are shown when Notebook pod is being started or alive. If there is no running notebook, it shows `Error: cannot get log due to pods "jupyter-xxxx" not found`.
@@ -64,8 +64,8 @@ Click `Shutdown Server`. It takes a short while to stop it.
 If switching the current working group after the Notebook is launched, it indicates the Notebook is retained in the other group.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/v39-jupyter-other-group.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/v39-jupyter-other-group.png" alt=""><figcaption></figcaption></figure>
 
 ### Reference
 
-[Accessible Data Store from Notebook](../../../../introduction/platform-introduction/concept/persistence.md)
+[Accessible Data Store from Notebook](../../developer-guide/concept/persistence.md)
