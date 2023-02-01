@@ -20,7 +20,7 @@ The PrimeHub platform integrates MLFlow as the model management function. You ca
 
 To track our experiments, we must first install MLflow, which is available as part of PrimeHub Apps. Use the guide at the following link to install MLflow:
 
-* [Create an MLflow server](../user-guide/apps/tutorial/create-an-mlflow-server.md)
+* [Create an MLflow server](../user-guide/apps-overview/tutorial/create-an-mlflow-server.md)
 
 ### Step 2: Training the model
 

@@ -9,7 +9,7 @@ According to a binding MLflow instance, Group Administrators could choose either
 
 ### MLflow instances
 
-There are some key considerations when setting up a [MLflow instance](../apps/tutorial/create-an-mlflow-server.md) to make **Model Management** and **Deployment** working together, especially deploy a model from the `MLflow Model Registry`.
+There are some key considerations when setting up a [MLflow instance](../apps-overview/tutorial/create-an-mlflow-server.md) to make **Model Management** and **Deployment** working together, especially deploy a model from the `MLflow Model Registry`.
 
 #### Installed MLflow server by PrimeHub Apps
 
@@ -46,7 +46,7 @@ Same as the use-case of sharing `MLflow Model Registry` to other groups, it is a
 
 So far, you supposedly already have a running MLFlow instance, either installed by PrimeHub Apps or externally-hosted. We have to bind the service by configuring Group Setting.
 
-<figure><img src="../../../.gitbook/assets/group-mlflow-configuration-example.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/group-mlflow-configuration-example.png" alt=""><figcaption></figcaption></figure>
 
 If using **installed MLflow server by Apps**, see [Group Setting - MLflow section](../group-admin/settings.md#mlflow).
 

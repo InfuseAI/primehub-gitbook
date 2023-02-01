@@ -4,7 +4,7 @@ This tutorial covers the basic flow to help you get started with MLflow in Prime
 
 ### Install MLflow
 
-First, you need to install it in the `Apps` tab. Please check the [Overview](../apps-overview.md) section to learn how to install an App. In the installing process, you can change the `backend store` and `artifact store` environment variables. If you don't know the meaning of the environment variables, can just use the default values or check the [MLflow Official Doc](https://mlflow.org/docs/latest/tracking.html#mlflow-tracking-servers) and Our Setting for more details.
+First, you need to install it in the `Apps` tab. Please check the [Overview](../) section to learn how to install an App. In the installing process, you can change the `backend store` and `artifact store` environment variables. If you don't know the meaning of the environment variables, can just use the default values or check the [MLflow Official Doc](https://mlflow.org/docs/latest/tracking.html#mlflow-tracking-servers) and Our Setting for more details.
 
 ### MLflow UI
 

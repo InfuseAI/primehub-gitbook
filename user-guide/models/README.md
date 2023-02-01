@@ -2,7 +2,7 @@
 description: Models Management Overview
 ---
 
-# Models Management
+# Models
 
 Data scientists requires to repeat training models with various combinations of dataset, feature, parameters etc., and conducting experiments on models, furthermore, to register/to version models which have decent performance according to results. Nowadays, this is one part of MLOps.
 
@@ -12,7 +12,7 @@ Regarding managing versioned models, PrimeHub, by integrating well-known _MLflow
 
 ### MLflow is required
 
-A running installed [MLflow instance](../apps/tutorial/create-an-mlflow-server.md) is required and [Group Setting](../group-admin/settings.md) has to be configured with relative information.
+A running installed [MLflow instance](../apps-overview/tutorial/create-an-mlflow-server.md) is required and [Group Setting](../group-admin/settings.md) has to be configured with relative information.
 
 **MLflow setting is not configured yet**
 
@@ -26,7 +26,7 @@ A running installed [MLflow instance](../apps/tutorial/create-an-mlflow-server.m
 
 The page displays registered models from binding MLflow.
 
-* See [Tutorial: Use MLflow Tracking](../apps/tutorial/create-an-mlflow-server.md).
+* See [Tutorial: Use MLflow Tracking](../apps-overview/tutorial/create-an-mlflow-server.md).
 
 {% hint style="info" %}
 If a loading page displays only, please double check `MLflow Tracking URI` configuration of MLflow setting in Group Setting.
