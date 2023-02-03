@@ -48,10 +48,10 @@ Hovering over top-right icon, there is a Profile Menu containing **User Profile*
 * **Jobs** where users can submit jobs of time-consuming tasks. See [Jobs](jobs-recurring-jobs/).
 * **Recurring Jobs** where users can schedule jobs regularly. See [Recurring Jobs](jobs-recurring-jobs/#recurring-jobs).
 * **Models** where users can track registered models from MLFlow. See [Models Management](models/model-management-configuration.md).
-* **Deployments** where users can deploy and serve models as services. See [Deployments Management](../technology/user-portal/broken-reference/).
+* **Deployments** where users can deploy and serve models as services. See [Deployments Management](deployments/).
 * **Shared Files** where users can upload files to PHFS storage to share with group members. See [Shared Files](shared-files.md).
 * **Datasets** where users can manage datasets. See Datasets Management.
-* **Apps** where users can install 3rd-party applications to extend capabilities of PrimeHub. See [PrimeHub Apps](../technology/user-portal/broken-reference/).
+* **Apps** where users can install 3rd-party applications to extend capabilities of PrimeHub. See [PrimeHub Apps](apps-overview/).
 
 ### Group admin feature
 
