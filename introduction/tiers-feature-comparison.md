@@ -2,7 +2,7 @@
 description: Product tiers and licenses
 ---
 
-# Tiers Feature Comparison
+# Tiers and Licenses
 
 ## Tiers
 
@@ -43,7 +43,7 @@ Here we list the features comparison among tiers.
 
 In addition to feature differences among tiers, some features are also varied in licenses.
 
-* EE Trial: Enterprise Edition with Default License.
+* EE Trial: Enterprise Edition with the trial License.
 * EE Licensed: Enterprise Edition with Authorized License.
 * Deploy Licensed: Deploy Edition with Authorized License.
 
@@ -87,10 +87,10 @@ For each license, we determine the:
 * License Start Time
 * License Expiration Time
 
-**Q: What is the default license?**
+**Q: What is the trial license?**
 
-* When we install a PrimeHub EE , there is a default license installed.
-* The detail of default license:
+* When we install a PrimeHub EE , there is a trial license installed.
+* The detail of the trial license:
   * 1 node
   * 5 users
   * 1 group

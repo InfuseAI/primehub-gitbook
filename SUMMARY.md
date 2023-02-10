@@ -2,7 +2,7 @@
 
 ## Introduction
 
-* [Platform](README.md)
+* [Introduction](README.md)
 * [Installation](introduction/install-manually.md)
 * [Tiers and Licenses](introduction/tiers-feature-comparison.md)
 
