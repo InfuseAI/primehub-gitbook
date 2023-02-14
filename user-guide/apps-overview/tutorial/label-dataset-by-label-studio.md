@@ -16,11 +16,11 @@ If you don't know the meaning of other environment variables, you can use the de
 
 PrimeHub shows the app's state in the `Apps` tab. You can open the Label Studio UI by clicking `Open` after the state becomes `Ready`.
 
-<figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_login_page (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_login_page (1).png" alt=""><figcaption></figcaption></figure>
 
 It will open a new window and show the Label Studio UI. You can find your login information by clicking `Manage` in the `Apps` tab and then clicking the eyes icon. The `$(PRIMEHUB_GROUP)` is the group name.
 
-<figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_login_info (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_login_info (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Label Dataset
 
@@ -37,26 +37,43 @@ Please have the data volume, group volume, or request administrators for assista
 
 1.  After login, please click `Create` button.
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_create (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_create (1).png" alt=""><figcaption></figcaption></figure>
 2. Enter your `Project Name`. Skip the `Data Import` step. And choose the `Labeling Setup`. Here we choose `Semantic Segmentation with Polygons`.
 3.  Delete the original `Labels` settings and `Add` our own label names.
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_labeling_setup (1).png" alt=""><figcaption></figcaption></figure>
-4.  Click the `Settings` on the upper-right. Click `Cloud Storage` and `Add Source Storage` to sync the `/datasets/dog-demo` data volume to label. You need to set `Local path` to `/datasets/dog-demo`, turn on toggle of `Treat every bucket object as a source file` and click `Sync Storage`\
-    \`\`
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_labeling_setup (1).png" alt=""><figcaption></figcaption></figure>
+4. Sync the data file folder with label studio.
+   1.  Click the _Settings_ on the upper-right.&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_sync_source (1).gif" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/label_4a.png" alt=""><figcaption></figcaption></figure>
+
+
+   2.  Click _Cloud Storage_ and _Add Source Storage_ to sync the data volume to label
+
+       <figure><img src="../../../.gitbook/assets/label_4b.png" alt=""><figcaption></figcaption></figure>
+   3.  Configure the source storage setting: \
+
+
+       | Variable                                   | Value               |
+       | ------------------------------------------ | ------------------- |
+       | Storage type                               | Local path          |
+       | Absolute local path                        | /datasets/dog-demo/ |
+       | File Filter Regex                          | .\*jpeg             |
+       | Treat every bucket object as a source file | Enable              |
+
+       <figure><img src="../../../.gitbook/assets/label_4c.png" alt=""><figcaption></figcaption></figure>
+   4. Click the _Sync Storage_ to sync the data volume
 5.  Click `Add Target Storage` to sync to labeled results to `/project/<group_name>/dog-demo-labeled`. You need to set `Local path` to `/project/<group_name>/dog-demo-labeled`.
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_sync_target.gif" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_sync_target.gif" alt=""><figcaption></figcaption></figure>
 6.  Back to the project in Label Studio. The data in the data volume has been shown on the UI. And you can click each row of data to label.
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_sync_result (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_sync_result (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_labeled (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_labeled (1).png" alt=""><figcaption></figcaption></figure>
 7.  After you submit the labeled result, the labeled json file will be under the `/project/<group_name>/dog-demo-labeled`.
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_labeled_json (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_labeled_json (1).png" alt=""><figcaption></figcaption></figure>
 
 That's the basic use of how to label the dataset by using Label Studio and PrimeHub. Enjoy it!
 
@@ -68,9 +85,9 @@ For simplicity, the model will be a classification model and you also only need 
 
 Here are examples of good and bad screws. The first image is the good screw. The second image is the bad screw and you can see the there is a manipulated front.
 
-<figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_screw_good (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_screw_good (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_screw_bad (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_screw_bad (1).png" alt=""><figcaption></figcaption></figure>
 
 #### What we need?
 
@@ -81,11 +98,11 @@ Here are examples of good and bad screws. The first image is the good screw. The
 * The prepared python file of the example _app\_tutorial\_labelstudio\_screw\_prepare.py_ and upload it to `~/screw_train` by the notebook
 * The prepared notebook file of the example _app\_tutorial\_labelstudio\_screw\_train.ipynb_ and upload it to `~/screw_train` by the notebook
 
-{% file src="../../../../.gitbook/assets/app_tutorial_labelstudio_screw_dataset.zip" %}
+{% file src="../../../.gitbook/assets/app_tutorial_labelstudio_screw_dataset.zip" %}
 
-{% file src="../../../../.gitbook/assets/app_tutorial_labelstudio_screw_prepare (1).py" %}
+{% file src="../../../.gitbook/assets/app_tutorial_labelstudio_screw_prepare (1).py" %}
 
-{% file src="../../../../.gitbook/assets/app_tutorial_labelstudio_screw_train (1).ipynb" %}
+{% file src="../../../.gitbook/assets/app_tutorial_labelstudio_screw_train (1).ipynb" %}
 
 {% hint style="warning" %}
 Please have the data volume, group volume, or request administrators for assistance before we start.
@@ -100,16 +117,16 @@ To use the new data volume, you need to create a label studio app **after** the 
 1. Follow the previous `Label Dataset` section to use the label studio. This time in `Labeling Setup`, we should choose `Image Classification`.
 2.  Delete the original `Labels` settings and `Add` our own label classes: `bad`, `good`.
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_screw_label_classes (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_screw_label_classes (1).png" alt=""><figcaption></figcaption></figure>
 3. Click the `Settings` on the upper-right. Click `Cloud Storage` and `Add Source Storage` to sync the `/datasets/screw` data volume to label. Set `Local path` to `/datasets/screw`, set `File Filter Regex` to `.*png`, turn on toggle of `Treat every bucket object as a source file`. After added, click `Sync Storage`.
 4. Click `Add Target Storage` to sync to labeled results to `/project/<group_name>/screw-labeled`. You need to set `Local path` to `/project/<group_name>/screw-labeled`.
 5.  Back to the project in Label Studio. The data in the data volume has been shown on the UI. And you can click `Label` to start labeling. (Tip: you can use number to select the class)
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_screw_label_start (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_screw_label_start (1).png" alt=""><figcaption></figcaption></figure>
 
     After you labeled all images, you may see the following message. This is a known issue. Please click `OK`, click your project name and refresh the page.
 
-    <figure><img src="../../../../.gitbook/assets/app_tutorial_labelstudio_screw_label_completed (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/app_tutorial_labelstudio_screw_label_completed (1).png" alt=""><figcaption></figcaption></figure>
 6. Now you have labeled all data by the label studio. We can go back to our notebook to train the model.
 7.  Open a terminal.
 
@@ -119,6 +136,6 @@ To use the new data volume, you need to create a label studio app **after** the 
     ```
 
     After executed, it will create a folder named `data` and place the labeled images into the correct folder inside `data` folder.
-8. Open the notebook `app_tutorial_labelstudio_screw_train.ipynb` and execute all cells. In the last cell, you will see the result which is similar to the following image. ![](<../../../../.gitbook/assets/app\_tutorial\_labelstudio\_screw\_train\_completed (1).png>)
+8. Open the notebook `app_tutorial_labelstudio_screw_train.ipynb` and execute all cells. In the last cell, you will see the result which is similar to the following image. ![](<../../../.gitbook/assets/app\_tutorial\_labelstudio\_screw\_train\_completed (1).png>)
 
 We successfully use our labeled data to train a model which can classify whether the screw is good or bad!
