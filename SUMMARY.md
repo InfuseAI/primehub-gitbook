@@ -1,10 +1,8 @@
 # Table of contents
 
-## Introduction
-
 * [Introduction](README.md)
-* [Installation](introduction/install-manually.md)
-* [Tiers and Licenses](introduction/tiers-feature-comparison.md)
+* [Installation](install-manually.md)
+* [Tiers and Licenses](tiers-feature-comparison.md)
 
 ## End-to-End Tutorial
 
