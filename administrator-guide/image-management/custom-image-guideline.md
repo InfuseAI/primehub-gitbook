@@ -20,7 +20,7 @@ For the sake of building images with JupyterHub, we must use base images which a
 
 There are two official registries where we can have JupyterHub-compatible base images, one is from **Jupyter**, the other is from **InfuseAI**.
 
-Please refer to the [Available Images List](../../developer-guide/infuseai-images-list.md) for details on images maintained by InfuseAI.
+Please refer to the [Available Images List](../../reference/infuseai-images-list.md) for details on images maintained by InfuseAI.
 
 | Provider | Registry                                      | Reference                                                                                                        |
 | -------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -58,7 +58,7 @@ E.g. a Dockerfile using a existing image provided by InfuseAI.
 FROM infuseai/docker-stacks/<image>
 ```
 
-Please refer to [Available Images List ](../../developer-guide/infuseai-images-list.md)for the latest InfuseAI provided images.
+Please refer to [Available Images List ](../../reference/infuseai-images-list.md)for the latest InfuseAI provided images.
 
 #### Dockerfile Reference
 

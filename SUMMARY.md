@@ -103,11 +103,14 @@
 * [Notebooks Admin](administrator-guide/notebooks-admin.md)
 * [Usage Reports](administrator-guide/usage-reports.md)
 
+## Reference
+
+* [InfuseAI Images List](reference/infuseai-images-list.md)
+* [Roadmap](https://github.com/orgs/InfuseAI/projects/4/views/1)
+
 ## Developer Guide
 
 * [GitHub](https://github.com/infuseAI/primehub)
-* [Roadmap](https://github.com/orgs/InfuseAI/projects/4/views/1)
-* [InfuseAI Images List](developer-guide/infuseai-images-list.md)
 * [Design](developer-guide/design/README.md)
   * [PrimeHub File System (PHFS)](developer-guide/design/primehub-file-system-phfs.md)
   * [PrimeHub Store](developer-guide/design/primehub-store.md)
