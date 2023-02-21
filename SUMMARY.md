@@ -106,6 +106,8 @@
 ## Developer Guide
 
 * [GitHub](https://github.com/infuseAI/primehub)
+* [Roadmap](https://github.com/orgs/InfuseAI/projects/4/views/1)
+* [InfuseAI Images List](developer-guide/infuseai-images-list.md)
 * [Design](developer-guide/design/README.md)
   * [PrimeHub File System (PHFS)](developer-guide/design/primehub-file-system-phfs.md)
   * [PrimeHub Store](developer-guide/design/primehub-store.md)
@@ -126,8 +128,3 @@
   * [Chart Configuration](developer-guide/configuration/chart-configuration.md)
   * [Configure PrimeHub Store](developer-guide/configuration/configure-primehub-store.md)
 * [Environment Variables](developer-guide/environment-variables.md)
-
-## Reference
-
-* [Roadmap](https://github.com/orgs/InfuseAI/projects/4/views/1)
-* [InfuseAI Images List](reference/infuseai-images-list.md)
