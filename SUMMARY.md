@@ -105,13 +105,18 @@
 
 ## Reference
 
-* [InfuseAI Images List](reference/infuseai-images-list.md)
+* [InfuseAI Images List](developer-guide/infuseai-images-list.md)
 * [Roadmap](https://github.com/orgs/InfuseAI/projects/4/views/1)
 
 ## Developer Guide
 
 * [GitHub](https://github.com/infuseAI/primehub)
 * [Design](developer-guide/design/README.md)
+  * [Architecture](developer-guide/design/architecture.md)
+  * [Data Model](developer-guide/design/data-model.md)
+  * [CRDs](developer-guide/design/crds.md)
+  * [GraphQL](developer-guide/design/graphql.md)
+  * [Persistence Storages](developer-guide/design/persistence-storages.md)
   * [PrimeHub File System (PHFS)](developer-guide/design/primehub-file-system-phfs.md)
   * [PrimeHub Store](developer-guide/design/primehub-store.md)
   * [Log Persistence](developer-guide/design/log-persistence.md)

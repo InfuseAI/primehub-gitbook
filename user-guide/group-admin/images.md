@@ -29,7 +29,7 @@ Add an existing image for the group.
 <figure><img src="../../.gitbook/assets/group-image-existing.png" alt=""><figcaption></figcaption></figure>
 
 * `Type`: `cpu`, `gpu` and `universal`: Select what type of the image is.
-* `Container image url`: Fill in the Image's url. See [Reference](../../reference/infuseai-images-list.md).
+* `Container image url`: Fill in the Image's url. See [Reference](../../developer-guide/infuseai-images-list.md).
 *   `Image Pull Secret` Enable and select the secret if a pull-secret is required.
 
     <figure><img src="../../.gitbook/assets/images_pull_secret_v26.png" alt=""><figcaption></figcaption></figure>

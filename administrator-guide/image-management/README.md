@@ -41,7 +41,7 @@ Instead of adding existing images, Administrators can build custom images and ad
 <figure><img src="../../.gitbook/assets/group-image-custom.png" alt=""><figcaption></figcaption></figure>
 
 * `Type`: `cpu`, `gpu` and `universal`: Select what type of the image is.
-* `Base image url` (required) The url of the base image; we can enter any valid image URLs or we can choose existing images from autocompletion. See [Reference](../../reference/infuseai-images-list.md).
+* `Base image url` (required) The url of the base image; we can enter any valid image URLs or we can choose existing images from autocompletion. See [Reference](../../developer-guide/infuseai-images-list.md).
 * `Image Pull Secret` Enable and select the secret if a pull-secret is required.
 *   `Packages` choose packages installer/management and fill in packages requirement.
 
