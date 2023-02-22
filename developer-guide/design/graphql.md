@@ -4,7 +4,9 @@ For making API queries to existing data in Kubernetes and Keycloak more understa
 
 ### Design
 
-The following diagram depicts what PrimeHub Spawner sends a query to GraphQL server for:
+The following diagram depicts what PrimeHub Spawner sends a query to GraphQL server for:&#x20;
+
+<figure><img src="../../.gitbook/assets/graphql.png" alt=""><figcaption></figcaption></figure>
 
 When a user intends to launch a JupyterHub via Spawner, Spawner has to learn what **server options** this user can have according to `images`, `instance types`, `datasets`, `groups`, `user` settings. For retrieving the relative data, Spawner sends a query to GraphQL server by `fetch_context` method, the server responds with a bunch of data in JSON. According to the response data, Spawner renders an HTML page to display for user selection.
 
@@ -79,6 +81,4 @@ query='query ($id: ID!) {
 }'
 ```
 
-### Reference
-
-For the detail of the latest GraphQL APIs, please see [canner-admin-ui](https://gitlab.com/infuseai/canner-admin-ui/tree/master/packages/graphql-server/src/graphql) repo. The access permission is required.
+###
