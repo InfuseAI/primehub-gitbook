@@ -73,5 +73,3 @@ clean up
 certificatesigningrequest.certificates.k8s.io "vendor-test-svc.vendor-test" deleted
 namespace "vendor-test" deleted
 ```
-
-referenced issue [ch1641](https://app.clubhouse.io/infuseai/story/1641/configure-rke-to-support-csr-approval)

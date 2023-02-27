@@ -10,7 +10,7 @@ We use a CRD ImageSpec to get specific definition of our image setup, [primehub-
 
 #### Image Builder spec
 
-[An ImageSpec example](https://github.com/InfuseAI/primehub-controller/blob/master/config/samples/primehub\_v1alpha1\_imagespec.yaml). You can modify `.spec.baseImage` value to extend exisiting docker image with custom packages, we support `.spec.packages.apt`, `.spec.packages.pip` and `.spec.packages.conda`.
+[An ImageSpec example](https://github.com/InfuseAI/primehub-controller/blob/master/config/samples/primehub\_v1alpha1\_imagespec.yaml). You can modify `.spec.baseImage` value to extend existing docker image with custom packages, we support `.spec.packages.apt`, `.spec.packages.pip` and `.spec.packages.conda`.
 
 #### Check building job status
 
