@@ -14,7 +14,7 @@ The PrimeHub model deployment feature is based on Seldon. This doc takes [refere
 
     ```
     install.packages('pls')
-    install.packages("Rcpp")
+    install.packages('Rcpp')
     ```
 *   Create a `Dockerfile` with the following content.
 
