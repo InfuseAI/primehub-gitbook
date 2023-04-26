@@ -2,7 +2,7 @@
 description: Platform Introduction
 ---
 
-# Platform
+# Introduction
 
 **PrimeHub** is a _Kubernetes-based_ platform designed for groups of data scientists. It aims to be an all-in-one, enterprise-level, machine learning platform that provides a seamless MLOps experience.
 
@@ -40,7 +40,7 @@ The [User Portal](user-guide/user-portal.md) provides access to a full MLOps fea
 2. Group admin features (Viewable only to the [group admin](developer-guide/concept/privilege.md#group-administrator))
 3. Group switch
 4. Group context
-5. Admin Portal entry (Viewable only the the [platform admin](developer-guide/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
+5. Admin Portal entry (Viewable only the [platform admin](developer-guide/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
 
 ### Admin Portal
 
