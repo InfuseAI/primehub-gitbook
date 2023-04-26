@@ -40,7 +40,7 @@ The [User Portal](user-guide/user-portal.md) provides access to a full MLOps fea
 2. Group admin features (Viewable only to the [group admin](developer-guide/concept/privilege.md#group-administrator))
 3. Group switch
 4. Group context
-5. Admin Portal entry (Viewable only the [platform admin](developer-guide/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
+5. Admin Portal entry (Viewable only to the [platform admin](developer-guide/concept/privilege.md#administrator)) ![](.gitbook/assets/v3-admin-entry-ui.png)
 
 ### Admin Portal
 
