@@ -109,7 +109,7 @@ We defined five default environment variables here and some of them are composed
 
 Now, when the user is trying to create a new `label-studio` app, this form will show up.
 
-<figure><img src="../../../../.gitbook/assets/app-tutorial-template-defaultenvs.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/app-tutorial-template-defaultenvs.png" alt=""><figcaption></figcaption></figure>
 
 Please note that if the `optional` attribute is set to `false`, then users can remove the defaultEnv. Be sure to set it properly.
 
@@ -135,10 +135,6 @@ The `svcTemplate` is basically the same as `Service` resource in Kubernetes. Pri
 If your application requires a persistant storage to keep your data, you can use the `group volume`.
 
 Every PrimeHub app is created inside a group context. If you have [enabled group volume](../../../administrator-guide/group-management.md#shared-volume) feature for that group, then that group volume will be mounted to your application container at `<group-volume>/phapplications/<app-id>`. You can use the predefined environment variable `PRIMEHUB_APP_ROOT` to tell your application to store persistant data into that location.
-
-### Label Studio Example
-
-Let's take a look at the Label Studio phapp for an example.
 
 ### More Examples
 
