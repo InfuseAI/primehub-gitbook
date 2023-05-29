@@ -105,6 +105,9 @@
 
 ## Reference
 
+* [Jupyter Images](reference/jupyter-images/README.md)
+  * [repo2docker image](reference/jupyter-images/repo2docker-image.md)
+  * [RStudio image](reference/jupyter-images/rstudio-image.md)
 * [InfuseAI Images List](developer-guide/infuseai-images-list.md)
 * [Roadmap](https://github.com/orgs/InfuseAI/projects/4/views/1)
 
