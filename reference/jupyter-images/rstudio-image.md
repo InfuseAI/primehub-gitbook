@@ -1,6 +1,6 @@
 # RStudio image
 
-We could use  repo2docker to build a Jupyter Notebook with RStudio: https://github.com/binder-examples/r
+We could use  [repo2docker](repo2docker-image.md) to build a Jupyter Notebook with RStudio: [https://github.com/binder-examples/r](https://github.com/binder-examples/r)
 
 1. Ensure repo2docker installed
 2. Clone the source code and add `sudo` to `apt.txt`
@@ -97,7 +97,9 @@ Start Notebook with the image in `Safe Mode`.
 
 Initially, it enters a general Jupyter Notebook.
 
-> For the RStudio environment, we must add the following at the end of the URL: `?urlpath=rstudio` according to the [README](https://github.com/binder-examples/r#url-addresses-for-rstudio-and-shiny-environments).
+{% hint style="info" %}
+For the RStudio environment, we must add the following at the end of the URL: `?urlpath=rstudio` according to the [README](https://github.com/binder-examples/r#url-addresses-for-rstudio-and-shiny-environments).
+{% endhint %}
 
 Regarding accessing RStudio, in browser the current URL looks like
 

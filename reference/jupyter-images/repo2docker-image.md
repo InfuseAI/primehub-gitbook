@@ -1,7 +1,5 @@
 # repo2docker image
 
-Enterprise Applicable to Enterprise EditionCommunity Applicable to Community Edition
-
 PrimeHub could support notebook images built from [repo2docker](https://repo2docker.readthedocs.io/en/latest/) tool, if an images had
 
 * `sudo` installed
@@ -45,11 +43,4 @@ If the command will invoke docker to build an image, you could push the image to
 
 Users should start a notebook built from repo2docker in `Safe Mode`, because it might have installed libraries in the `$HOME`.
 
-***
-
-### Examples
-
-* RStudio
-* Matlab
-* Spyder
-* ROS
+<figure><img src="../../.gitbook/assets/repo2docker-safe-mode.png" alt=""><figcaption></figcaption></figure>
