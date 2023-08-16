@@ -6,8 +6,8 @@ InfuseAI provides and maintains certain images which can be used as base images 
 
 | Framework       | Image                                                                   | CPU / GPU                                       | Python |
 | --------------- | ----------------------------------------------------------------------- | ----------------------------------------------- | ------ |
-| TensorFlow 2.13 | infuseai/docker-stacks:tensorflow-notebook-v2-13-0-aa45316d             | `CPU`                                           | 3.9    |
-| TensorFlow 2.13 | infuseai/docker-stacks:tensorflow-notebook-v2-13-0-aa45316d-gpu-cuda-12 | <p><code>GPU</code><br><code>CUDA 12</code></p> | 3.9    |
+| TensorFlow 2.13 | infuseai/docker-stacks:tensorflow-notebook-v2-13-0-1951c2b3             | `CPU`                                           | 3.9    |
+| TensorFlow 2.13 | infuseai/docker-stacks:tensorflow-notebook-v2-13-0-1951c2b3-gpu-cuda-12 | <p><code>GPU</code><br><code>CUDA 12</code></p> | 3.9    |
 | TensorFlow 2.8  | infuseai/docker-stacks:tensorflow-notebook-v2-8-0-6dec5b2e              | `CPU`                                           | 3.7    |
 | TensorFlow 2.8  | infuseai/docker-stacks:tensorflow-notebook-v2-8-0-6dec5b2e-gpu-cuda-11  | <p><code>GPU</code><br><code>CUDA 11</code></p> | 3.7    |
 | TensorFlow 2.5  | infuseai/docker-stacks:tensorflow-notebook-v2-5-0-1eb85fe1              | `CPU`                                           | 3.7    |
@@ -25,8 +25,8 @@ InfuseAI provides and maintains certain images which can be used as base images 
 
 | Framework      | Image                                                                      | CPU / GPU                                       | Python |
 | -------------- | -------------------------------------------------------------------------- | ----------------------------------------------- | ------ |
-| PyTorch v2.0.0 | infuseai/docker-stacks:pytorch-notebook-v2-0-0-aa45316d                    | `CPU`                                           | 3.9    |
-| PyTorch v2.0.0 | infuseai/docker-stacks:pytorch-notebook-v2-0-0-aa45316d-gpu-cuda-12        | <p><code>GPU</code><br><code>CUDA 12</code></p> | 3.9    |
+| PyTorch v2.0.0 | infuseai/docker-stacks:pytorch-notebook-v2-0-0-1951c2b3                    | `CPU`                                           | 3.9    |
+| PyTorch v2.0.0 | infuseai/docker-stacks:pytorch-notebook-v2-0-0-1951c2b3-gpu-cuda-12        | <p><code>GPU</code><br><code>CUDA 12</code></p> | 3.9    |
 | PyTorch 1.10.2 | infuseai/docker-stacks:pytorch-notebook-v1-10-2-6dec5b2e                   | `CPU`                                           | 3.7    |
 | PyTorch 1.10.2 | infuseai/docker-stacks:pytorch-notebook-v1-10-2-6dec5b2e-gpu-cuda-11       | <p><code>GPU</code><br><code>CUDA 11</code></p> | 3.7    |
 | PyTorch 1.8    | infuseai/docker-stacks:pytorch-notebook-v1-8-0-1eb85fe1                    | `CPU`                                           | 3.7    |
@@ -43,7 +43,7 @@ InfuseAI provides and maintains certain images which can be used as base images 
 
 | Name          | Image                                                      | CPU / GPU                                       | Python |
 | ------------- | ---------------------------------------------------------- | ----------------------------------------------- | ------ |
-| SciPy         | infuseai/docker-stacks:scipy-notebook-aa45316d             | `CPU`                                           | 3.9    |
-| SciPy         | infuseai/docker-stacks:scipy-notebook-aa45316d-gpu-cuda-12 | <p><code>GPU</code><br><code>CUDA 12</code></p> | 3.9    |
-| Base notebook | infuseai/docker-stacks:base-notebook-aa45316d              | `CPU`                                           | 3.9    |
-| Base notebook | infuseai/docker-stacks:base-notebook-aa45316d-gpu-cuda-12  | <p><code>GPU</code><br><code>CUDA 12</code></p> | 3.9    |
+| SciPy         | infuseai/docker-stacks:scipy-notebook-1951c2b3             | `CPU`                                           | 3.9    |
+| SciPy         | infuseai/docker-stacks:scipy-notebook-1951c2b3-gpu-cuda-12 | <p><code>GPU</code><br><code>CUDA 12</code></p> | 3.9    |
+| Base notebook | infuseai/docker-stacks:base-notebook-1951c2b3              | `CPU`                                           | 3.9    |
+| Base notebook | infuseai/docker-stacks:base-notebook-1951c2b3-gpu-cuda-12  | <p><code>GPU</code><br><code>CUDA 12</code></p> | 3.9    |
