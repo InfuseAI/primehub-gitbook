@@ -19,7 +19,7 @@ Here we list the features comparison among tiers.
 | Notebooks                         | ✅️        | ✅️         |        |
 | Jobs                              |           | ✅️         |        |
 | Recurring Jobs                    |           | ✅️         |        |
-| Models                            |           | ✅️         | ✅️     |
+| Models                            |           | ✅️         |        |
 | Deployments                       |           | ✅️         | ✅️     |
 | Shared Files                      | ✅️        | ✅️         | ✅️     |
 | Datasets                          | ✅️        | ✅️         | ✅️     |
